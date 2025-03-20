@@ -1,0 +1,117 @@
+############# English navigation ##############
+
+# main menu
+############# English Navigation ##############
+
+# Main menu
+[[main]]
+name = "TAQ"
+weight = 1
+
+[[main]]
+parent = "TAQ"
+name = "About"
+url = "/about"
+
+[[main]]
+parent = "TAQ"
+name = "History"
+url = "/history"
+
+[[main]]
+parent = "TAQ"
+name = "Mission & Objectives"
+url = "/mission-objectives"
+
+[[main]]
+parent = "TAQ"
+name = "Steering Committee"
+url = "/steering-committee"
+
+[[main]]
+parent = "TAQ"
+name = "Governance"
+url = "/governance"
+
+# ADNe Services
+[[main]]
+name = "ADNe Services"
+weight = 2
+
+[[main]]
+parent = "ADNe Services"
+name = "Sampling"
+url = "/sampling"
+
+[[main]]
+parent = "ADNe Services"
+name = "Laboratory Analysis"
+url = "/laboratory-analysis"
+
+[[main]]
+parent = "ADNe Services"
+name = "Data Processing"
+url = "/data-processing"
+
+[[main]]
+parent = "ADNe Services"
+name = "Training"
+url = "/training"
+
+[[main]]
+parent = "ADNe Services"
+name = "What is ADNe?"
+url = "/training/adne"
+
+# Members
+[[main]]
+name = "Members"
+weight = 3
+
+[[main]]
+parent = "Members"
+name = "Structure"
+url = "/members/structure"
+
+[[main]]
+parent = "Members"
+name = "Member List"
+url = "/members/list"
+
+[[main]]
+parent = "Members"
+name = "Become a Member"
+url = "/members/become-a-member"
+
+# News
+[[main]]
+name = "News"
+url = "/news"
+weight = 4
+
+[[main]]
+parent = "News"
+name = "TAQ and Member News"
+url = "/news/taq"
+
+# Contact
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 5
+
+# footer menu
+[[footer]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[footer]]
+name = "Elements"
+url = "/elements"
+weight = 2
+
+[[footer]]
+name = "Privacy Policy"
+url = "/privacy-policy"
+weight = 3
