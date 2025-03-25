@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="800px"
+   height="800px"
+   viewBox="-4 0 36 36"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="marker.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.19992693"
+     inkscape:cx="245.08955"
+     inkscape:cy="190.06944"
+     inkscape:window-width="1792"
+     inkscape:window-height="987"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+  <title
+     id="title1">map-marker</title>
+  <desc
+     id="desc1">Created with Sketch.</desc>
+  <defs
+     id="defs1" />
+  <g
+     id="Vivid.JS"
+     stroke="none"
+     stroke-width="1"
+     fill="none"
+     fill-rule="evenodd">
+    <g
+       id="Vivid-Icons"
+       transform="translate(-125.000000, -643.000000)"
+       style="fill:#d4aa00">
+      <g
+         id="Icons"
+         transform="translate(37.000000, 169.000000)"
+         style="fill:#d4aa00">
+        <g
+           id="map-marker"
+           transform="translate(78.000000, 468.000000)"
+           style="fill:#d4aa00">
+          <g
+             transform="translate(10.000000, 6.000000)"
+             id="g1"
+             style="fill:#d4aa00">
+            <path
+               d="M14,0 C21.732,0 28,5.641 28,12.6 C28,23.963 14,36 14,36 C14,36 0,24.064 0,12.6 C0,5.641 6.268,0 14,0 Z"
+               id="Shape"
+               fill="#FF6E6E"
+               style="fill:#d4aa00" />
+            <circle
+               id="Oval"
+               fill="#0C0058"
+               fill-rule="nonzero"
+               cx="14"
+               cy="14"
+               r="7"
+               style="fill:#ffffff;stroke:#ffffff" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>map-marker</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>

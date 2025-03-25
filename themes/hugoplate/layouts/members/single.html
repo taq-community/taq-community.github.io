@@ -5,7 +5,7 @@
         <div class="lg:col-4 text-center">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto" "Size" "200x200") }}
+            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto") }}
           {{ else if .Params.Email }}
             <img
               class="mx-auto"
@@ -16,7 +16,7 @@
           {{ end }}
           <h1 class="h3 mt-10">{{ .Title }}</h1>
           <div class="content mt-6">
-            {{ .Content }}
+            {{ .Summary }}
           </div>
           <ul class="social-icons ml-4 mt-10 text-center">
             {{ range .Params.social }}

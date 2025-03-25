@@ -1,0 +1,93 @@
+############# Navigation en français ##############
+
+# Menu principal
+[[main]]
+name = "Qu'est ce que la TAQ?"
+weight = 1
+
+[[main]]
+parent = "Qu'est ce que la TAQ?"
+name = "À propos"
+url = "/a-propos"
+
+[[main]]
+parent = "Qu'est ce que la TAQ?"
+name = "Historique"
+url = "/historique"
+
+[[main]]
+parent = "Qu'est ce que la TAQ?"
+name = "Mission & objectifs"
+url = "/mission-objectifs"
+
+[[main]]
+parent = "Qu'est ce que la TAQ?"
+name = "Comité de direction"
+url = "/comite-direction"
+
+[[main]]
+parent = "Qu'est ce que la TAQ?"
+name = "Gouvernance"
+url = "/gouvernance"
+
+# Services en ADNe
+[[main]]
+name = "Services en ADNe"
+weight = 2
+
+[[main]]
+parent = "Services en ADNe"
+name = "Échantillonnage"
+url = "/echantillonnage"
+
+[[main]]
+parent = "Services en ADNe"
+name = "Analyses de laboratoire"
+url = "/analyses-laboratoire"
+
+[[main]]
+parent = "Services en ADNe"
+name = "Traitement de données"
+url = "/traitement-donnees"
+
+[[main]]
+parent = "Services en ADNe"
+name = "Formation"
+url = "/formation"
+
+[[main]]
+parent = "Services en ADNe"
+name = "L'ADNe, c'est quoi ?"
+url = "/formation/adne"
+
+# Membres
+[[main]]
+name = "Membres"
+weight = 3
+
+[[main]]
+parent = "Membres"
+name = "Structure"
+url = "/membres/structure"
+
+[[main]]
+parent = "Membres"
+name = "Liste des membres"
+url = "/membres/liste"
+
+[[main]]
+parent = "Membres"
+name = "Devenir membre"
+url = "/membres/devenir-membre"
+
+# Actualités
+[[main]]
+name = "Actualités"
+url = "/actualites"
+weight = 4
+
+# Contact
+[[main]]
+name = "Contact"
+url = "/contact"
+weight = 5

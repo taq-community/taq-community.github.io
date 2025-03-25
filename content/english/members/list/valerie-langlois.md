@@ -3,6 +3,7 @@ title: Valérie Langlois
 email: valerie.langlois@inrs.ca
 image: "/images/valerie-langlois.jpg"
 description: this is meta description
+summary: lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
 social:
   - name: google-scholar
     icon: fa-brands fa-github
@@ -17,4 +18,3 @@ social:
     link: https://orcid.org/0000-0003-4031-6838
 ---
 
-Écotoxicogénomique, ADN environnemental, ARN environnemental, Biologie moléculaire, Endocrinologie, Perturbation endocrinienne, Physiologie animale, Toxicologie chimique et environnementale
