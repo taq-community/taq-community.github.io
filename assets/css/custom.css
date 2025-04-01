@@ -1,0 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    --tw-font-weight: var(--font-weight-semi-bold);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.nav-link {
+    font-weight: var(--font-weight-light);
+}
+
+.nav-dropdown-link {
+    font-weight: var(--font-weight-light);
+}
+
+p {
+    font-weight: var(--font-weight-light);
+}

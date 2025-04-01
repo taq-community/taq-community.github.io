@@ -1,35 +1,32 @@
 ############# English navigation ##############
 
-# main menu
-############# English Navigation ##############
-
 # Main menu
 [[main]]
-name = "TAQ"
+name = "What's the TAQ?"
 weight = 1
 
 [[main]]
-parent = "TAQ"
+parent = "What's the TAQ?"
 name = "About"
 url = "/about"
 
 [[main]]
-parent = "TAQ"
+parent = "What's the TAQ?"
 name = "History"
 url = "/history"
 
 [[main]]
-parent = "TAQ"
+parent = "What's the TAQ?"
 name = "Mission & Objectives"
 url = "/mission-objectives"
 
 [[main]]
-parent = "TAQ"
+parent = "What's the TAQ?"
 name = "Steering Committee"
 url = "/steering-committee"
 
 [[main]]
-parent = "TAQ"
+parent = "What's the TAQ?"
 name = "Governance"
 url = "/governance"
 
@@ -75,7 +72,7 @@ url = "/members/structure"
 
 [[main]]
 parent = "Members"
-name = "Member List"
+name = "Member list"
 url = "/members/list"
 
 [[main]]
@@ -88,11 +85,6 @@ url = "/members/become-a-member"
 name = "News"
 url = "/news"
 weight = 4
-
-[[main]]
-parent = "News"
-name = "TAQ and Member News"
-url = "/news/taq"
 
 # Contact
 [[main]]
