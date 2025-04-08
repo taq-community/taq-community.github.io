@@ -4,11 +4,12 @@
 [[main]]
 name = "What's the TAQ?"
 weight = 1
+url = "/"
 
 [[main]]
 parent = "What's the TAQ?"
 name = "About"
-url = "/about"
+url = "/"
 
 [[main]]
 parent = "What's the TAQ?"
@@ -58,7 +59,7 @@ url = "/training"
 [[main]]
 parent = "ADNe Services"
 name = "What is ADNe?"
-url = "/training/adne"
+url = "/adne"
 
 # Members
 [[main]]
