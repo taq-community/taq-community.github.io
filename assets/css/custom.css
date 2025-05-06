@@ -18,4 +18,22 @@ h6 {
 
 p {
     font-weight: var(--font-weight-light);
+    text-align: justify;
+}
+
+.nav-dropdown-list {
+    z-index: 100;
+    background-color: white;
+}
+
+.nav-dropdown-link {
+    color: var(--color-body);
+}
+
+.nav-dropdown-item :hover {
+    font-weight: var(--font-weight-semibold);
+}
+
+.search-modal {
+    color: var(--color-gray-800);
 }

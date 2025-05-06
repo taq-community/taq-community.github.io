@@ -1,7 +1,6 @@
-<section class="bg-light">
-  <div class="container bg-light py-4">
-    <h1 class="my-2">{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
-    <p class="font-thin mt-2"></p>
+<section>
+  <div class="container py-4">
+    <h1>{{ .Title | default .Title }}</h1>
     {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
   </div>
 </section>

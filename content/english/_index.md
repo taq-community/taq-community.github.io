@@ -2,9 +2,7 @@
 # Gallery
 gallery:
   images:
-    - link: images/gallery/02.jpg
-    - link: images/gallery/03.jpg
-    - link: images/gallery/04.jpg
+    - link: images/gallery/01.png
 
 # Features
 features:
