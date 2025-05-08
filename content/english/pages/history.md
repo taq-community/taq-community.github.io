@@ -1,7 +1,6 @@
 ---
-title: "Hey, I am John Doe!"
-meta_title: "About"
-description: "this is meta description"
+title: "History"
+meta_title: "History of the TAQ table"
 image: "/images/avatar.png"
 draft: false
 ---
