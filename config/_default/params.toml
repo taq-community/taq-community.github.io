@@ -2,14 +2,13 @@
 # favicon module: https://github.com/gethugothemes/hugo-modules/tree/master/images#favicon-implementation
 favicon = "images/favicon.png"
 # logo module: https://github.com/gethugothemes/hugo-modules/tree/master/images#logo-implementation
-logo = "images/logo.svg"
-logo_darkmode = "images/logo-darkmode.png"
+logo = "images/logo_white.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
 logo_width = "320px"
 logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
-logo_webp = true
+logo_webp = false
 # logo text will only show when logo is missing.
 logo_text = "TAQ"
 # navbar fixed to top
@@ -27,7 +26,7 @@ google_adsense = ""     # example: ca-pub-xxxxxxxxxxxxxxxx
 # custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>"
 custom_script = ""
 # copyright
-copyright = "Original designed by [Zeon Studio](https://zeon.studio), adapted by [INRS](https://inrs.ca/)"
+copyright = "Original designed by [Zeon Studio](https://zeon.studio), adapted by Steve Vissault"
 
 # Preloader
 # preloader module: https://github.com/gethugothemes/hugo-modules/tree/master/components/preloader

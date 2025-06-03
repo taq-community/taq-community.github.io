@@ -1,35 +1,27 @@
 ---
-# Gallery
-gallery:
-  images:
-    - link: images/gallery/02.jpg
-    - link: images/gallery/03.jpg
-    - link: images/gallery/04.jpg
-
 # Features
 features:
-  - title: "Sample three ecological continuum: air, water and soil to monitor canadian biodiversity"
-    image: "/images/service-2.png"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    bulletpoints:
-      - "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tortor neque, aliquet nec mollis vitae, dignissim eu ligula."
-      - "Vivamus non sodales orci, at pharetra diam. Aliquam nunc orci, aliquam ac velit quis, mollis consequat elit."
-      - "Vivamus non sodales orci, at pharetra diam."
+  - title: "The Québec Environmental DNA Table (TAQ) brings together stakeholders around eDNA science in Québec."
+    image: "/images/filter.jpg"
+    content: "TAQ connects researchers, private and public organizations, first nations to support the development and application of environmental DNA (eDNA) standards."
     button:
-      enable: false
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      enable: true
+      label: "Become a TAQ member"
+      link: ""
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
-    image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+  - title: "TAQ fosters collaboration by sharing eDNA knowledge, tools, and best practices."
+    image: "/images/collector.jpg"
+    content: "Access protocols, training materials, and other resources to help you navigate the growing field of environmental DNA."
     button:
-      enable: false
-      label: ""
+      enable: true
+      label: "Access the TAQ documentation center"
+      link: ""
+
+  - title: "Environmental DNA for biodiversity assessment in Québec."
+    image: "/images/landscape.png"
+    content: "TAQ supports the use of eDNA as a powerful tool for monitoring and assessing biodiversity across Québec’s ecosystems — to better understand the distribution of keystone species, cryptic animals, and invasive taxa in natural and managed ecosystems."
+    button:
+      enable: true
+      label: "Explore our case studies"
       link: ""
 ---

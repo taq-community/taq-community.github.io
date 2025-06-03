@@ -1,39 +1,38 @@
 {{ define "main" }}
   <section class="section-sm pb-0">
-    <div class="container">
-      <div class="row border-border  justify-center border-b pb-14">
-        <div class="lg:col-4 text-center">
+    <div class="container my-12 rounded-lg">
+      <div class="row">
+        <div class="py-6 lg:col-4">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto") }}
-          {{ else if .Params.Email }}
+            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "max-h-32 rounded-lg") }}
+          {{ else }}
             <img
               class="mx-auto"
-              alt="{{ .Title }}"
+              alt="{{ .Lastname }}"
               height="200"
               width="200"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
           {{ end }}
-          <h1 class="h3 mt-10">{{ .Title }}</h1>
-          <div class="content mt-6">
-            {{ .Summary }}
-          </div>
-          <ul class="social-icons ml-4 mt-10 text-center">
-            {{ range .Params.social }}
+        </div>
+        <div class="lg:col-8">
+            <h1 class="mt-10">{{ .Params.Firstname }} {{ .Params.Lastname }}</h1>
+            <p class="font-weight:300;">{{ .Params.Affiliation }}</p>
+            <div class="content mt-6">
+              {{ .Summary }}
+            </div>
+            <ul class="social-icons mt-10">
+              {{ range .Params.social }}
               <li>
-                <a
-                  href="{{ .link | safeURL }}"
-                  target="_blank"
-                  rel="noopener nofollow">
+                <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
                   <span class="sr-only">{{ .title }}</span>
                   <i class="{{ .icon }}"></i>
                 </a>
               </li>
-            {{ end }}
-          </ul>
+              {{ end }}
+            </ul>
         </div>
       </div>
-
       <div class="row pb-16 pt-14">
         {{ $filterByAuthor := where site.RegularPages "Params.author" "==" .Title }}
         {{ range $filterByAuthor }}

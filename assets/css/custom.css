@@ -16,6 +16,42 @@ h6 {
     font-weight: var(--font-weight-light);
 }
 
+content {
+    font-weight: var(--font-weight-light);
+    text-align: justify;
+}
+
 p {
     font-weight: var(--font-weight-light);
+}
+
+.btn-primary {
+    color: var(--color-body);
+}
+
+.nav-dropdown-list {
+    z-index: 100;
+    background-color: white;
+}
+
+.nav-dropdown-link {
+    color: var(--color-body);
+}
+
+.nav-dropdown-item :hover {
+    font-weight: var(--font-weight-semibold);
+}
+
+.search-wrapper-header {
+    color: var(--color-body);
+}
+
+.search-modal .search-wrapper-body {
+    color: var(--color-body);
+    background-color: #eaf5ff;
+    box-shadow: none;
+}
+
+.search-result-item-title {
+    color: var(--color-body);
 }

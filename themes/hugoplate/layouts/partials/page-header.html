@@ -1,9 +1,6 @@
 <section>
-  <div class="container text-center">
-    <div class="from-body to-light rounded-2xl px-8 py-14">
-      <h1>{{ T (printf "%s" (lower .Title)) | default .Title | title }}</h1>
-      {{ partial "image" (dict "Src" "/images/hr.png" "Context" .Page "Alt" .Title "Class" "mx-auto mb-6") }}
-      {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
-    </div>
+  <div class="container py-4">
+    <h1 class="text-gold">{{ .Title | default .Title }}</h1>
+    {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
   </div>
 </section>

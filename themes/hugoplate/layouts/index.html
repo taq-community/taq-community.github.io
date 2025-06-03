@@ -34,61 +34,7 @@
     </section>
   {{ end }}
 
-  <!-- Gallery -->
-  {{ with .Params.gallery }}
-    <div class="container">
-      <div class="row items-center">
-        <div class="lg:col-6 md:col-8 mb-7">
-          <div id="default-carousel" class="section relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-              {{ range .images }}
-              <!-- Loop over Item -->
-              <div class="hidden duration-800 ease-in-out" data-carousel-item>
-                {{ partial "image" (dict "Src" .link "Loading" "eager") }}
-              </div>
-              {{ end }}
-            </div>
-            <!-- Slider controls -->
-            <button type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M5 1 1 5l4 4" />
-                </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next>
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
-          </div>
-        </div>
-          <div class="ml-4 md:order-1 md:col-6 lg:col-5">
-            <h2 class="mb-4">
-              Empowering communities, scientists, and decision-makers with accessible eDNA tools
-            </h2>
-            <p class="mb-8 text-lg">
-              Our goal is to build the capacity for large-scale and standardized eDNA sampling to enable biodiversity monitoring
-            </p>
-          </div>
-      </div>
-    </div>
-  {{ end }}
+
   <!-- Features -->
   {{ range $i, $e:= .Params.features }}
     <section class="section-sm {{ if (modBool $i 2) }}{{ end }}">
@@ -97,14 +43,16 @@
           <div
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-1
-            {{ end }} md:col-5 mb-6">
-            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "520x" "DisplayLG" "425x" "DisplayMD" "360x") }}
+            {{ end }} md:col-5 mb-3 mx-auto" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+            {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "1000x" "DisplayLG" "600x" "DisplayMD" "360x" "Class" "rounded-xl shadow-lg object-cover") }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}
-              md:order-1
-            {{ end }} md:col-7 lg:col-6">
-            <h2 class="mb-4">
+              md:order-0
+            {{ end }} md:col-7 lg:col-6 mx-auto" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500">
+            <h2 class="text-gold mb-4">
               {{ .title | markdownify }}
             </h2>
             <p class="mb-8 text-lg">
@@ -120,7 +68,7 @@
             </ul>
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-primary mt-6" href="{{ .link | absURL }}">
+                <a class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-body py-2 px-4 borde-3 border-gold hover:border-transparent rounded" href="{{ .link | absURL }}">
                   {{ .label }}
                   <i class="fa fa-arrow-right pl-2"></i>
                 </a>
@@ -133,60 +81,39 @@
   {{ end }}
   <!-- /Features -->
 
-  <!-- Testimonials -->
-  {{ with site.GetPage "sections/testimonial" }}
+  <!-- Partners -->
+  {{ with site.GetPage "sections/partners" }}
     {{ if .Params.enable }}
-      <section class="section">
+      <section class="section-sm">
         <div class="container">
           <div class="row">
             <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-              <h2 class="mb-4">
+              <h1 class="my-6 text-gold">
                 {{ .Title | markdownify }}
-              </h2>
-              <p>
+              </h1>
+              <p class="mb-10" style="text-align:center !important;">
                 {{ .Params.description | markdownify }}
               </p>
             </div>
             <div class="col-12">
-              <div class="swiper testimonial-slider">
-                <div class="swiper-wrapper">
-                  {{ range .Params.testimonials }}
-                    <div class="swiper-slide">
-                      <div class="bg-light  rounded-lg px-7 py-10">
-                        <div class="text-text-dark ">
-                          <svg
-                            width="33"
-                            height="20"
-                            viewBox="0 0 33 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                              d="M1.28375 19.41L0.79375 18.64C1.21375 17.0067 1.75042 15.07 2.40375 12.83C3.05708 10.5433 3.75708 8.28 4.50375 6.04C5.29708 3.75333 6.06708 1.77 6.81375 0.0899959H15.3538C14.9338 2.09666 14.4904 4.26667 14.0238 6.6C13.5571 8.88666 13.1371 11.15 12.7638 13.39C12.4371 15.5833 12.1571 17.59 11.9238 19.41H1.28375ZM31.69 0.0899959L32.18 0.859998C31.76 2.54 31.2233 4.5 30.57 6.74C29.9167 8.98 29.2167 11.2433 28.47 13.53C27.7233 15.77 26.9533 17.73 26.16 19.41H17.69C18.0167 17.9167 18.3433 16.33 18.67 14.65C18.9967 12.9233 19.3 11.22 19.58 9.54C19.9067 7.81333 20.1867 6.15667 20.42 4.57C20.7 2.93666 20.91 1.44333 21.05 0.0899959H31.69Z"
-                              fill="currentColor" />
-                          </svg>
-                        </div>
-                        <blockquote class="mt-8">
-                          {{ .content | markdownify }}
-                        </blockquote>
-                        <div class="mt-11 flex items-center">
-                          <div class="text-text-dark ">
-                            {{ partial "image" (dict "Src" .avatar "Size" "50x50" "Class" "rounded-full" "Alt" .name) }}
-                          </div>
-                          <div class="ml-4">
-                            <h3 class="h5 font-primary font-semibold">
-                              {{ .name }}
-                            </h3>
-                            <p class="text-text-dark ">
-                              {{ .designation | markdownify }}
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  {{ end }}
-                </div>
-                <div
-                  class="testimonial-slider-pagination mt-9 flex items-center justify-center text-center"></div>
+              <div class="grid grid-cols-5 gap-6">
+                {{ range .Params.partners }}
+                  <div>{{ partial "image" (dict "Src" .image "Alt" .name "Class" "max-w-32") }}</div>
+                {{ end}}
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
+              <h5 class="my-6 text-bold">
+                Funded by
+              </h5>
+            </div>
+            <div class="col-12">
+              <div class="grid grid-cols-2 gap-6">
+                {{ range .Params.fundings }}
+                <div>{{ partial "image" (dict "Src" .image "Alt" .name "Class" "max-w-32") }}</div>
+                {{ end}}
               </div>
             </div>
           </div>

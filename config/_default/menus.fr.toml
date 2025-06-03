@@ -4,31 +4,32 @@
 [[main]]
 name = "Qu'est ce que la TAQ?"
 weight = 1
+url = "/about"
 
 [[main]]
 parent = "Qu'est ce que la TAQ?"
 name = "À propos"
-url = "/a-propos"
+url = "/about"
 
 [[main]]
 parent = "Qu'est ce que la TAQ?"
 name = "Historique"
-url = "/historique"
+url = "/history"
 
 [[main]]
 parent = "Qu'est ce que la TAQ?"
 name = "Mission & objectifs"
-url = "/mission-objectifs"
+url = "/mission-objectives"
 
 [[main]]
 parent = "Qu'est ce que la TAQ?"
 name = "Comité de direction"
-url = "/comite-direction"
+url = "/steering-committee"
 
 [[main]]
 parent = "Qu'est ce que la TAQ?"
 name = "Gouvernance"
-url = "/gouvernance"
+url = "/governance"
 
 # Services en ADNe
 [[main]]
@@ -38,27 +39,27 @@ weight = 2
 [[main]]
 parent = "Services en ADNe"
 name = "Échantillonnage"
-url = "/echantillonnage"
+url = "/sampling"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Analyses de laboratoire"
-url = "/analyses-laboratoire"
+url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Traitement de données"
-url = "/traitement-donnees"
+url = "/data-processing"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Formation"
-url = "/formation"
+url = "/training"
 
 [[main]]
 parent = "Services en ADNe"
 name = "L'ADNe, c'est quoi ?"
-url = "/formation/adne"
+url = "/adne"
 
 # Membres
 [[main]]
@@ -68,22 +69,22 @@ weight = 3
 [[main]]
 parent = "Membres"
 name = "Structure"
-url = "/membres/structure"
+url = "/members/structure"
 
 [[main]]
 parent = "Membres"
 name = "Liste des membres"
-url = "/membres/liste"
+url = "/members/list"
 
 [[main]]
 parent = "Membres"
 name = "Devenir membre"
-url = "/membres/devenir-membre"
+url = "/members/become-a-member"
 
 # Actualités
 [[main]]
 name = "Actualités"
-url = "/actualites"
+url = "/news"
 weight = 4
 
 # Contact

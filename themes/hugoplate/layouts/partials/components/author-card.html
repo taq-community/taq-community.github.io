@@ -1,29 +1,51 @@
-<div class="bg-light  rounded p-8 text-center">
+<div class="max-w-sm w-full bg-white rounded shadow-lg overflow-hidden">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mx-auto mb-6 rounded" "size" "120x120") }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-24 object-cover" ) }}
   {{ else if .Params.Email }}
     <img
-      class="mx-auto mb-6 rounded"
+      class="w-full h-48 object-cover"
       alt="{{ .Title }}"
-      height="120"
-      width="120"
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
   {{ end }}
-  <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-  </h4>
-  <p class="mb-4">
-    {{ .Summary }}
-  </p>
-  <ul class="social-icons">
-    {{ range .Params.social }}
-      <li>
-        <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow">
-          <span class="sr-only">{{ .title }}</span>
-          <i class="{{ .icon }}"></i>
-        </a>
-      </li>
-    {{ end }} 
-  </ul>
+  <div class="p-6">
+    <h2 class="text-xl font-semibold text-gray-800">{{ .Params.firstname }} {{ .Params.lastname }}</h2>
+    <p class="text-sm text-gray-600 mb-2">{{ .Params.affiliation }}</p>
+    <p class="text-sm text-gray-700 mb-4">
+        {{ .Params.summary }}
+    </p>
+    <div class="flex space-x-4">
+      {{ range .Params.social }}
+          <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow"
+            class="text-gray-600 hover:text-gray-900">
+            <i class="{{ .icon }}"></i>
+          </a>
+      {{ end }} 
+    </div>
+  </div>
 </div>
+
+  {{/*  <div class="max-w-sm w-full bg-white rounded shadow-lg overflow-hidden">
+    <img class="w-full h-56 object-cover" src="/images/valerie-langlois.jpg" alt="Valérie Langlois">
+    <div class="p-6">
+      <h2 class="text-xl font-semibold text-gray-800">Valérie Langlois</h2>
+      <p class="text-sm text-gray-600 mb-2">Ph.D., Professeure à l'INRS</p>
+      <p class="text-sm text-gray-700 mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+      </p>
+      <div class="flex space-x-4">
+        <a href="https://scholar.google.ca/citations?user=RX9XNLUAAAAJ&hl=en" target="_blank"
+          class="text-gray-600 hover:text-gray-900">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/valerie-langlois-2559542a/" target="_blank"
+          class="text-gray-600 hover:text-gray-900">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://orcid.org/0000-0003-4031-6838" target="_blank" class="text-gray-600 hover:text-gray-900">
+          <i class="fab fa-orcid"></i>
+        </a>
+      </div>
+    </div>
+  </div>  */}}
