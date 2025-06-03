@@ -1,6 +1,6 @@
 <section>
   <div class="container py-4">
-    <h1>{{ .Title | default .Title }}</h1>
+    <h1 class="text-gold">{{ .Title | default .Title }}</h1>
     {{ partial "components/breadcrumb" (dict "Context" . "Class" "mt-6") }}
   </div>
 </section>

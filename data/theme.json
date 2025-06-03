@@ -6,7 +6,8 @@
         "body": "#17537bff",
         "border": "#eaeaea",
         "light": "#fff",
-        "dark": "#17537bff"
+        "dark": "#17537bff",
+        "gold": "#ffeb9aff"
       },
       "text_color": {
         "text": "#fff",

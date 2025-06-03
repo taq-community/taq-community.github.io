@@ -8,28 +8,33 @@ url = "/"
 
 [[main]]
 parent = "What's the TAQ?"
-name = "About"
+name = "Mission & Objectives"
+weight = 10
 url = "/"
 
 [[main]]
 parent = "What's the TAQ?"
+name = "Governance"
+weight = 20
+url = "/governance"
+
+[[main]]
+parent = "What's the TAQ?"
 name = "History"
+weight = 30
 url = "/history"
 
-[[main]]
-parent = "What's the TAQ?"
-name = "Mission & Objectives"
-url = "/mission-objectives"
+# [[main]]
+# parent = "What's the TAQ?"
+# name = "Steering Committee"
+# weight = "40"
+# url = "/steering-committee"
 
+# Documentation
 [[main]]
-parent = "What's the TAQ?"
-name = "Steering Committee"
-url = "/steering-committee"
-
-[[main]]
-parent = "What's the TAQ?"
-name = "Governance"
-url = "/governance"
+name = "Documentation"
+url = "/documentation"
+weight = 4
 
 # ADNe Services
 [[main]]
@@ -38,28 +43,33 @@ weight = 2
 
 [[main]]
 parent = "ADNe Services"
+name = "What is ADNe?"
+weight=10
+url = "/adne"
+
+[[main]]
+parent = "ADNe Services"
 name = "Sampling"
+weight=20
 url = "/sampling"
 
 [[main]]
 parent = "ADNe Services"
 name = "Laboratory Analysis"
+weight=30
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "ADNe Services"
 name = "Data Processing"
+weight=40
 url = "/data-processing"
 
 [[main]]
 parent = "ADNe Services"
 name = "Training"
+weight=50
 url = "/training"
-
-[[main]]
-parent = "ADNe Services"
-name = "What is ADNe?"
-url = "/adne"
 
 # Members
 [[main]]
@@ -87,11 +97,6 @@ name = "News"
 url = "/news"
 weight = 4
 
-# Contact
-[[main]]
-name = "Contact"
-url = "/contact"
-weight = 5
 
 # footer menu
 [[footer]]
@@ -100,9 +105,9 @@ url = "/about"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "/elements"
-weight = 2
+name = "Contact"
+url = "/contact"
+weight = 5
 
 [[footer]]
 name = "Privacy Policy"

@@ -16,9 +16,17 @@ h6 {
     font-weight: var(--font-weight-light);
 }
 
-p {
+content {
     font-weight: var(--font-weight-light);
     text-align: justify;
+}
+
+p {
+    font-weight: var(--font-weight-light);
+}
+
+.btn-primary {
+    color: var(--color-body);
 }
 
 .nav-dropdown-list {
@@ -41,7 +49,7 @@ p {
 .search-modal .search-wrapper-body {
     color: var(--color-body);
     background-color: #eaf5ff;
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 .search-result-item-title {
