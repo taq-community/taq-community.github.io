@@ -17,9 +17,9 @@ features:
       label: "Access the TAQ documentation center"
       link: ""
 
-  - title: "Environmental DNA for biodiversity assessment in Québec."
+  - title: "TAQ supports the use Environmental DNA to address biodiversity challenges."
     image: "/images/landscape.png"
-    content: "TAQ supports the use of eDNA as a powerful tool for monitoring and assessing biodiversity across Québec’s ecosystems — to better understand the distribution of keystone species, cryptic animals, and invasive taxa in natural and managed ecosystems."
+    content: "TAQ supports the use of eDNA as a powerful tool for monitoring and assessing biodiversity — to better understand the distribution of keystone species, cryptic animals, and invasive taxa in natural and managed ecosystems."
     button:
       enable: true
       label: "Explore our case studies"
