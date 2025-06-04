@@ -34,7 +34,7 @@
             </ul>
             {{ with .button }}
               {{ if .enable }}
-                <a class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-body py-2 px-4 borde-3 border-gold hover:border-transparent rounded" href="{{ .link | absURL }}" {{ if eq .rel "external" }} target="_blank"{{ end }}>
+                <a class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-body py-2 px-4 borde-3 border-gold hover:border-transparent rounded" href="{{ .link | absLangURL }}" {{ if eq .rel "external" }} target="_blank"{{ end }}>
                   {{ .label }}
                   <i class="fa fa-arrow-right pl-2"></i>
                 </a>
