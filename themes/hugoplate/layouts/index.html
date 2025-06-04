@@ -43,13 +43,13 @@
           <div
             class="mb:md-0 {{ if not (modBool $i 2) }}
               md:order-1
-            {{ end }} md:col-5 mb-3 mx-auto" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+            {{ end }} md:col-5 mb-3 mx-auto" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="500">
             {{ partial "image" (dict "Src" .image "Alt" "feature image" "DisplayXL" "1000x" "DisplayLG" "600x" "DisplayMD" "360x" "Class" "rounded-xl shadow-lg object-cover") }}
           </div>
           <div
             class="{{ if not (modBool $i 2) }}
               md:order-0
-            {{ end }} md:col-7 lg:col-6 mx-auto" data-aos="fade-down"
+            {{ end }} md:col-7 lg:col-6 mx-auto" data-aos="fade-left"
             data-aos-easing="linear"
             data-aos-duration="500">
             <h2 class="text-gold mb-4">
