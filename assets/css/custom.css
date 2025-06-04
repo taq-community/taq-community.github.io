@@ -21,7 +21,7 @@ content {
     text-align: justify;
 }
 
-p {
+body {
     font-weight: var(--font-weight-light);
 }
 
@@ -68,3 +68,13 @@ p {
 .search-result-item-title {
     color: var(--color-body);
 }
+
+.social-icons li a {
+    border-radius: var(--radius-2xl);
+    color: var(--color-body);
+}
+
+.form-input {
+    color: var(--color-body);
+}
+

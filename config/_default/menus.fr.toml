@@ -2,34 +2,39 @@
 
 # Menu principal
 [[main]]
-name = "Qu'est ce que la TAQ?"
+name = "Qu’est-ce que la TAQ ?"
 weight = 1
-url = "/about"
+url = "/"
 
 [[main]]
-parent = "Qu'est ce que la TAQ?"
-name = "À propos"
-url = "/about"
+parent = "Qu’est-ce que la TAQ ?"
+name = "Missions"
+weight = 10
+url = "/"
 
 [[main]]
-parent = "Qu'est ce que la TAQ?"
+parent = "Qu’est-ce que la TAQ ?"
+name = "Gouvernance"
+weight = 20
+url = "/governance"
+
+[[main]]
+parent = "Qu’est-ce que la TAQ ?"
 name = "Historique"
+weight = 30
 url = "/history"
 
-[[main]]
-parent = "Qu'est ce que la TAQ?"
-name = "Mission & objectifs"
-url = "/mission-objectives"
+# [[main]]
+# parent = "Qu’est-ce que la TAQ ?"
+# name = "Comité de direction"
+# weight = "40"
+# url = "/steering-committee"
 
+# Documentation
 [[main]]
-parent = "Qu'est ce que la TAQ?"
-name = "Comité de direction"
-url = "/steering-committee"
-
-[[main]]
-parent = "Qu'est ce que la TAQ?"
-name = "Gouvernance"
-url = "/governance"
+name = "Documentation"
+url = "/documentation"
+weight = 4
 
 # Services en ADNe
 [[main]]
@@ -38,38 +43,38 @@ weight = 2
 
 [[main]]
 parent = "Services en ADNe"
+name = "Qu’est-ce que l’ADNe ?"
+weight=10
+url = "/adne"
+
+[[main]]
+parent = "Services en ADNe"
 name = "Échantillonnage"
+weight=20
 url = "/sampling"
 
 [[main]]
 parent = "Services en ADNe"
-name = "Analyses de laboratoire"
+name = "Analyses en laboratoire"
+weight=30
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
-name = "Traitement de données"
+name = "Traitement des données"
+weight=40
 url = "/data-processing"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Formation"
+weight=50
 url = "/training"
-
-[[main]]
-parent = "Services en ADNe"
-name = "L'ADNe, c'est quoi ?"
-url = "/adne"
 
 # Membres
 [[main]]
 name = "Membres"
 weight = 3
-
-[[main]]
-parent = "Membres"
-name = "Structure"
-url = "/members/structure"
 
 [[main]]
 parent = "Membres"
@@ -79,7 +84,8 @@ url = "/members/list"
 [[main]]
 parent = "Membres"
 name = "Devenir membre"
-url = "/members/become-a-member"
+url = "https://forms.gle/WCvUnvtjezjfU8x37"
+rel = 'external'
 
 # Actualités
 [[main]]
@@ -87,8 +93,19 @@ name = "Actualités"
 url = "/news"
 weight = 4
 
-# Contact
-[[main]]
+
+# Menu de pied de page
+[[footer]]
+name = "À propos"
+url = "/about"
+weight = 1
+
+[[footer]]
 name = "Contact"
 url = "/contact"
 weight = 5
+
+[[footer]]
+name = "Politique de confidentialité"
+url = "/privacy-policy"
+weight = 3
