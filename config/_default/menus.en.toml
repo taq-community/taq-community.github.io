@@ -78,18 +78,14 @@ weight = 3
 
 [[main]]
 parent = "Members"
-name = "Structure"
-url = "/members/structure"
-
-[[main]]
-parent = "Members"
 name = "Member list"
 url = "/members/list"
 
 [[main]]
 parent = "Members"
 name = "Become a Member"
-url = "/members/become-a-member"
+url = "https://forms.gle/WCvUnvtjezjfU8x37"
+rel = 'external'
 
 # News
 [[main]]
