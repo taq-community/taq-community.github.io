@@ -29,6 +29,19 @@ p {
     color: var(--color-body);
 }
 
+.btn-outline-primary {
+    color: var(--color-gold);
+    font-weight: var(--font-weight-semibold);
+    border-color: var(--color-gold);
+}
+
+.btn-outline-primary:hover {
+    color: var(--color-body);
+    font-weight: var(--font-weight-semibold);
+    background-color: white;
+    border-color: var(--color-body);
+}
+
 .nav-dropdown-list {
     z-index: 100;
     background-color: white;
