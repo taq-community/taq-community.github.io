@@ -78,3 +78,6 @@ body {
     color: var(--color-body);
 }
 
+.notice-head p {
+    color: white;
+}

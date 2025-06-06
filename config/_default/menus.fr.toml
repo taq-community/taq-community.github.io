@@ -96,16 +96,22 @@ weight = 4
 
 # Menu de pied de page
 [[footer]]
-name = "À propos"
-url = "/about"
-weight = 1
+name = "Catalogue qPCR"
+url = ""
+weight = 2
+
+[[footer]]
+name = "Identité visuelle"
+url = ""
+weight = 3
+
 
 [[footer]]
 name = "Contact"
 url = "/contact"
-weight = 5
+weight = 4
 
 [[footer]]
 name = "Politique de confidentialité"
 url = "/privacy-policy"
-weight = 3
+weight = 5
