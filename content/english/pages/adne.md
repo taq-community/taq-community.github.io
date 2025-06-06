@@ -1,8 +1,8 @@
 ---
 title: "What is eDNA?"
-meta_title: "About"
+meta_title: "eDNA"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/as_217861490.jpg"
 draft: false
 ---
 

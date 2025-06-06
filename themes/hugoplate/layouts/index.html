@@ -50,36 +50,40 @@
   <!-- Partners -->
   {{ with site.GetPage "sections/partners" }}
     {{ if .Params.enable }}
-      <section class="section-sm">
-        <div class="container">
+      <section class="section-sm bg-[#d0f5ff]">
+        <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
           <div class="row">
             <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-              <h1 class="my-6 text-gold">
+              <h1 class="my-6 text-body">
                 {{ .Title | markdownify }}
               </h1>
-              <p class="mb-10" style="text-align:center !important;">
+              <p class="mb-10 text-body">
                 {{ .Params.description | markdownify }}
               </p>
             </div>
             <div class="col-12">
-              <div class="grid grid-cols-5 gap-6">
+              <div class="grid grid-cols-5 gap-15 justify-center items-center">
                 {{ range .Params.partners }}
-                  <div>{{ partial "image" (dict "Src" .image "Alt" .name "Class" "max-w-32") }}</div>
+                  <div class="place-items-center mx-auto">
+                    {{ partial "image" (dict "Src" .image "Alt" .name "Class" "mx-auto") }}
+                  </div>
                 {{ end}}
               </div>
             </div>
           </div>
           <div class="row">
             <div class="md:col-10 lg:col-8 xl:col-6 mx-auto mb-12 text-center">
-              <h5 class="my-6 text-bold">
-                Funded by
-              </h5>
+              <p class="mt-20 text-body text-lg font-bold">
+                With the financial support
+              </p>
             </div>
-            <div class="col-12">
-              <div class="grid grid-cols-2 gap-6">
+            <div class="row"> 
+              <div class="grid grid-cols-4 gap-20 justify-center items-center">
                 {{ range .Params.fundings }}
-                <div>{{ partial "image" (dict "Src" .image "Alt" .name "Class" "max-w-32") }}</div>
-                {{ end}}
+                  <div class="mx-auto">
+                    {{ partial "image" (dict "Src" .image "Alt" .name "Class" "mx-auto" ) }}
+                  </div>
+                {{ end}} 
               </div>
             </div>
           </div>
@@ -87,5 +91,4 @@
       </section>
     {{ end }}
   {{ end }}
-  <!-- /Testimonials -->
 {{ end }}
