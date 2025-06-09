@@ -9,9 +9,9 @@
       src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
   {{ end }}
   <div class="p-6">
-    <h2 class="text-xl font-semibold text-gray-800">{{ .Params.firstname }} {{ .Params.lastname }}</h2>
+    <h2 class="text-xl font-semibold text-gray-600">{{ .Params.firstname }} {{ .Params.lastname }}</h2>
     <p class="text-sm text-gray-600 mb-2">{{ .Params.affiliation }}</p>
-    <p class="text-sm text-gray-700 mb-4">
+    <p class="text-sm text-gray-600 mb-4">
         {{ .Params.summary }}
     </p>
     <div class="flex space-x-4">
