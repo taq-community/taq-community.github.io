@@ -1,6 +1,6 @@
 ---
 title: "UNESCO Expeditions Protocols"
-tags: ["Sampling", "Protocol"]
+tags: ["Sampling", "Protocol", "English"]
 year: 2020
 authors: ['UNESCO Intergovernmental Oceanographic Commission']
 institution: "UNESCO"
