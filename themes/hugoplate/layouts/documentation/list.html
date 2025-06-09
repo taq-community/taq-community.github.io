@@ -2,15 +2,75 @@
 {{ partial "page-header" . }}
 
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      {{ range .RegularPages }}
-      <div class="md:col-6 lg:col-4 mb-14">
-        {{ . }}
+<section class="section-sm">
+  <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+    <!-- Filter buttons -->
+    {{/* Collect all tags from .Pages */}}
+    {{- $allTags := slice -}}
+    {{ range .Pages }}
+      {{ with .Params.tags }}
+        {{ range . }}
+        {{- $allTags = $allTags | append . -}}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+    {{- $uniqueTags := $allTags | uniq | sort -}}
+    
+    <!-- Tag Filter Checkboxes -->
+    <div class="mb-6">
+      <p class="font-semibold mb-2">Filter by tag</p>
+      <div id="tag-filters" class="flex flex-wrap gap-4">
+        {{ range $uniqueTags }}
+        <label class="inline-flex items-center space-x-2">
+          <input type="checkbox" value="{{ . }}" class="tag-checkbox accent-body rounded-sm">
+          <span class="text-sm">{{ . }}</span>
+        </label>
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Document cards -->
+    <div id="doc-list" class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 gap-6">
+      {{ range .Pages }}
+      {{ $thumb := replace .Params.pdf ".pdf" ".png"  }}
+      {{ $thumb := replace $thumb "documents/" "documents/thumbnails/" }}
+      {{ $img := resources.Get $thumb }}
+      {{ $pdf := resources.Get .Params.pdf }}
+      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit .Params.tags " " }}">
+        <div class="flex flex-col items-center md:flex-row md:max-w-xl">
+          <img class="pl-5 w-36"
+            src="{{ $img.RelPermalink }}" alt="">
+          <div class="flex flex-col justify-between p-5 leading-normal">
+            <p>{{ .Params.year }}</p>
+            <h2 class="text-xl text-white font-semibold mb-2">{{ .Params.title }}</h2>
+            <p class="text-sm text-white mb-1">
+              {{ delimit .Params.authors ", " }}<br>
+              {{ .Params.institution }} <br>
+              <a class="btn btn-outline-primary btn-sm mt-3" href="{{ $pdf.RelPermalink }}" target="_blank">
+                PDF</a>
+            </p>
+          </div>
+        </div>
       </div>
       {{ end }}
     </div>
+  
   </div>
 </section>
+
+<!-- Tag filtering script -->
+<script>
+  document.querySelectorAll('.tag-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      const checkedTags = Array.from(document.querySelectorAll('.tag-checkbox:checked')).map(cb => cb.value);
+      const cards = document.querySelectorAll('.doc-card');
+
+      cards.forEach(card => {
+        const tags = card.getAttribute('data-tags').split(" ");
+        const show = checkedTags.length === 0 || checkedTags.some(tag => tags.includes(tag));
+        card.style.display = show ? 'block' : 'none';
+      });
+    });
+  });
+</script>
 {{ end }}
