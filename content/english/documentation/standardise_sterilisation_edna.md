@@ -3,6 +3,6 @@ title: "Protocole standardisé des procédures de stérilisation et d’échanti
 tags: ["Sampling", "Protocol", "French"]
 year: 2021
 authors: ""
-institution: "Ministère des forêts, de la faune et des parcs"
+institution: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
 pdf: "documents/PT_standardise_sterilisation_echantillonnage_eau_ADNe (Version 2021).pdf"
 ---

@@ -5,7 +5,7 @@
         <div class="py-6 lg:col-4">
           {{ $image:= .Params.image }}
           {{ if $image }}
-            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "max-h-32 rounded-lg") }}
+            {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "rounded-lg") }}
           {{ else }}
             <img
               class="mx-auto"

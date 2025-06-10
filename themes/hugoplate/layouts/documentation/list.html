@@ -30,7 +30,7 @@
     </div>
 
     <!-- Document cards -->
-    <div id="doc-list" class="grid grid-cols-3 md:grid-cols-2 lg:grid-cols-2 gap-6">
+    <div id="doc-list" class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
       {{ range .Pages }}
       {{ $thumb := replace .Params.pdf ".pdf" ".png"  }}
       {{ $thumb := replace $thumb "documents/" "documents/thumbnails/" }}
@@ -38,19 +38,30 @@
       {{ $pdf := resources.Get .Params.pdf }}
       <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit .Params.tags " " }}">
         <div class="flex flex-col items-center md:flex-row md:max-w-xl">
-          <img class="pl-5 w-36"
+          <img class="w-48"
             src="{{ $img.RelPermalink }}" alt="">
           <div class="flex flex-col justify-between p-5 leading-normal">
+            {{ with .Params.tags }}
+            <div class="flex flex-wrap gap-2 mb-2">
+              {{ range . }}
+              <span class="inline-block bg-gold text-body text-xs font-medium px-2.5 py-0.5 rounded">
+                {{ . }}
+              </span>
+              {{ end }}
+            </div>
+            {{ end }}
             <p>{{ .Params.year }}</p>
             <h3 class="text-lg text-white font-semibold mb-2">{{ .Params.title }}</h3>
             <p class="text-sm text-white mb-1">
               {{ if .Params.authors }}
                 {{ delimit .Params.authors ", " }}<br>
               {{ end }}
-              {{ .Params.institution }} <br>
-              <a class="btn btn-outline-primary btn-sm mt-3" href="{{ $pdf.RelPermalink }}" target="_blank">
-                PDF</a>
+              {{ if .Params.institution }}
+                {{.Params.institution }} <br>
+              {{ end }}
             </p>
+            <a class="btn btn-outline-primary btn-sm mt-3" style="align-self: flex-start" href="{{ $pdf.RelPermalink }}" target="_blank">
+              PDF</a>
           </div>
         </div>
       </div>

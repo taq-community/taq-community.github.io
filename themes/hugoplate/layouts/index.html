@@ -62,10 +62,10 @@
               </p>
             </div>
             <div class="col-12" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000">
-              <div class="grid grid-cols-5 gap-15 md:grid-cols-3 xl:grid-cols-5 xl:justify-between justify-center items-center">
+              <div class="grid grid-cols-2 gap-15 md:grid-cols-3 xl:grid-cols-5 xl:justify-between justify-center items-center">
                 {{ range .Params.partners }}
                   <div class="place-items-center mx-auto">
-                    {{ partial "image" (dict "Src" .image "Alt" .name "DisplayMD" "300x" "DisplayXL" "600x" "Class" "mx-auto h-full") }}
+                    {{ partial "image" (dict "Src" .image "Alt" .name "DisplayMD" "400x" "DisplayXL" "800x" "Class" "mx-auto h-full") }}
                   </div>
                 {{ end}}
               </div>
@@ -78,7 +78,7 @@
               </p>
             </div>
             <div class="row"> 
-              <div class="grid grid-cols-4 gap-15 items-center">
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-15 items-center">
                 <div class="col-span-1"></div>
                 <div class="col-span-1">
                   {{ $GCanada := resources.Get "images/partners/genome_canada.png" }}

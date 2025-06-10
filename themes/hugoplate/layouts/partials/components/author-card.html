@@ -1,7 +1,7 @@
 <div class="max-w-sm w-full bg-white rounded shadow-lg overflow-hidden">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-24 object-cover" ) }}
+    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full max-h-64 object-scale-down" ) }}
   {{ else if .Params.Email }}
     <img
       class="w-full h-48 object-cover"
