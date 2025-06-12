@@ -8,7 +8,7 @@ url = "/"
 
 [[main]]
 parent = "Qu’est-ce que la TAQ ?"
-name = "Missions"
+name = "Mission"
 weight = 10
 url = "/"
 
