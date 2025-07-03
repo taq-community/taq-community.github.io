@@ -2,14 +2,14 @@
 firstname: Valérie
 lastname: Langlois 
 email: valerie.langlois@inrs.ca
-title: Valérie Langlois
-affiliation: Ph.D., Professeure à l'INRS
+title: Ph.D., Professor, 
+title_taq: Co-principal investigator of the TAQ
+affiliation: INRS, Quebec
 image: "/images/members/valerie-langlois.jpg"
-description: this is meta description
-summary: lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostr navigation et dolore magna aliqua.
+summary: Valérie Langlois holds the Canada Research Chair in Ecotoxicogenomics. As a lead researcher in the iTrackDNA project, she has played a central role in advancing standardized eDNA protocols and developing molecular tools to monitor biodiversity and assess contaminant impacts on aquatic ecosystems.
 social:
   - name: google-scholar
-    icon: fa-brands fa-github
+    icon: fa-brands fa-google-scholar
     link: https://scholar.google.ca/citations?user=RX9XNLUAAAAJ&hl=en
   - name: linkedin
     icon: fa-brands fa-linkedin

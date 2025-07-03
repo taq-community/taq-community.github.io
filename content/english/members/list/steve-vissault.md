@@ -2,14 +2,13 @@
 firstname: Steve
 lastname: Vissault
 email: steve.vissault@inrs.ca
-title: Steve Vissault
-affiliation: M.Sc., Research Software Engineer
-image: "/images/steve-vissault.jpg"
-description: Research software engineer specialized.
-summary: Steve holds a Master’s degree in Computational Ecology from Université du Québec à Rimouski. He has over six years of experience as a research software engineer. He led the development of major scientific platforms such as mangal.io and Biodiversité Québec, creating R libraries, databases, and web interfaces. 
+title: M.Sc., Research associate at the TAQ
+affiliation: INRS, Quebec
+image: "https://media.licdn.com/dms/image/v2/D4E03AQEHatCRZVZwXw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1698160919115?e=1756944000&v=beta&t=L4O6yp09v2_poDfaf-5LF4_qL5JsjVTgCOCwbKmjYBQ"
+summary: Steve has a Master’s degree in Computational Ecology from Université du Québec à Rimouski. He led the development of serveral scientific platforms such as mangal.io and Biodiversité Québec, creating R libraries, databases, and web interfaces. 
 social:
   - name: google-scholar
-    icon: fa-brands fa-google
+    icon: fa-brands fa-google-scholar
     link: https://scholar.google.fr/citations?user=gUUVhKoAAAAJ&hl=fr
   - name: linkedin
     icon: fa-brands fa-linkedin

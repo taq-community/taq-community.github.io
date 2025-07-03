@@ -36,6 +36,7 @@ name = "Documentation"
 url = "/documentation"
 weight = 4
 
+
 # ADNe Services
 [[main]]
 name = "ADNe Services"
@@ -75,17 +76,7 @@ url = "/training"
 [[main]]
 name = "Members"
 weight = 3
-
-[[main]]
-parent = "Members"
-name = "Member list"
 url = "/members/list"
-
-[[main]]
-parent = "Members"
-name = "Become a Member"
-url = "https://forms.gle/WCvUnvtjezjfU8x37"
-rel = 'external'
 
 # News
 [[main]]
@@ -93,19 +84,7 @@ name = "News"
 url = "/news"
 weight = 4
 
-
 # footer menu
-[[footer]]
-name = "qPCR catalog"
-url = ""
-weight = 2
-
-[[footer]]
-name = "Visual identity"
-url = ""
-weight = 3
-
-
 [[footer]]
 name = "Contact"
 url = "/contact"

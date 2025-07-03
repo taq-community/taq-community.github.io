@@ -36,6 +36,12 @@ name = "Documentation"
 url = "/documentation"
 weight = 4
 
+[[main]]
+name = "CSI / ISO Standards"
+parent = "Documentation"
+url = "/standards"
+weight = 41
+
 # Services en ADNe
 [[main]]
 name = "Services en ADNe"
