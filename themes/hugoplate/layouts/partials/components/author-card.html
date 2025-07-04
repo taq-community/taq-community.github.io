@@ -11,11 +11,12 @@
 
   <h4 class="font-bold text-gold">{{ .Params.firstname }} {{ .Params.lastname }}</h4>
   {{ if .Params.title_taq }}
-    <p class="text-white">{{ .Params.title_taq }}</p>
+    <p class="text-white font-semibold">{{ .Params.title_taq }}</p>
   {{ end }}
   <p class="text-white">{{ .Params.title }}</p>
   <p class="text-white">{{ .Params.affiliation }}</p>
   <p class="text-white">{{ .Params.role }}</p>
+  <p class="text-sm text-white my-4">{{ .Params.summary }}</p>
   <div class="flex justify-center space-x-4">
     {{ range .Params.social }}
     <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow" class="text-gold hover:text-white">
@@ -23,7 +24,6 @@
     </a>
     {{ end }}
   </div>
-  <p class="text-sm text-white my-4">{{ .Params.summary }}</p>
 </div>
 
 

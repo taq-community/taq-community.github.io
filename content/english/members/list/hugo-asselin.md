@@ -4,7 +4,7 @@ lastname: Asselin
 email: hugo.asselin@uqat.ca
 title: Ph.D., Professor
 title_taq: Co-Principal investigator of the TAQ
-affiliation: UQAT, Quebec
+affiliation: Université du Québec en Abitibi Temiscamingue, Quebec
 image: "https://prof.uqat.ca/wp-content/uploads/2023/05/Asselin_Hugo-1.jpg.webp"
 summary: 
 social:

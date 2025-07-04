@@ -2,8 +2,8 @@
 firstname: Julie
 lastname: Couillard
 email: julie.couillard@inrs.ca
-title_taq: Ph.D., Research associate at the TAQ
-affiliation: INRS, Quebec
+title: Ph.D., Research associate and coordinator of the TAQ
+affiliation: Institut national de la recherche scientifique, Quebec
 image: "https://itrackdna.ca/wp-content/uploads/2021/09/julie-couillard-itrackdna.png"
 summary: "" 
 social:
