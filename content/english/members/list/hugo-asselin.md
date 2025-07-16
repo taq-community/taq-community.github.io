@@ -17,4 +17,6 @@ social:
   - name: orcid
     icon: fa-brands fa-orcid
     link: https://orcid.org/0000-0002-9542-4994
+  - name: fa-brands fa-researchgate 
+    link: https://www.researchgate.net/profile/Hugo_Asselin
 ---
