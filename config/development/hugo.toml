@@ -1,0 +1,2 @@
+# Development base URL (overrides the root hugo.toml)
+baseURL = "http://localhost:1313"

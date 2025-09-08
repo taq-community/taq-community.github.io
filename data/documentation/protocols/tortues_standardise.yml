@@ -1,0 +1,17 @@
+# Primary title (original language - French)
+title: "Protocole standardisé pour l'inventaire des tortues d'eau douce à l'aide de l'ADNe au Québec"
+title_en: "Standardized protocol for freshwater turtle inventory using eDNA in Quebec"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol", "English"]
+tags_fr: ["Échantillonnage", "Protocole", "Français"]
+
+# Institution names
+institution_en: "Ministry of Forests, Wildlife and Parks (Quebec)"
+institution_fr: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
+
+# Shared metadata
+year: 2022
+authors: [""]
+pdf: "documents/Protocole standardisé pour les tortues au Québec.pdf"
+original_language: "fr"

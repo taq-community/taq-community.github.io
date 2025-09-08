@@ -1,0 +1,17 @@
+# Primary title (original language - English)
+title: "Standard Operating Procedure for eDNA Sampling - Japan"
+title_fr: "Procédure opérationnelle standard pour l'échantillonnage d'ADNe - Japon"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol", "English"]
+tags_fr: ["Échantillonnage", "Protocole", "Français"]
+
+# Institution names
+institution_en: "Ministry of the Environment, Japan"
+institution_fr: "Ministère de l'Environnement, Japon"
+
+# Shared metadata
+year: 2020
+authors: ["Nagayasu N. et al."]
+pdf: "documents/sampling (Japan).pdf"
+original_language: "en"

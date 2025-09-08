@@ -56,7 +56,7 @@ url = "/adne"
 [[main]]
 parent = "Services en ADNe"
 name = "Échantillonnage"
-weight=20
+weight = 20
 url = "/sampling"
 
 [[main]]
@@ -85,11 +85,13 @@ weight = 3
 [[main]]
 parent = "Membres"
 name = "Liste des membres"
+weight = 31
 url = "/members/list"
 
 [[main]]
 parent = "Membres"
 name = "Devenir membre"
+weight = 32
 url = "https://forms.gle/WCvUnvtjezjfU8x37"
 rel = 'external'
 
@@ -101,17 +103,6 @@ weight = 4
 
 
 # Menu de pied de page
-[[footer]]
-name = "Catalogue qPCR"
-url = ""
-weight = 2
-
-[[footer]]
-name = "Identité visuelle"
-url = ""
-weight = 3
-
-
 [[footer]]
 name = "Contact"
 url = "/contact"

@@ -1,9 +1,20 @@
 ---
 title: "eDNA sampling"
 meta_title: "eDNA sampling"
-description: "this is meta description"
+description: "Environmental DNA sampling services"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Environmental DNA (eDNA) sampling is the crucial first step in biodiversity analysis. TAQ connects clients with sampling experts who use standardized methods to collect water, soil, or other environmental substrate samples.
+
+### Available sampling services
+
+- **Aquatic sampling**: Water sample collection from lakes, rivers, ponds, and wetlands
+- **Terrestrial sampling**: Soil and sediment sample collection
+- **Standardized protocols**: Application of validated and reproducible methods
+- **Training**: Support to develop your internal sampling capabilities
+
+### Why choose our services?
+
+Our partner members use proven protocols that guarantee the quality and reliability of eDNA data. Proper sampling is essential for obtaining accurate and actionable results for biodiversity monitoring and environmental decision-making.

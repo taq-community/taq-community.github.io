@@ -4,12 +4,33 @@
 
 <section class="section-sm">
   <div class="container">
-    <h3 class="my-4">Protocols</h3>
+    {{/* Get documentation from data/documentation directory */}}
+    {{ $allDocs := slice }}
+    {{ $protocols := slice }}
+    {{ $standards := slice }}
+    
+    {{ range $category, $docs := site.Data.documentation }}
+      {{ range $filename, $doc := $docs }}
+        {{ $allDocs = $allDocs | append $doc }}
+        {{ if eq $category "protocols" }}
+          {{ $protocols = $protocols | append $doc }}
+        {{ else if eq $category "standards" }}
+          {{ $standards = $standards | append $doc }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
     <!-- Filter buttons -->
-    {{/* Collect all tags from .Pages */}}
+    {{/* Collect all tags from shared docs based on current language */}}
     {{- $allTags := slice -}}
-    {{ range .Pages }}
-      {{ with .Params.tags }}
+    {{ range $allDocs }}
+      {{ $tags := slice }}
+      {{ if eq $.Site.Language.Lang "fr" }}
+        {{ $tags = .tags_fr }}
+      {{ else }}
+        {{ $tags = .tags_en }}
+      {{ end }}
+      {{ with $tags }}
         {{ range . }}
         {{- $allTags = $allTags | append . -}}
         {{ end }}
@@ -19,7 +40,7 @@
     
     <!-- Tag Filter Checkboxes -->
     <div class="mb-6">
-      <p class="font-semibold mb-2">Filter by tags</p>
+      <p class="font-semibold mb-2">{{ if eq .Site.Language.Lang "fr" }}Filtrer par étiquettes{{ else }}Filter by tags{{ end }}</p>
       <div id="tag-filters" class="flex flex-wrap gap-4">
         {{ range $uniqueTags }}
         <label class="inline-flex items-center space-x-2">
@@ -30,19 +51,42 @@
       </div>
     </div>
 
-    <!-- Document cards -->
-    <div id="doc-list" class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
-      {{ range .Pages }}
-      {{ $thumb := replace .Params.pdf ".pdf" ".png"  }}
-      {{ $thumb := replace $thumb "documents/" "documents/thumbnails/" }}
-      {{ $img := resources.Get $thumb }}
-      {{ $pdf := resources.Get .Params.pdf }}
-      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit .Params.tags " " }}">
+    <!-- Protocols Section -->
+    {{ if $protocols }}
+    <h2 class="my-4">{{ if eq .Site.Language.Lang "fr" }}Protocoles{{ else }}Protocols{{ end }}</h2>
+    <div id="protocols-list" class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mb-10" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+      {{ range $protocols }}
+      <!-- Set up variables based on current language -->
+      {{ $pdf := "" }}
+      {{ $img := "" }}
+      {{ $currentTitle := .title }}
+      {{ $currentTags := .tags_en }}
+      {{ $currentInstitution := .institution_en }}
+      
+      {{ if eq $.Site.Language.Lang "fr" }}
+        {{ if .title_fr }}{{ $currentTitle = .title_fr }}{{ end }}
+        {{ $currentTags = .tags_fr }}
+        {{ $currentInstitution = .institution_fr }}
+      {{ end }}
+      
+      {{ if .pdf }}
+        {{ $thumb := replace .pdf ".pdf" ".png"  }}
+        {{ $thumb := replace $thumb "documents/" "documents/thumbnails/" }}
+        {{ $img = resources.Get $thumb }}
+        {{ $pdf = resources.Get .pdf }}
+      {{ end }}
+      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit $currentTags " " }}">
         <div class="flex flex-col items-center md:flex-row md:max-w-xl">
+          {{ if and .pdf $img }}
           <img class="w-48"
             src="{{ $img.RelPermalink }}" alt="">
+          {{ else }}
+          <div class="w-48 h-32 bg-gray-200 flex items-center justify-center">
+            <span class="text-gray-500">{{ if .pdf }}No preview{{ else }}Document{{ end }}</span>
+          </div>
+          {{ end }}
           <div class="flex flex-col justify-between p-5 leading-normal">
-            {{ with .Params.tags }}
+            {{ with $currentTags }}
             <div class="flex flex-wrap gap-2 mb-2">
               {{ range . }}
               <span class="inline-block bg-gold text-body text-xs font-medium px-2.5 py-0.5 rounded">
@@ -51,24 +95,93 @@
               {{ end }}
             </div>
             {{ end }}
-            <p>{{ .Params.year }}</p>
-            <h3 class="text-lg text-white font-semibold mb-2">{{ .Params.title }}</h3>
+            <p>{{ .year }}</p>
+            <h3 class="text-lg text-white font-semibold mb-2">{{ $currentTitle }}</h3>
             <p class="text-sm text-white mb-1">
-              {{ if .Params.authors }}
-                {{ delimit .Params.authors ", " }}<br>
+              {{ if .authors }}
+                {{ delimit .authors ", " }}<br>
               {{ end }}
-              {{ if .Params.institution }}
-                {{.Params.institution }} <br>
+              {{ if $currentInstitution }}
+                {{ $currentInstitution }}<br>
               {{ end }}
             </p>
+            {{ if and .pdf $pdf }}
             <a class="btn btn-outline-primary btn-sm mt-3" style="align-self: flex-start" href="{{ $pdf.RelPermalink }}" target="_blank">
               PDF</a>
+            {{ end }}
           </div>
         </div>
       </div>
       {{ end }}
     </div>
-  
+    {{ end }}
+
+    <!-- Standards Section -->
+    {{ $standards := where $allDocs "type" "standard" }}
+    {{ if $standards }}
+    <h2 class="my-4">{{ if eq .Site.Language.Lang "fr" }}Standards internationaux{{ else }}International Standards{{ end }}</h2>
+    <div id="standards-list" class="grid xs:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+      {{ range $standards }}
+      <!-- Set up variables based on current language -->
+      {{ $pdf := "" }}
+      {{ $img := "" }}
+      {{ $currentTitle := .title }}
+      {{ $currentTags := .tags_en }}
+      {{ $currentInstitution := .institution_en }}
+      
+      {{ if eq $.Site.Language.Lang "fr" }}
+        {{ if .title_fr }}{{ $currentTitle = .title_fr }}{{ end }}
+        {{ $currentTags = .tags_fr }}
+        {{ $currentInstitution = .institution_fr }}
+      {{ end }}
+      
+      {{ if .pdf }}
+        {{ $thumb := replace .pdf ".pdf" ".png"  }}
+        {{ $thumb := replace $thumb "documents/" "documents/thumbnails/" }}
+        {{ $img = resources.Get $thumb }}
+        {{ $pdf = resources.Get .pdf }}
+      {{ end }}
+      
+      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit $currentTags " " }}">
+        <div class="flex flex-col items-center md:flex-row md:max-w-xl">
+          {{ if and .pdf $img }}
+          <img class="w-48"
+            src="{{ $img.RelPermalink }}" alt="">
+          {{ else }}
+          <div class="w-48 h-32 bg-gray-200 flex items-center justify-center">
+            <span class="text-gray-500">{{ if .pdf }}No preview{{ else }}Document{{ end }}</span>
+          </div>
+          {{ end }}
+          <div class="flex flex-col justify-between p-5 leading-normal">
+            {{ with $currentTags }}
+            <div class="flex flex-wrap gap-2 mb-2">
+              {{ range . }}
+              <span class="inline-block bg-gold text-body text-xs font-medium px-2.5 py-0.5 rounded">
+                {{ . }}
+              </span>
+              {{ end }}
+            </div>
+            {{ end }}
+            <p>{{ .year }}</p>
+            <h3 class="text-lg text-white font-semibold mb-2">{{ $currentTitle }}</h3>
+            <p class="text-sm text-white mb-1">
+              {{ if .authors }}
+                {{ delimit .authors ", " }}<br>
+              {{ end }}
+              {{ if $currentInstitution }}
+                {{ $currentInstitution }}<br>
+              {{ end }}
+            </p>
+            {{ if and .pdf $pdf }}
+            <a class="btn btn-outline-primary btn-sm mt-3" style="align-self: flex-start" href="{{ $pdf.RelPermalink }}" target="_blank">
+              PDF</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
   </div>
 </section>
 

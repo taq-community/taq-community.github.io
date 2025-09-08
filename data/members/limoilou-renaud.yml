@@ -1,0 +1,25 @@
+# Basic info (shared)
+firstname: Limoilou
+lastname: Renaud
+email: limoilou-amelie.renaud@dfo-mpo.gc.ca
+image: "https://limoilourenaud.com/author/avatar_hu2992bc39e7e9a0e12129ee242cfd7675_687524_270x270_fill_q90_lanczos_center.jpg"
+sort_order: 99
+
+# English content
+title_en: "Postdoctoral researcher"
+affiliation_en: "Université du Québec en Abitibi Temiscamingue, Quebec"
+summary_en: "Limoilou is a postdoctoral researcher at the School of indigenous studies of the Université du Québec en Abitibi-Témiscamingue. Her research interests focus on wildlife-habitat relationships, biodiversity conservation, and the use of both quantitative and qualitative approaches to answer various ecological questions."
+
+# French content
+title_fr: "Chercheuse post-doctorale"
+affiliation_fr: "Université du Québec en Abitibi-Témiscamingue, Québec"
+summary_fr: "Limoilou est chercheure postdoctorale à l'École d'études autochtones de l'Université du Québec en Abitibi-Témiscamingue. Ses intérêts de recherche se concentrent sur les relations faune-habitat, la conservation de la biodiversité et l'utilisation d'approches quantitatives et qualitatives pour répondre à diverses questions écologiques."
+
+# Social links (shared)
+social:
+  - name: google-scholar
+    icon: fa-brands fa-google-scholar
+    link: https://scholar.google.com/citations?user=WQQIjM8AAAAJ&hl=en
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/limoilou-renaud-40494a292/

@@ -1,7 +1,7 @@
 ---
 title: "What is eDNA?"
 meta_title: "eDNA"
-description: "this is meta description"
+description: "Understanding environmental DNA"
 image: "/images/as_217861490.jpg"
 draft: false
 ---
