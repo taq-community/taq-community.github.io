@@ -34,7 +34,7 @@ url = "/history"
 [[main]]
 name = "Documentation"
 url = "/documentation"
-weight = 4
+weight = 5
 
 
 # ADNe Services
@@ -45,38 +45,50 @@ weight = 2
 [[main]]
 parent = "ADNe Services"
 name = "What is ADNe?"
-weight=10
+weight = 21
 url = "/adne"
 
 [[main]]
 parent = "ADNe Services"
 name = "Sampling"
-weight=20
+weight = 22
 url = "/sampling"
 
 [[main]]
 parent = "ADNe Services"
 name = "Laboratory Analysis"
-weight=30
+weight = 23
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "ADNe Services"
 name = "Data Processing"
-weight=40
+weight = 24
 url = "/data-processing"
 
 [[main]]
 parent = "ADNe Services"
 name = "Training"
-weight=50
+weight = 25
 url = "/training"
 
 # Members
 [[main]]
 name = "Members"
 weight = 3
+
+[[main]]
+parent = "Members"
+name = "Members List"
+weight = 31
 url = "/members/list"
+
+[[main]]
+parent = "Members"
+name = "Become a Member"
+weight = 32
+url = "https://forms.gle/WCvUnvtjezjfU8x37"
+rel = 'external'
 
 # News
 [[main]]

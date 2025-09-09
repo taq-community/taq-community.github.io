@@ -1,0 +1,17 @@
+# Primary title (bilingual document - using English as primary)
+title: "UNESCO Expeditions Protocols"
+title_fr: "Protocoles des expéditions UNESCO"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol"]
+tags_fr: ["Échantillonnage", "Protocole"]
+
+# Institution names
+institution_en: "UNESCO"
+institution_fr: "UNESCO"
+
+# Shared metadata
+year: 2020
+authors: ["UNESCO Intergovernmental Oceanographic Commission"]
+pdf: "documents/Protocoles_expeditions_protocols_(UNESCO).pdf"
+original_language: "en"

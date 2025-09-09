@@ -1,0 +1,17 @@
+# Primary title (original language - French)
+title: "Protocole standardisé des procédures de stérilisation et d'échantillonnage d'eau afin de déterminer la présence d'espèces fauniques dans les milieux hydriques par l'analyse d'ADNe au Québec"
+title_en: "Standardized protocol for sterilization and water sampling procedures to determine the presence of wildlife species in aquatic environments through eDNA analysis in Quebec"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol"]
+tags_fr: ["Échantillonnage", "Protocole"]
+
+# Institution names
+institution_en: "Ministry of Forests, Wildlife and Parks (Quebec)"
+institution_fr: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
+
+# Shared metadata
+year: 2021
+authors: [""]
+pdf: "documents/PT_standardise_sterilisation_echantillonnage_eau_ADNe (Version 2021).pdf"
+original_language: "fr"

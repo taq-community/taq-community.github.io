@@ -1,0 +1,16 @@
+# Primary title (original language - English)
+title: "W214: Environmental DNA (eDNA) – Terminology, Methodology, and Reporting for Aquatic Ecosystems"
+title_fr: "W214 : ADN environnemental (ADNe) – Terminologie, méthodologie et rapports pour les écosystèmes aquatiques"
+
+# Tags for both languages
+tags_en: ["Sampling", "Standard", "Canada", "CSA"]
+tags_fr: ["Échantillonnage", "Standard", "Canada", "CSA"]
+
+# Institution names
+institution_en: "Canadian Standards Association (CSA)"
+institution_fr: "Association canadienne de normalisation (CSA)"
+
+# Shared metadata
+year: 2021
+authors: ["CSA Group"]
+original_language: "en"

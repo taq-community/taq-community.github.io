@@ -1,9 +1,38 @@
 ---
 title: "Training"
 meta_title: "Training"
-description: "this is meta description"
+description: "Environmental DNA training services"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+TAQ offers specialized training services to develop environmental DNA (eDNA) skills for researchers, environmental managers, consultants, and other professionals interested in this emerging technology.
+
+### Available training programs
+
+- **Theoretical training**: Fundamental principles of eDNA and applications
+- **Practical training**: Field sampling techniques
+- **Laboratory workshops**: DNA extraction and analysis methods
+- **Bioinformatics training**: eDNA data processing and analysis
+
+### Learning formats
+
+- **Intensive workshops**: One to multi-day sessions
+- **Online training**: Distance learning modules
+- **Custom training**: Programs adapted to specific needs
+- **Mentorship**: Individual guidance by experts
+
+### Target audience
+
+- Researchers and students
+- Wildlife and environmental managers
+- Environmental consultants
+- Laboratory personnel
+- First Nations representatives
+- Environmental project managers
+
+### Certification
+
+Our training can include certification attesting to acquired eDNA skills, recognized by the Quebec scientific and professional community.
+
+Contact us to develop a training program adapted to your specific needs.

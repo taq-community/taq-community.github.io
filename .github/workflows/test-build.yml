@@ -1,0 +1,50 @@
+# workflow for testing build on dev branch without deployment
+name: Test Build
+
+on:
+  # Runs on pushes targeting the dev branch
+  push:
+    branches: ["dev"]
+  # Also allow manual trigger
+  workflow_dispatch:
+
+# Default to bash
+defaults:
+  run:
+    shell: bash
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  HUGO_ENV: development
+  HUGO_VERSION: "0.141.0"
+  GO_VERSION: "1.23.3"
+
+jobs:
+  # Build job only (no deployment)
+  build:
+    runs-on: ubuntu-24.04-arm
+    steps:
+      - name: Install Hugo
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Install Go
+        run: |
+          wget -O ${{ runner.temp }}/go.deb https://dl.google.com/go/go${GO_VERSION}.linux-amd64.tar.gz \
+          && sudo tar -C /usr/local -xzf ${{ runner.temp }}/go.deb
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Setup Project
+        run: npm run project-setup
+
+      - name: Install npm dependencies
+        run: npm install
+
+      - name: Test build
+        run: npm run build

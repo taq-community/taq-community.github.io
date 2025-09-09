@@ -1,4 +1,4 @@
 ---
-title: "Members list"
+title: "Members List"
+layout: "list"
 ---
-    

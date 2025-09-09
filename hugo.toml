@@ -1,6 +1,6 @@
 ######################## default configuration ####################
 # The base URL of your site (required). This will be prepended to all relative URLs.
-baseURL = "https://taq.info"
+baseURL = "http://localhost:1313"
 # Title of your website (required).
 title = "Table sur l'ADN environnemental du Québec"
 # Your theme name
@@ -17,7 +17,7 @@ hasCJKLanguage = false #  If hasCJKLanguage true, auto-detect Chinese/Japanese/K
 defaultContentLanguage = 'en'
 # defaultContentLanguageInSubdir need to be true if you want to use the language code as a subdirectory and language specific 404 page
 defaultContentLanguageInSubdir = true
-
+ 
 ########################### Services #############################
 [services]
 [services.googleAnalytics]
@@ -72,11 +72,23 @@ resampleFilter = "Lanczos"
 [caches]
 [caches.images]
 dir = ":resourceDir/_gen"
-maxAge = "720h"
+maxAge = "0s"
 
 [caches.assets]
 dir = ":resourceDir/_gen"
-maxAge = "720h"
+maxAge = "0s"
+
+[caches.getjson]
+dir = ":cacheDir/:project"
+maxAge = "0s"
+
+[caches.getcsv]
+dir = ":cacheDir/:project"
+maxAge = "0s"
+
+[caches.modules]
+dir = ":cacheDir/modules"
+maxAge = "0s"
 
 
 ############################ Markup ##############################

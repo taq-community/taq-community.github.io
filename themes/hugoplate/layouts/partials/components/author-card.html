@@ -1,26 +1,47 @@
 <div class="flex flex-col items-center overflow-hidden p-4 text-center bg-transparent">
-  {{ $image := .Params.image }}
+  {{ $image := .image }}
+  
+  {{/* Set up language-specific variables */}}
+  {{ $currentTitle := .title_en }}
+  {{ $currentTitleTaq := .title_taq_en }}
+  {{ $currentAffiliation := .affiliation_en }}
+  {{ $currentSummary := .summary_en }}
+
+
+  {{ if eq site.Language.Lang "fr" }}
+    {{ $currentTitle = .title_fr }}
+    {{ $currentTitleTaq = .title_taq_fr }}
+    {{ $currentAffiliation = .affiliation_fr }}
+    {{ $currentSummary = .summary_fr }}
+  {{ end }}
+  
   <div class="w-48 h-48 mb-4 overflow-hidden rounded-full border-2 border-gold">
     {{ if $image }}
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-full object-cover" ) }}
     {{ else }}
-    <img class="w-full h-full object-cover" alt="{{ .Title }}"
-      src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon" />
+    <img class="w-full h-full object-cover" alt="{{ .firstname }} {{ .lastname }}"
+      src="https://www.gravatar.com/avatar/{{ md5 .email }}?s=128&pg&d=identicon" />
     {{ end }}
   </div>
 
-  <h4 class="font-bold text-gold">{{ .Params.firstname }} {{ .Params.lastname }}</h4>
-  {{ if .Params.title_taq }}
-    <p class="text-white font-semibold">{{ .Params.title_taq }}</p>
+  <h4 class="font-bold text-gold">{{ .firstname }} {{ .lastname }}</h4>
+  {{ if $currentTitleTaq }}
+    <p class="text-white font-semibold">{{ $currentTitleTaq }}</p>
   {{ end }}
-    <p class="text-white">{{ .Params.title }}</p>
-    <p class="text-white">{{ .Params.affiliation }}</p>
-    <p class="text-white">{{ .Params.role }}</p>
-  {{ if .Params.summary }}
-    <p class="text-sm text-white my-4">{{ .Params.summary }}</p>
+  {{ if $currentTitle }}
+    <p class="text-white">{{ $currentTitle }}</p>
+  {{ end }}
+  {{ if $currentAffiliation }}
+    <p class="text-white">{{ $currentAffiliation }}</p>
+  {{ end }}
+  {{ if .role }}
+    <p class="text-white">{{ .role }}</p>
+  {{ end }}
+  {{ if $currentSummary }}
+    <p class="text-sm text-white my-4">{{ $currentSummary }}</p>
   {{ end }}
   <div class="flex justify-center space-x-4">
-    {{ range .Params.social }}
+    {{ range .social }}
     <a href="{{ .link | safeURL }}" target="_blank" rel="noopener nofollow" class="text-gold hover:text-white">
       <i class="{{ .icon }}"></i>
     </a>

@@ -1,0 +1,17 @@
+# Primary title (original language - English)
+title: "Protocol for Stream Macroinvertebrate Sampling (USA)"
+title_fr: "Protocole d'échantillonnage des macroinvertébrés des cours d'eau (USA)"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol"]
+tags_fr: ["Échantillonnage", "Protocole"]
+
+# Institution names
+institution_en: "U.S. Environmental Protection Agency"
+institution_fr: "U.S. Environmental Protection Agency"
+
+# Shared metadata
+year: 2013
+authors: ["US EPA – National Rivers and Streams Assessment"]
+pdf: "documents/Protol_Stream (USA).pdf"
+original_language: "en"

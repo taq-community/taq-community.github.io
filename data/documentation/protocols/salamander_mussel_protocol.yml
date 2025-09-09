@@ -1,0 +1,17 @@
+# Primary title (bilingual document - using English as primary)
+title: "Salamander Mussel (Simpsonaias ambigua) eDNA Protocol"
+title_fr: "Protocole d'ADNe de la mulette de la salamandre (Simpsonaias ambigua)"
+
+# Tags for both languages
+tags_en: ["Sampling", "Protocol"]
+tags_fr: ["Échantillonnage", "Protocole"]
+
+# Institution names
+institution_en: "Environment and Climate Change Canada"
+institution_fr: "Environnement et Changement climatique Canada"
+
+# Shared metadata
+year: 2021
+authors: ["Sabel Porto-Hannes, Kelly McNichols-O'Rourke, Margaret Goguen, Maggie Fang and Todd J. Morris"]
+pdf: "documents/Protocole Salamander Mussel (Canada, V2021).pdf"
+original_language: "en"
