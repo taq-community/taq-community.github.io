@@ -75,7 +75,7 @@
         {{ $img = resources.Get $thumb }}
         {{ $pdf = resources.Get .pdf }}
       {{ end }}
-      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit $currentTags " " }}">
+      <div class="doc-card rounded-lg" data-tags="{{ delimit $currentTags " " }}">
         <div class="flex flex-col items-center md:flex-row md:max-w-xl">
           {{ if and .pdf $img }}
           <img class="w-48"
@@ -141,7 +141,7 @@
         {{ $pdf = resources.Get .pdf }}
       {{ end }}
       
-      <div class="doc-card bg-body rounded-lg" data-tags="{{ delimit $currentTags " " }}">
+      <div class="doc-card rounded-lg" data-tags="{{ delimit $currentTags " " }}">
         <div class="flex flex-col items-center md:flex-row md:max-w-xl">
           {{ if and .pdf $img }}
           <img class="w-48"

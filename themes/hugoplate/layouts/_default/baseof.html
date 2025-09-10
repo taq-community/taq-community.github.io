@@ -20,6 +20,11 @@
   </head>
 
   <body>
+    <!-- Background global pour toutes les pages -->
+    <div class="fixed inset-0 -z-50 pointer-events-none opacity-30">
+      {{ partial "svg/ecosystem-bg.html" (dict "class" "text-blue-100") }}
+    </div>
+    
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
