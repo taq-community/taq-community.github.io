@@ -1,6 +1,6 @@
 # Primary title (original language - English)
-title: "W219: Performance Criteria for Quantitative PCR-based Environmental DNA Assays"
-title_fr: "W219 : Critères de performance pour les analyses d'ADN environnemental basées sur la PCR quantitative"
+title: "CSA W219:F23 Performance Criteria for Quantitative PCR-based Environmental DNA Assays"
+title_fr: "CSA W219:F23 Critères de performance pour les analyses de l’ADN environnemental par réaction de polymérisation en chaîne quantitative ciblée"
 
 # Tags for both languages
 tags_en: ["qPCR", "Standard", "Canada", "CSA"]
@@ -14,3 +14,4 @@ institution_fr: "Association canadienne de normalisation (CSA)"
 year: 2023
 authors: ["CSA Group"]
 original_language: "en"
+web_url: "https://www.csagroup.org/store/product/CSA_W219%3A23/"
