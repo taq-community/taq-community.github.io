@@ -15,6 +15,7 @@ Environmental DNA (eDNA) sampling is the crucial first step in biodiversity anal
 - **Standardized protocols**: Application of validated and reproducible methods
 - **Training**: Support to develop your internal sampling capabilities
 
-### Why choose our services?
 
-Our partner members use proven protocols that guarantee the quality and reliability of eDNA data. Proper sampling is essential for obtaining accurate and actionable results for biodiversity monitoring and environmental decision-making.
+---
+
+{{< edna-contact-form >}}

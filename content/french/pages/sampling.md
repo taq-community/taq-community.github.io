@@ -18,3 +18,7 @@ L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale
 ### Pourquoi choisir nos services ?
 
 Nos membres partenaires utilisent des protocoles éprouvés qui garantissent la qualité et la fiabilité des données ADNe. L'échantillonnage approprié est essentiel pour obtenir des résultats précis et exploitables pour la surveillance de la biodiversité et la prise de décision environnementale.
+
+---
+
+{{< edna-contact-form >}}

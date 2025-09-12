@@ -1,9 +1,20 @@
 ---
 title: "Data processing"
-meta_title: "About"
-description: "this is meta description"
+meta_title: "Data processing"
+description: "Environmental DNA data processing and analysis services"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+eDNA data processing transforms raw laboratory results into actionable scientific information. TAQ connects you with bioinformatics and data analysis experts who use advanced tools and methods to interpret your environmental DNA data.
+
+### Available processing services
+
+- **Bioinformatics analysis**: DNA sequence processing and taxonomic identification
+- **Statistical analysis**: Assessment of species diversity, abundance and distribution
+- **Data visualization**: Creation of graphs, maps and interpretive reports
+- **Quality assurance**: Validation and quality control of analyses
+
+---
+
+{{< edna-contact-form >}}

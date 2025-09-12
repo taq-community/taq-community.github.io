@@ -15,18 +15,6 @@ Le traitement des données ADNe transforme les résultats bruts de laboratoire e
 - **Visualisation des données** : Création de graphiques, cartes et rapports interprétatifs
 - **Assurance qualité** : Validation et contrôle qualité des analyses
 
-### Outils et méthodes
+---
 
-- Pipelines bioinformatiques standardisés
-- Bases de données de référence actualisées
-- Analyses multivariées et modélisation
-- Interfaces utilisateur conviviales
-
-### Livrables
-
-- Rapports détaillés avec interprétation des résultats
-- Données formatées pour publication scientifique
-- Cartes de distribution des espèces
-- Recommandations pour la gestion et la conservation
-
-Nos experts vous accompagnent dans l'interprétation des résultats pour soutenir vos décisions de gestion environnementale et vos projets de recherche.
+{{< edna-contact-form >}}

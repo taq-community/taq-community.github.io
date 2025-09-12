@@ -9,24 +9,32 @@
           <form action="{{ site.Params.contact_form_action }}" method="POST">
             <div class="mb-6">
               <label for="name" class="form-label">
-                Full Name <span class="text-red-500">*</span>
+                {{ if eq .Site.Language.Lang "fr" }}
+                  Nom complet <span class="text-red-500">*</span>
+                {{ else }}
+                  Full Name <span class="text-red-500">*</span>
+                {{ end }}
               </label>
               <input
                 id="name"
                 name="name"
                 class="form-input"
-                placeholder="John Doe"
+                placeholder="{{ if eq .Site.Language.Lang "fr" }}Jean Dupont{{ else }}John Doe{{ end }}"
                 type="text" />
             </div>
             <div class="mb-6">
               <label for="email" class="form-label">
-                Working Mail <span class="text-red-500">*</span>
+                {{ if eq .Site.Language.Lang "fr" }}
+                  Adresse e-mail <span class="text-red-500">*</span>
+                {{ else }}
+                  Email <span class="text-red-500">*</span>
+                {{ end }}
               </label>
               <input
                 id="email"
                 name="email"
                 class="form-input"
-                placeholder="john.doe@email.com"
+                placeholder="{{ if eq .Site.Language.Lang "fr" }}jean.dupont@email.com{{ else }}john.doe@email.com{{ end }}"
                 type="email" />
             </div>
             <div class="mb-6">
@@ -37,10 +45,16 @@
                 id="message"
                 name="message"
                 class="form-input"
-                placeholder="Message goes here..."
+                placeholder="{{ if eq .Site.Language.Lang "fr" }}Votre message...{{ else }}Message goes here...{{ end }}"
                 rows="8"></textarea>
             </div>
-            <button type="submit" class="btn btn-outline-primary">Submit</button>
+            <button type="submit" class="btn btn-outline-primary">
+              {{ if eq .Page.Site.Language.Lang "fr" }}
+              Envoyer
+              {{ else }}
+              Send Message
+              {{ end }}
+            </button>
           </form>
         </div>
       </div>
