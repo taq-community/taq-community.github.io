@@ -1,0 +1,39 @@
+<!-- Formes écosystémiques -->
+<svg width="100%" height="100%" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradients organiques -->
+    <radialGradient id="ecoGrad1" cx="30%" cy="40%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.08"/>
+      <stop offset="70%" stop-color="currentColor" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0.01"/>
+    </radialGradient>
+    <radialGradient id="ecoGrad2" cx="70%" cy="60%">
+      <stop offset="0%" stop-color="currentColor" stop-opacity="0.06"/>
+      <stop offset="60%" stop-color="currentColor" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Grandes formes organiques (inspiration bassins versants) -->
+  <ellipse cx="200" cy="200" rx="180" ry="120" fill="url(#ecoGrad1)" transform="rotate(-25 200 200)"/>
+  <ellipse cx="800" cy="500" rx="220" ry="140" fill="url(#ecoGrad2)" transform="rotate(35 800 500)"/>
+  <ellipse cx="1000" cy="150" rx="160" ry="200" fill="url(#ecoGrad1)" transform="rotate(-10 1000 150)" opacity="0.8"/>
+  
+  <!-- Formes secondaires (îlots d'habitat) -->
+  <ellipse cx="400" cy="400" rx="80" ry="60" fill="currentColor" opacity="0.2" transform="rotate(45 400 400)"/>
+  <ellipse cx="600" cy="250" rx="70" ry="90" fill="currentColor" opacity="0.3" transform="rotate(-20 600 250)"/>
+  <ellipse cx="300" cy="600" rx="100" ry="50" fill="currentColor" opacity="0.5" transform="rotate(15 300 600)"/>
+  
+  <!-- Micro-habitats (points de biodiversité) -->
+  <circle cx="250" cy="350" r="12" fill="currentColor" opacity="0.2"/>
+  <circle cx="550" cy="180" r="8" fill="currentColor" opacity="0.2"/>
+  <circle cx="750" cy="400" r="10" fill="currentColor" opacity="0.2"/>
+  <circle cx="150" cy="500" r="6" fill="currentColor" opacity="0.2"/>
+  <circle cx="900" cy="300" r="7" fill="currentColor" opacity="0.2"/>
+  <circle cx="450" cy="650" r="9" fill="currentColor" opacity="0.2"/>
+  
+  <!-- Connexions écologiques subtiles -->
+  <path d="M250,350 Q350,300 550,180" stroke="currentColor" stroke-width="1" opacity="0.4" fill="none"/>
+  <path d="M550,180 Q650,290 750,400" stroke="currentColor" stroke-width="0.8" opacity="0.4" fill="none"/>
+  <path d="M150,500 Q200,425 250,350" stroke="currentColor" stroke-width="0.6" opacity="0.4" fill="none"/>
+</svg>

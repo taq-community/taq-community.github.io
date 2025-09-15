@@ -1,10 +1,10 @@
 # Primary title (original language - English)
-title: "ISO 17805.2 – Sampling, capture and preservation of environmental DNA from water"
-title_fr: "ISO 17805.2 – Échantillonnage, capture et préservation de l'ADN environnemental de l'eau"
+title: "ISO/DIS 17805.2 – Water quality — Sampling, capture and preservation of environmental DNA from water"
+title_fr: "ISO/DIS 17805.2 – Échantillonnage, capture et préservation de l'ADN environnemental de l'eau"
 
-# Tags for both languages
-tags_en: ["Sampling", "Standard", "ISO", "Water", "eDNA"]
-tags_fr: ["Échantillonnage", "Standard", "ISO", "Eau", "ADNe"]
+# Tags for both languages - categorized system
+tags_en: ["eDNA", "Water", "International Standard", "ISO", "Preservation", "Capture"]
+tags_fr: ["ADNe", "Eau", "Standard international", "ISO", "Préservation", "Capture"]
 
 # Institution names
 institution_en: "International Organization for Standardization (ISO)"
@@ -14,3 +14,4 @@ institution_fr: "Organisation internationale de normalisation (ISO)"
 year: 2023
 authors: ["ISO/TC 147/SC 5"]
 original_language: "en"
+web_url: "https://www.iso.org/standard/87980.html"

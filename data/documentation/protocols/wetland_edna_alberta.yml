@@ -2,9 +2,9 @@
 title: "Open Water Wetland Environmental DNA (eDNA) Field Collection Protocols"
 title_fr: "Protocoles de collecte sur le terrain d'ADN environnemental (ADNe) des milieux humides en eau libre"
 
-# Tags for both languages
-tags_en: ["Sampling", "Protocol"]
-tags_fr: ["Échantillonnage", "Protocole"]
+# Tags for both languages - categorized system
+tags_en: ["eDNA", "Wetlands", "Biodiversity", "Monitoring", "Canada", "Field Collection"]
+tags_fr: ["ADNe", "Milieux humides", "Biodiversité", "Surveillance", "Canada", "Collecte terrain"]
 
 # Institution names
 institution_en: "Alberta Biodiversity Monitoring Institute"
