@@ -1,0 +1,117 @@
+{{ $filterType := .Get "type" }}
+
+<div class="my-8">
+  <!-- Quebec Section -->
+  {{ $quebecItems := slice }}
+  {{ range .Page.Site.Data.service_providers.providers.quebec }}
+    {{ if and (ne .display false) (or (not $filterType) (eq .type $filterType) (and (reflect.IsSlice .type) (in .type $filterType))) }}
+      {{ $quebecItems = $quebecItems | append . }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if gt (len $quebecItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🏴󠁣󠁡󠁱󠁣󠁿</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Québec
+          {{ else }}
+            Quebec
+          {{ end }}
+        </h3>
+        <p class="text-white text-sm mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Fournisseurs de services au Québec
+          {{ else }}
+            Service providers in Quebec
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      {{ range $quebecItems }}
+        {{ partial "components/service-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- Canada Section -->
+  {{ $canadaItems := slice }}
+  {{ range .Page.Site.Data.service_providers.providers.canada }}
+    {{ if and (ne .display false) (or (not $filterType) (eq .type $filterType) (and (reflect.IsSlice .type) (in .type $filterType))) }}
+      {{ $canadaItems = $canadaItems | append . }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if gt (len $canadaItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🇨🇦</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Canada
+          {{ else }}
+            Canada
+          {{ end }}
+        </h2>
+        <p class="text-white text-sm mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Fournisseurs de services canadiens
+          {{ else }}
+            Canadian service providers
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+      {{ range $canadaItems }}
+        {{ partial "components/service-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- International Section -->
+  {{ $internationalItems := slice }}
+  {{ range .Page.Site.Data.service_providers.providers.international }}
+    {{ if and (ne .display false) (or (not $filterType) (eq .type $filterType) (and (reflect.IsSlice .type) (in .type $filterType))) }}
+      {{ $internationalItems = $internationalItems | append . }}
+    {{ end }}
+  {{ end }}
+  
+  {{ if gt (len $internationalItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🌍</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            International
+          {{ else }}
+            International
+          {{ end }}
+        </h2>
+        <p class="text-white text-sm">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Fournisseurs de services internationaux
+          {{ else }}
+            International service providers
+          {{ end }}
+        </p>
+      </div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {{ range $internationalItems }}
+        {{ partial "components/service-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

@@ -126,7 +126,7 @@
           <div class="flex gap-2">
             {{ if .web_url }}
             <a class="btn btn-outline-primary btn-sm" href="{{ .web_url }}" target="_blank">
-              Accéder</a>
+              {{ if eq .Site.Language.Lang "fr" }}Accéder à la ressource{{ else }}Access ressource{{ end }}</a>
             {{ end }}
           </div>
         </div>

@@ -8,25 +8,50 @@ draft: false
 
 Le traitement des données ADNe transforme les résultats bruts de laboratoire en informations scientifiques exploitables. La TAQ vous connecte avec des experts en bioinformatique et en analyse de données qui utilisent des outils et méthodes avancés pour interpréter vos données d'ADN environnemental.
 
-### Services de traitement disponibles
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🧬</span>
+      <h5 class="text-body">Analyse bioinformatique</h5>
+    </div>
+    <p class="text-body">Traitement des séquences d'ADN et identification taxonomique avec des méthodes computationnelles avancées</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">📊</span>
+      <h5 class="text-body">Analyse statistique</h5>
+    </div>
+    <p class="text-body">Évaluation de la diversité, abondance et distribution des espèces avec des méthodes statistiques robustes</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">📈</span>
+      <h5 class="text-body">Visualisation des données</h5>
+    </div>
+    <p class="text-body">Création de graphiques, cartes et rapports interprétatifs pour une communication claire des données</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">✅</span>
+      <h5 class="text-body">Assurance qualité</h5>
+    </div>
+    <p class="text-body">Validation et contrôle qualité des analyses pour assurer des résultats fiables et précis</p>
+  </div>
+</div>
 
-- **Analyse bioinformatique** : Traitement des séquences d'ADN et identification taxonomique
-- **Analyse statistique** : Évaluation de la diversité, abondance et distribution des espèces
-- **Visualisation des données** : Création de graphiques, cartes et rapports interprétatifs
-- **Assurance qualité** : Validation et contrôle qualité des analyses
+<div class="flex flex-col items-center justify-center mb-2 mt-6">
+    <h3 class="font-bold text-gold">Fournisseurs de services de traitement des données</h3>
+    <p class="text-white">Connectez-vous avec des experts en bioinformatique et spécialistes en analyse de données offrant des services de traitement d'ADN environnemental dans différentes régions.</p>
+</div>
 
-### Outils et méthodes
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10">
 
-- Pipelines bioinformatiques standardisés
-- Bases de données de référence actualisées
-- Analyses multivariées et modélisation
-- Interfaces utilisateur conviviales
+{{< service-providers type="storage" >}}
 
-### Livrables
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-- Rapports détaillés avec interprétation des résultats
-- Données formatées pour publication scientifique
-- Cartes de distribution des espèces
-- Recommandations pour la gestion et la conservation
+{{< edna-contact-form >}}
 
-Nos experts vous accompagnent dans l'interprétation des résultats pour soutenir vos décisions de gestion environnementale et vos projets de recherche.

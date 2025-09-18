@@ -1,0 +1,77 @@
+<section class="py-8 px-6 rounded-lg mt-8">
+  <div class="max-w-lg mx-auto">
+    <h3 class="text-gold text-bold font-semibold mb-2 text-center">
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Désirez-vous être présent sur cette page comme fournisseur de services?
+      {{ else }}
+        Want to be featured on this page as service provider?
+      {{ end }}
+    </h3>
+    <p class="text-center mb-6">
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Contactez-nous pour plus d'informations.
+      {{ else }}
+        Get in touch with us for more information.
+      {{ end }}
+    </p>
+    
+    <form action="{{ .Page.Site.Params.contact_form_action }}" method="POST">
+      <div class="mb-4">
+        <label for="name" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Nom complet <span class="text-red-500">*</span>
+          {{ else }}
+            Full Name <span class="text-red-500">*</span>
+          {{ end }}
+        </label>
+        <input
+          id="name"
+          name="name"
+          class="form-input"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Jean Dupont{{ else }}John Doe{{ end }}"
+          type="text"
+          required />
+      </div>
+      
+      <div class="mb-4">
+        <label for="email" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Adresse courriel <span class="text-red-500">*</span>
+          {{ else }}
+            Email Address <span class="text-red-500">*</span>
+          {{ end }}
+        </label>
+        <input
+          id="email"
+          name="email"
+          class="form-input"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}jean.dupont@email.com{{ else }}john.doe@email.com{{ end }}"
+          type="email"
+          required />
+      </div>
+      
+      <div class="mb-4">
+        <label for="message" class="form-label">
+          Message <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="message"
+          name="message"
+          class="form-input"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Votre message...{{ else }}Your message...{{ end }}"
+          rows="4"
+          required></textarea>
+      </div>
+      
+      <div class="text-center">
+        <button type="submit" class="btn btn-outline-primary">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Envoyer
+          {{ else }}
+            Send Message
+          {{ end }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

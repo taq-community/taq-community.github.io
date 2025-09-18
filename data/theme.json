@@ -7,7 +7,8 @@
         "border": "#eaeaea",
         "light": "#fff",
         "dark": "#17537bff",
-        "gold": "#ffeb9aff"
+        "gold": "#ffeb9aff",
+        "semigold": "#f7efd2"
       },
       "text_color": {
         "text": "#fff",
@@ -23,6 +24,6 @@
       "secondary": "PT+Serif:ital,wght@0,400;0,700;1,400;1,700",
       "secondary_type": "sans-serif"
     },
-    "font_size": { "base": "16", "scale": "1.2" }
+    "font_size": { "base": "18", "scale": "1.2" }
   }
 }
