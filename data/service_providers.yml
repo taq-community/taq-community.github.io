@@ -1,0 +1,140 @@
+providers:
+
+  # Quebec
+  quebec:
+    - name: "Valérie Langlois Laboratory (INRS)"
+      name_fr: "Laboratoire de Valérie Langlois (INRS)"
+      type: ["research", "analysis", "sampling", "training"]
+      province: "Quebec"
+      description: "qPCR analysis, metabarcoding, validated kits, standardization"
+      description_fr: "Analyse qPCR, métabarcoding, kits validés, standardisation"
+      url: "https://inrs.ca/la-recherche/professeurs/valerie-langlois/"
+      logo: "/images/services/inrs.png"
+      display: true
+      
+    - name: "McGill / Frigon"
+      name_fr: "McGill / Frigon"
+      type: "research"
+      province: "Quebec"
+      description: "Metagenomics and wastewater treatment"
+      description_fr: "Métagénomique et traitement des eaux usées"
+      url: "https://www.mcgill.ca/civil/people-contacts/faculty/frigon"
+      logo: ""
+      display: false
+      
+    - name: "GEN-FISH"
+      name_fr: "GEN-FISH"
+      type: "research"
+      province: "Quebec"
+      description: "Fish species detection via qPCR"
+      description_fr: "Détection d'espèces de poissons via qPCR"
+      url: "https://gen-fish.ca/fr/"
+      logo: ""
+      display: false
+      
+    - name: "IBIS (Institut de biologie intégrative et des systèmes)"
+      name_fr: "IBIS (Institut de biologie intégrative et des systèmes)"
+      type: "analysis"
+      province: "Quebec"
+      description: "Integrative biology institute at Université Laval with genomic analysis platform and bioinformatics capabilities for eDNA research, including environmental DNA and RNA ecology studies"
+      description_fr: "Institut de biologie intégrative à l'Université Laval avec plateforme d'analyses génomiques et capacités bioinformatiques pour la recherche ADNe, incluant les études d'écologie de l'ADN et ARN environnemental"
+      url: "https://www.ibis.ulaval.ca/"
+      logo: "/images/services/ibis.png"
+      display: false
+      
+    - name: "Genovalia"
+      name_fr: "Genovalia"
+      type: ["analysis","storage"]
+      province: "Quebec"
+      description: "Non-human genomic data valorization center"
+      description_fr: "Centre de valorisation de données génomiques non humaines"
+      url: "https://genovalia.ulaval.ca/en/"
+      logo: "/images/services/genovalia.jpg"
+      display: true
+
+  # Canada
+  canada:
+    - name: "Helbing Lab (U. Victoria)"
+      name_fr: "Laboratoire Helbing (U. Victoria)"
+      type: "research"
+      province: "British Columbia"
+      description: "Standardization, eRNA and eDNA development, protocol validation"
+      description_fr: "Standardisation, développement eRNA et eDNA, validation de protocoles"
+      url: "https://www.uvic.ca/science/biology/people/faculty/helbing-caren.php"
+      logo: ""
+      display: false
+      
+    - name: "InnoTech Alberta"
+      name_fr: "InnoTech Alberta"
+      type: "analysis"
+      province: "Alberta"
+      description: "Applied technologies, development and field testing"
+      description_fr: "Technologies appliquées, développement et tests de terrain"
+      url: "https://www.innotechalberta.ca/"
+      logo: ""
+      display: false
+      
+    - name: "DFO Gulf Fisheries Centre (Atlantic Science Enterprise Centre)"
+      name_fr: "Centre des pêches du Golfe MPO (Centre d'entreprise scientifique de l'Atlantique)"
+      type: "analysis"
+      province: "New Brunswick"
+      description: "ISO 17025 accredited eDNA testing lab for aquatic invasive species detection"
+      description_fr: "Laboratoire d'analyse d'ADNe accrédité ISO 17025 pour la détection d'espèces aquatiques envahissantes"
+      url: "https://www.canada.ca/en/fisheries-oceans/news/2024/02/government-of-canada-research-facility-accredited-to-international-standards-for-edna-work-for-early-detection-of-aquatic-invasive-species.html"
+      logo: "/images/services/can-gov.png"
+      display: true
+      
+    - name: "DFO Freshwater Institute"
+      name_fr: "Institut des eaux douces MPO"
+      type: "analysis"
+      province: "Manitoba"
+      description: "Fisheries and Oceans Canada facility with eDNA capabilities for aquatic species monitoring"
+      description_fr: "Installation de Pêches et Océans Canada avec capacités d'ADNe pour la surveillance des espèces aquatiques"
+      url: "https://www.dfo-mpo.gc.ca/videos/freshwater-institute-institut-eaux-douces-eng.html"
+      logo: ""
+      display: false
+      
+    - name: "Parks Canada eDNA Program"
+      name_fr: "Programme ADNe de Parcs Canada"
+      type: "analysis"
+      province: "National"
+      description: "National park system using eDNA for biodiversity monitoring and species conservation across Canada"
+      description_fr: "Système de parcs nationaux utilisant l'ADNe pour la surveillance de la biodiversité et la conservation des espèces à travers le Canada"
+      url: "https://parks.canada.ca/nature/science/especes-species/adne-edna"
+      logo: ""
+      display: false
+      
+    - name: "Hakai Institute - Integrated Coastal Observatory (ICO)"
+      name_fr: "Institut Hakai - Observatoire côtier intégré (ICO)"
+      type: "analysis"
+      province: "British Columbia"
+      description: "Marine biodiversity monitoring using eDNA along BC coast, citizen science coordination, and invasive species detection"
+      description_fr: "Surveillance de la biodiversité marine utilisant l'ADNe le long de la côte de la C.-B., coordination de science citoyenne et détection d'espèces envahissantes"
+      url: "https://hakai.org/primed-to-detect-the-green-crab-invasion/"
+      logo: "/images/services/hakai.svg"
+      display: false
+      
+    - name: "BOLD (Barcode of Life Data System)"
+      name_fr: "BOLD (Système de données de codes-barres de la vie)"
+      type: ["database", "analysis"]
+      province: "Ontario"
+      description: "Global platform for DNA barcode data storage and analysis, hosted at University of Guelph"
+      description_fr: "Plateforme mondiale pour le stockage et l'analyse de données de codes-barres ADN, hébergée à l'Université de Guelph"
+      url: "https://www.boldsystems.org/"
+      logo: "/images/services/ibol.png"
+      display: false
+
+  # International
+  international:
+    - name: "GBIF (Global Biodiversity Information Facility)"
+      name_fr: "GBIF (Infrastructure mondiale d'information sur la biodiversité)"
+      type: "storage"
+      province: "International"
+      description: "Global network and data infrastructure providing open access to biodiversity data, including eDNA-derived occurrence records and sequence data"
+      description_fr: "Réseau mondial et infrastructure de données fournissant un accès libre aux données de biodiversité, incluant les enregistrements d'occurrence et données de séquences dérivées de l'ADNe"
+      url: "https://www.gbif.org/"
+      logo: "/images/services/gbif.png"
+      display: true
+
+      
+

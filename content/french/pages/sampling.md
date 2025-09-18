@@ -8,17 +8,49 @@ draft: false
 
 L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale dans l'analyse de la biodiversité. La TAQ connecte les clients avec des experts en échantillonnage qui utilisent des méthodes standardisées pour collecter des échantillons d'eau, de sol ou d'autres substrats environnementaux.
 
-### Services d'échantillonnage disponibles
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🌊</span>
+      <h5 class="text-body">Échantillonnage aquatique</h5>
+    </div>
+    <p class="text-body">Prélèvement d'échantillons d'eau dans les lacs, rivières, étangs et zones humides avec des protocoles standardisés</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🏔️</span>
+      <h5 class="text-body">Échantillonnage terrestre</h5>
+    </div>
+    <p class="text-body">Collecte d'échantillons de sol et de sédiments avec des méthodes validées et reproductibles</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">📋</span>
+      <h5 class="text-body">Protocoles standardisés</h5>
+    </div>
+    <p class="text-body">Application de méthodes validées et reproductibles garantissant la qualité et la fiabilité des données</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🎓</span>
+      <h5 class="text-body">Formation et accompagnement</h5>
+    </div>
+    <p class="text-body">Guidance professionnelle pour développer vos capacités d'échantillonnage internes et votre expertise</p>
+  </div>
+</div>
 
-- **Échantillonnage aquatique** : Prélèvement d'échantillons d'eau dans les lacs, rivières, étangs et zones humides
-- **Échantillonnage terrestre** : Collecte d'échantillons de sol et de sédiments
-- **Protocoles standardisés** : Application de méthodes validées et reproductibles
-- **Formation** : Accompagnement pour développer vos capacités d'échantillonnage internes
+<div class="flex flex-col items-center justify-center mb-2 mt-6">
+    <h3 class="font-bold text-gold">Fournisseurs de services d'échantillonnage ADNe</h3>
+    <p class="text-white">Connectez-vous avec des experts en échantillonnage certifiés et des institutions de recherche offrant des services de collecte d'ADN environnemental dans différentes régions.</p>
+</div>
 
-### Pourquoi choisir nos services ?
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10">
 
-Nos membres partenaires utilisent des protocoles éprouvés qui garantissent la qualité et la fiabilité des données ADNe. L'échantillonnage approprié est essentiel pour obtenir des résultats précis et exploitables pour la surveillance de la biodiversité et la prise de décision environnementale.
+{{< service-providers type="sampling" >}}
 
----
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 {{< edna-contact-form >}}

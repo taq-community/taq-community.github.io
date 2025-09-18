@@ -1,31 +1,50 @@
 ---
-title: "Laboratory analysis"
-meta_title: "Laboratory analysis"
+title: "Laboratory Analyses"
+meta_title: "Laboratory Analyses"
 description: "Environmental DNA laboratory analysis services"
 image: "/images/avatar.png"
 draft: false
 ---
 
-Laboratory analysis transforms your environmental samples into actionable biodiversity data. TAQ connects you with specialized laboratories that use advanced molecular techniques to detect and identify species present in your samples.
 
-### Available analysis services
+Laboratory analyses enable the extraction and amplification of genetic material contained in your samples. Once extraction and amplification are completed, several analyses can be performed using high-throughput sequencers. These analyses involve comparing the obtained genetic sequences with reference biobanks to identify individuals, species, or taxonomic groups to which the sequenced DNA fragments belong.
 
-- **Quantitative PCR (qPCR)**: Targeted detection of specific species
-- **Metabarcoding**: Identification of entire communities of organisms
-- **DNA fragment analysis**: Detailed characterization of genetic sequences
-- **Quality control**: Validation and verification of results
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🎯</span>
+      <h5 class="text-body">Quantitative PCR (qPCR)</h5>
+    </div>
+    <p class="text-body">Targeted detection of specific species with high precision and sensitivity</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🌿</span>
+      <h5 class="text-body">Metabarcoding</h5>
+    </div>
+    <p class="text-body">Identification of entire communities of organisms from environmental samples</p>
+  </div>
+  
+  <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
+    <div class="flex items-center mb-3">
+      <span class="text-2xl mr-3">🧩</span>
+      <h5 class="text-body">DNA Fragment Analysis</h5>
+    </div>
+    <p class="text-body">Detailed characterization and sequencing of genetic fragments</p>
+  </div>
+</div>
 
-### Cutting-edge technologies
+<div class="flex flex-col items-center justify-center mb-2 mt-6">
+    <h3 class="font-bold text-gold">Laboratories Offering eDNA Analysis Services</h3>
+    <p class="text-white">Explore certified laboratories and research institutions providing environmental DNA analysis services across different regions.</p>
+</div>
 
-Our partner laboratories use the latest sequencing and molecular analysis technologies to provide accurate, fast, and reliable results. Each analysis follows standardized protocols to ensure reproducibility and data comparability.
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10">
 
-### Applications
 
-- Invasive species monitoring
-- Detection of species at risk
-- Biodiversity assessment
-- Environmental impact studies
+{{< service-providers type="analysis" >}}
 
----
+<hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
 {{< edna-contact-form >}}

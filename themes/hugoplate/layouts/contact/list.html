@@ -25,7 +25,7 @@
             <div class="mb-6">
               <label for="email" class="form-label">
                 {{ if eq .Site.Language.Lang "fr" }}
-                  Adresse e-mail <span class="text-red-500">*</span>
+                  Adresse courriel <span class="text-red-500">*</span>
                 {{ else }}
                   Email <span class="text-red-500">*</span>
                 {{ end }}
@@ -46,6 +46,7 @@
                 name="message"
                 class="form-input"
                 placeholder="{{ if eq .Site.Language.Lang "fr" }}Votre message...{{ else }}Message goes here...{{ end }}"
+
                 rows="8"></textarea>
             </div>
             <button type="submit" class="btn btn-outline-primary">
