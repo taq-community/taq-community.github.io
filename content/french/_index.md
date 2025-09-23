@@ -1,7 +1,7 @@
 ---
 # Fonctionnalités
 features:
-  - title: "La Table québécoise de l'ADN environnemental (TAQ) réunit les parties prenantes autour de la science de l'ADNe au Québec."
+  - title: "La Table sur l'ADN environnemental du Québec (TAQ) réunit les parties prenantes autour de la science de l'ADNe au Québec."
     image: "/images/filter.jpg"
     content: "La TAQ connecte chercheurs, organisations privées et publiques, premières nations pour soutenir le développement et l'application des standards d'ADN environnemental (ADNe)."
     button:

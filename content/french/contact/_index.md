@@ -1,6 +1,6 @@
 ---
 title: "Contact"
 meta_title: "Contactez la TAQ"
-description: "Contactez la Table québécoise de l'ADN environnemental"
+description: "Contactez la Table sur l'ADN environnemental du Québec"
 draft: false
 ---
