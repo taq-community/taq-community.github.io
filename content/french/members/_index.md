@@ -1,4 +1,4 @@
 ---
-title: "Members List"
+title: "Membres"
 layout: "list"
 ---

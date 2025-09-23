@@ -1,4 +1,4 @@
-home: Acceuil
+home: Accueil
 read_more: Lire plus
 send: Envoyer
 related_posts: Articles similaires
@@ -12,3 +12,8 @@ search_initial_message: Tapper pour rechercher..
 search_navigate: Aller
 search_select: Seléctionner
 search_close: Fermer
+members: Membres
+committees: Comités
+documentation: Documentation
+news: Actualités
+contact: Contact
