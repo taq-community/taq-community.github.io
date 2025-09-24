@@ -24,10 +24,10 @@ providers:
       
     - name: "GEN-FISH"
       name_fr: "GEN-FISH"
-      type: "research"
+      type: ["research", "analysis"]
       province: "Quebec"
-      description: "Fish species detection via qPCR"
-      description_fr: "Détection d'espèces de poissons via qPCR"
+      description: "Fish species detection via qPCR, park-wide inventories, collaboration with Parks Canada"
+      description_fr: "Détection d'espèces de poissons via qPCR, inventaires à l'échelle de parcs, collaboration avec Parcs Canada"
       url: "https://gen-fish.ca/fr/"
       logo: ""
       display: false
@@ -51,16 +51,68 @@ providers:
       url: "https://genovalia.ulaval.ca/en/"
       logo: "/images/services/genovalia.jpg"
       display: true
+      
+    - name: "Bureau Veritas Laboratories - Quebec"
+      name_fr: "Laboratoires Bureau Veritas - Québec"
+      type: ["analysis", "certification"]
+      province: "Quebec"
+      description: "First Canadian laboratory ISO 17025 accredited for eDNA testing, IntegritE-DNA method licensed from UVic"
+      description_fr: "Premier laboratoire canadien accrédité ISO 17025 pour les tests d'ADNe, méthode IntegritE-DNA sous licence de UVic"
+      url: "https://www.bvna.com/environmental-ih-laboratories/services/environmental-dna"
+      logo: ""
+      display: false
 
-  # Canada
+  # Ontario
+  ontario:
+    - name: "Natural Resources DNA Profiling and Forensic Centre (NRDPFC)"
+      name_fr: "Centre de profilage ADN et de criminalistique des ressources naturelles (NRDPFC)"
+      type: ["analysis", "research", "forensic"]
+      province: "Ontario"
+      description: "Trent University facility providing eDNA testing, genetic analysis, wildlife forensics with 48-capillary ABI 3730 DNA analyzer"
+      description_fr: "Installation de l'Université Trent offrant des tests d'ADNe, analyses génétiques, criminalistique de la faune avec analyseur ADN ABI 3730 à 48 capillaires"
+      url: "https://nrdpfc.ca/"
+      logo: ""
+      display: false
+      
+    - name: "BOLD (Barcode of Life Data System)"
+      name_fr: "BOLD (Système de données de codes-barres de la vie)"
+      type: ["database", "analysis"]
+      province: "Ontario"
+      description: "Global platform for DNA barcode data storage and analysis, hosted at University of Guelph"
+      description_fr: "Plateforme mondiale pour le stockage et l'analyse de données de codes-barres ADN, hébergée à l'Université de Guelph"
+      url: "https://www.boldsystems.org/"
+      logo: "/images/services/ibol.png"
+      display: false
+      
+    - name: "Invasive Species Centre"
+      name_fr: "Centre des espèces envahissantes"
+      type: ["analysis", "monitoring"]
+      province: "Ontario"
+      description: "eDNA services for invasive species detection including zebra/quagga mussels, water soldier, hydrilla, marbled crayfish, hemlock woolly adelgid"
+      description_fr: "Services d'ADNe pour la détection d'espèces envahissantes incluant moules zébrées/quagga, soldat d'eau, hydrilla, écrevisse marbrée, puceron lanigère de la pruche"
+      url: "https://www.invasivespeciescentre.ca/edna/"
+      logo: ""
+      display: false
+
+  # Canada (Multi-provincial/Federal)
   canada:
     - name: "Helbing Lab (U. Victoria)"
       name_fr: "Laboratoire Helbing (U. Victoria)"
-      type: "research"
+      type: ["research", "standardization", "training"]
       province: "British Columbia"
-      description: "Standardization, eRNA and eDNA development, protocol validation"
-      description_fr: "Standardisation, développement eRNA et eDNA, validation de protocoles"
+      description: "Standardization, eRNA and eDNA development, protocol validation, IntegritE-DNA method development, iTrackDNA project lead"
+      description_fr: "Standardisation, développement eRNA et eDNA, validation de protocoles, développement de la méthode IntegritE-DNA, responsable du projet iTrackDNA"
       url: "https://www.uvic.ca/science/biology/people/faculty/helbing-caren.php"
+      logo: ""
+      display: false
+      
+    - name: "Living Lakes Canada - iTrackDNA"
+      name_fr: "Living Lakes Canada - iTrackDNA"
+      type: ["training", "sampling", "coordination"]
+      province: "National"
+      description: "Targeted eDNA training and coordination, community-based monitoring, Indigenous collaboration, 100 priority species assays development"
+      description_fr: "Formation et coordination d'ADNe ciblée, surveillance communautaire, collaboration autochtone, développement de tests pour 100 espèces prioritaires"
+      url: "https://livinglakescanada.ca/project/itrack-dna/"
       logo: ""
       display: false
       
@@ -96,17 +148,17 @@ providers:
       
     - name: "Parks Canada eDNA Program"
       name_fr: "Programme ADNe de Parcs Canada"
-      type: "analysis"
+      type: ["analysis", "monitoring"]
       province: "National"
-      description: "National park system using eDNA for biodiversity monitoring and species conservation across Canada"
-      description_fr: "Système de parcs nationaux utilisant l'ADNe pour la surveillance de la biodiversité et la conservation des espèces à travers le Canada"
+      description: "National park system using eDNA for biodiversity monitoring, invasive species detection, and species conservation across Canada"
+      description_fr: "Système de parcs nationaux utilisant l'ADNe pour la surveillance de la biodiversité, détection d'espèces envahissantes et conservation des espèces à travers le Canada"
       url: "https://parks.canada.ca/nature/science/especes-species/adne-edna"
-      logo: ""
+      logo: "/images/services/parks-canada.png"
       display: false
       
     - name: "Hakai Institute - Integrated Coastal Observatory (ICO)"
       name_fr: "Institut Hakai - Observatoire côtier intégré (ICO)"
-      type: "analysis"
+      type: ["analysis", "research"]
       province: "British Columbia"
       description: "Marine biodiversity monitoring using eDNA along BC coast, citizen science coordination, and invasive species detection"
       description_fr: "Surveillance de la biodiversité marine utilisant l'ADNe le long de la côte de la C.-B., coordination de science citoyenne et détection d'espèces envahissantes"
@@ -114,14 +166,24 @@ providers:
       logo: "/images/services/hakai.svg"
       display: false
       
-    - name: "BOLD (Barcode of Life Data System)"
-      name_fr: "BOLD (Système de données de codes-barres de la vie)"
-      type: ["database", "analysis"]
-      province: "Ontario"
-      description: "Global platform for DNA barcode data storage and analysis, hosted at University of Guelph"
-      description_fr: "Plateforme mondiale pour le stockage et l'analyse de données de codes-barres ADN, hébergée à l'Université de Guelph"
-      url: "https://www.boldsystems.org/"
-      logo: "/images/services/ibol.png"
+    - name: "Stantec Environmental Services"
+      name_fr: "Services environnementaux Stantec"
+      type: ["consulting", "sampling", "analysis"]
+      province: "National"
+      description: "Environmental consulting with eDNA services, 125+ species-specific assays, 20+ trained staff, global reach with laboratory partnerships"
+      description_fr: "Consultation environnementale avec services d'ADNe, 125+ tests spécifiques aux espèces, 20+ personnel formé, portée mondiale avec partenariats de laboratoires"
+      url: "https://www.stantec.com/en/services/digital/edna"
+      logo: ""
+      display: false
+      
+    - name: "eDNAtec"
+      name_fr: "eDNAtec"
+      type: ["analysis", "consulting"]
+      province: "Newfoundland and Labrador"
+      description: "Environmental genomics specialists, EnviroSeq workflow, marine and terrestrial ecosystem monitoring, standardized protocols"
+      description_fr: "Spécialistes en génomique environnementale, workflow EnviroSeq, surveillance des écosystèmes marins et terrestres, protocoles standardisés"
+      url: "https://ednatec.com/"
+      logo: ""
       display: false
 
   # International
@@ -135,6 +197,85 @@ providers:
       url: "https://www.gbif.org/"
       logo: "/images/services/gbif.png"
       display: true
-
       
+    - name: "SPYGEN"
+      name_fr: "SPYGEN"
+      type: ["analysis", "research", "kits"]
+      province: "International"
+      description: "Service and research laboratory specializing in aquatic and terrestrial biodiversity monitoring using eDNA, VigiDNA technology, 6 international patents"
+      description_fr: "Laboratoire de service et de recherche spécialisé dans la surveillance de la biodiversité aquatique et terrestre utilisant l'ADNe, technologie VigiDNA, 6 brevets internationaux"
+      url: "https://www.spygen.com/"
+      logo: ""
+      display: false
+      
+    - name: "NatureMetrics"
+      name_fr: "NatureMetrics"
+      type: ["analysis", "consulting", "platform"]
+      province: "International"
+      description: "End-to-end nature reporting service, eDNA-powered biodiversity monitoring platform, business nature impact assessment, $2.8 billion in prevented project delays"
+      description_fr: "Service de rapport sur la nature de bout en bout, plateforme de surveillance de la biodiversité alimentée par l'ADNe, évaluation de l'impact commercial sur la nature, 2,8 milliards $ de retards de projet évités"
+      url: "https://www.naturemetrics.com/"
+      logo: ""
+      display: false
+      
+    - name: "WilderLab"
+      name_fr: "WilderLab"
+      type: ["analysis", "kits"]
+      province: "International"
+      description: "Testing kits and analysis services for rare and invasive species detection, ecosystem health evaluation, environmental impact assessment, based in New Zealand"
+      description_fr: "Kits de test et services d'analyse pour la détection d'espèces rares et envahissantes, évaluation de la santé des écosystèmes, évaluation d'impact environnemental, basé en Nouvelle-Zélande"
+      url: "https://www.wilderlab.co.nz/"
+      logo: ""
+      display: false
+      
+    - name: "Cornell eDNA & Genomics Core Facility (EGCF)"
+      name_fr: "Installation centrale eDNA et génomique de Cornell (EGCF)"
+      type: ["research", "analysis"]
+      province: "International"
+      description: "Research and consulting facility with dedicated clean labs for eDNA analysis, collaboration with international agencies including Parks Canada"
+      description_fr: "Installation de recherche et de consultation avec laboratoires propres dédiés pour l'analyse d'ADNe, collaboration avec agences internationales incluant Parcs Canada"
+      url: "https://genomics-edna.cornell.edu/"
+      logo: ""
+      display: false
+      
+    - name: "Genidaqs"
+      name_fr: "Genidaqs"
+      type: ["analysis", "consulting"]
+      province: "International"
+      description: "eDNA project design from start to finish, 20 years of experience, Alpine to marine environments, quantitative PCR assays, metabarcoding"
+      description_fr: "Conception de projets d'ADNe de A à Z, 20 ans d'expérience, environnements alpins à marins, tests qPCR quantitatifs, métacodage à barres"
+      url: "https://genidaqs.com/"
+      logo: ""
+      display: false
+      
+    - name: "Applied Genomics Ltd (UK)"
+      name_fr: "Applied Genomics Ltd (Royaume-Uni)"
+      type: ["analysis"]
+      province: "International"
+      description: "Environmental DNA-based analysis services for detection, monitoring and management of biological diversity"
+      description_fr: "Services d'analyse basés sur l'ADN environnemental pour la détection, surveillance et gestion de la diversité biologique"
+      url: "https://appliedgenomics.co.uk/"
+      logo: ""
+      display: false
+      
+    - name: "EnviroDNA (Australia)"
+      name_fr: "EnviroDNA (Australie)"
+      type: ["analysis", "consulting"]
+      province: "International"
+      description: "eDNA services for biodiversity conservation, biosecurity & agriculture, citizen science, and research applications"
+      description_fr: "Services d'ADNe pour la conservation de la biodiversité, biosécurité et agriculture, science citoyenne, et applications de recherche"
+      url: "https://www.envirodna.com/"
+      logo: ""
+      display: false
 
+  # Nouveaux ajouts - Organisations de formation et certification
+  training_certification:
+    - name: "Genome Canada eDNA Surveillance Program"
+      name_fr: "Programme de surveillance ADNe de Génome Canada"
+      type: ["training", "funding", "standardization"]
+      province: "National"
+      description: "12 projects building eDNA surveillance capacity, $11.3M investment, training for Indigenous communities, data standards development"
+      description_fr: "12 projets développant la capacité de surveillance ADNe, investissement de 11,3M$, formation pour les communautés autochtones, développement de normes de données"
+      url: "https://genomecanada.ca/edna-surveillance-announcement/"
+      logo: ""
+      display: false
