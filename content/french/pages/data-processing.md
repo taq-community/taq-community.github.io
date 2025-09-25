@@ -14,7 +14,7 @@ Le traitement des données ADNe transforme les résultats bruts de laboratoire e
       <span class="text-2xl mr-3">🧬</span>
       <h5 class="text-body">Analyse bioinformatique</h5>
     </div>
-    <p class="text-body">Traitement des séquences d'ADN et identification taxonomique avec des méthodes computationnelles avancées</p>
+    <p class="text-body">Traitement des séquences d'ADN et identification taxonomique avec des méthodes computationnelles</p>
   </div>
   
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
@@ -22,7 +22,7 @@ Le traitement des données ADNe transforme les résultats bruts de laboratoire e
       <span class="text-2xl mr-3">📊</span>
       <h5 class="text-body">Analyse statistique</h5>
     </div>
-    <p class="text-body">Évaluation de la diversité, abondance et distribution des espèces avec des méthodes statistiques robustes</p>
+    <p class="text-body">Évaluation de la diversité, abondance et distribution des espèces avec des méthodes statistiques.</p>
   </div>
   
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
@@ -30,7 +30,7 @@ Le traitement des données ADNe transforme les résultats bruts de laboratoire e
       <span class="text-2xl mr-3">📈</span>
       <h5 class="text-body">Visualisation des données</h5>
     </div>
-    <p class="text-body">Création de graphiques, cartes et rapports interprétatifs pour une communication claire des données</p>
+    <p class="text-body">Création de graphiques, cartes et rapports</p>
   </div>
   
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

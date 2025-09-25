@@ -38,7 +38,7 @@ L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale
       <span class="text-2xl mr-3">🎓</span>
       <h5 class="text-body">Formation et accompagnement</h5>
     </div>
-    <p class="text-body">Guidance professionnelle pour développer vos capacités d'échantillonnage internes et votre expertise</p>
+    <p class="text-body">Accompagnement professionnelle pour développer vos capacités d'échantillonnage</p>
   </div>
 </div>
 

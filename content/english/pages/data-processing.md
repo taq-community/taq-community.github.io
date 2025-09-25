@@ -22,7 +22,7 @@ eDNA data processing transforms raw laboratory results into actionable scientifi
       <span class="text-2xl mr-3">📊</span>
       <h5 class="text-body">Statistical Analysis</h5>
     </div>
-    <p class="text-body">Assessment of species diversity, abundance and distribution with robust statistical methods</p>
+    <p class="text-body">Assessment of species diversity, abundance and distribution with statistical methods</p>
   </div>
   
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
@@ -30,7 +30,7 @@ eDNA data processing transforms raw laboratory results into actionable scientifi
       <span class="text-2xl mr-3">📈</span>
       <h5 class="text-body">Data Visualization</h5>
     </div>
-    <p class="text-body">Creation of graphs, maps and interpretive reports for clear data communication</p>
+    <p class="text-body">Creation of graphs, maps and interpretive reports</p>
   </div>
   
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

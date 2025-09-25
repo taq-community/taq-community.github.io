@@ -38,7 +38,7 @@ Environmental DNA (eDNA) sampling is the crucial first step in biodiversity anal
       <span class="text-2xl mr-3">🎓</span>
       <h5 class="text-body">Training & Support</h5>
     </div>
-    <p class="text-body">Professional guidance to develop your internal sampling capabilities and expertise</p>
+    <p class="text-body">Professional guidance to develop your sampling capabilities and expertise</p>
   </div>
 </div>
 
