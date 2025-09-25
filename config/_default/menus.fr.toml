@@ -91,10 +91,10 @@ url = "https://forms.gle/WCvUnvtjezjfU8x37"
 rel = 'external'
 
 # Actualités
-[[main]]
-name = "Actualités"
-url = "/news"
-weight = 4
+# [[main]]
+# name = "Actualités"
+# url = "/news"
+# weight = 4
 
 
 # Menu de pied de page
