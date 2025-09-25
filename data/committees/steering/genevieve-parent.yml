@@ -4,10 +4,12 @@ lastname: Parent
 image: ""
 
 # English content
+title_taq_en: "Executive Committee Member"
 affiliation_en: "Fisheries and Oceans Canada"
 title_en: "Research scientist"
 
 # French content
+title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Pêches et océan Canada"
 title_fr: "Chercheuse"
 

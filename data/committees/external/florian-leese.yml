@@ -4,10 +4,12 @@ lastname: Leese
 image: ""
 
 # English content
+title_taq_en: "External Committee Member"
 affiliation_en: "University of Duisburg-Essen, Germany"
-title_en: "Professor (Full Professor) in Aquatic Ecosystem Research"
+title_en: "Professor in Aquatic Ecosystem Research"
 
 # French content
+title_taq_fr: "Membre du comité externe"
 affiliation_fr: "Université de Duisburg-Essen, Allemagne"
 title_fr: "Professeur titulaire en recherche sur les écosystèmes aquatiques"
 

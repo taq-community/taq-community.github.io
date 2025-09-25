@@ -4,10 +4,12 @@ lastname: Lucas
 image: "images/comitee-members/aurore-lucas.jpeg"
 
 # English content
+title_taq_en: "Executive Committee Member"
 affiliation_en: "City of Rouyn-Noranda"
 title_en: "Projects manager"
 
 # French content
+title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Ville de Rouyn-Noranda"
 title_fr: "Chargé de projets"
 
