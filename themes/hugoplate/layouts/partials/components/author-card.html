@@ -16,11 +16,10 @@
   {{ end }}
   
   <div class="w-48 h-48 mb-4 overflow-hidden rounded-full border-2 border-gold">
-    {{ if $image }}
+    {{ if and $image (ne $image "") }}
     {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-full object-cover" ) }}
     {{ else }}
-    <img class="w-full h-full object-cover" alt="{{ .firstname }} {{ .lastname }}"
-      src="https://www.gravatar.com/avatar/{{ md5 .email }}?s=128&pg&d=identicon" />
+    {{ partial "image" (dict "Src" "/images/avatar.png" "Context" .Page "Alt" (.firstname | default "Member") "Class" "w-full h-full object-cover" ) }}
     {{ end }}
   </div>
 
@@ -37,8 +36,8 @@
   {{ if .role }}
     <p class="text-white">{{ .role }}</p>
   {{ end }}
-  {{ if $currentSummary }}
-    <p class="text-sm text-white my-4">{{ $currentSummary }}</p>
+  {{ if and $currentSummary (ne $currentSummary "") }}
+    <p class="text-sm text-white">{{ $currentSummary }}</p>
   {{ end }}
   <div class="flex justify-center space-x-4">
     {{ range .social }}

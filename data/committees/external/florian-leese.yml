@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Florian
+lastname: Leese
+image: ""
+
+# English content
+affiliation_en: "University of Duisburg-Essen, Germany"
+title_en: "Professor (Full Professor) in Aquatic Ecosystem Research"
+
+# French content
+affiliation_fr: "Université de Duisburg-Essen, Allemagne"
+title_fr: "Professeur titulaire en recherche sur les écosystèmes aquatiques"
+
+# Social links (shared)
+social: []

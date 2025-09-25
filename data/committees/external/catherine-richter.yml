@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Catherine
+lastname: Richter
+image: ""
+
+# English content
+affiliation_en: "U.S. Geological Survey, Columbia Environmental Research Center"
+title_en: "Research Molecular Biologist"
+
+# French content
+affiliation_fr: "U.S. Geological Survey, Columbia Environmental Research Center"
+title_fr: "Biologiste moléculaire de recherche"
+
+# Social links (shared)
+social: []

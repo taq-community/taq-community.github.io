@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Aurore
+lastname: Lucas
+image: "images/comitee-members/aurore-lucas.jpeg"
+
+# English content
+affiliation_en: "City of Rouyn-Noranda"
+title_en: "Projects manager"
+
+# French content
+affiliation_fr: "Ville de Rouyn-Noranda"
+title_fr: "Chargé de projets"
+
+# Social links (shared)
+social: []

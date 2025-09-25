@@ -6,14 +6,10 @@
     <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
       <h2 class="h3 mb-8">{{ if eq site.Language.Lang "fr" }}Comité de direction{{ else }}Steering Committee{{ end }}</h2>
       <div class="row">
-        {{ if site.Data.committees.steering }}
-          {{ range $member := sort site.Data.committees.steering "sort_order" "asc" }}
-            <div class="md:col-3 lg:col-4 mb-14">
-              {{ partial "components/author-card" $member }}
-            </div>
-          {{ end }}
-        {{ else }}
-          <p class="text-center w-full">{{ if eq site.Language.Lang "fr" }}Aucun membre pour le moment{{ else }}No members yet{{ end }}</p>
+        {{ range $member := sort site.Data.committees.steering "sort_order" "asc" }}
+          <div class="md:col-3 lg:col-4 mb-14">
+            {{ partial "components/author-card" $member }}
+          </div>
         {{ end }}
       </div>
     </div>
@@ -24,14 +20,10 @@
     <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
       <h2 class="h3 mb-8">{{ if eq site.Language.Lang "fr" }}Comité externe{{ else }}External Committee{{ end }}</h2>
       <div class="row">
-        {{ if site.Data.committees.external }}
-          {{ range $member := sort site.Data.committees.external "sort_order" "asc" }}
-            <div class="md:col-3 lg:col-4 mb-14">
-              {{ partial "components/author-card" $member }}
-            </div>
-          {{ end }}
-        {{ else }}
-          <p class="text-center w-full">{{ if eq site.Language.Lang "fr" }}Aucun membre pour le moment{{ else }}No members yet{{ end }}</p>
+        {{ range $member := sort site.Data.committees.external "sort_order" "asc" }}
+          <div class="md:col-3 lg:col-4 mb-14">
+            {{ partial "components/author-card" $member }}
+          </div>
         {{ end }}
       </div>
     </div>

@@ -2,30 +2,30 @@
 
 # Menu principal
 [[main]]
-name = "Qu'est-ce que la TAQ ?"
+name = "Qu'est-ce que la TAQ?"
 weight = 1
 url = "#"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Mission"
 weight = 11
 url = "/"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Comités"
 weight = 12
 url = "/committees"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Gouvernance"
 weight = 13
 url = "/governance"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Historique"
 weight = 14
 url = "/history"
@@ -44,7 +44,7 @@ weight = 2
 
 [[main]]
 parent = "Services en ADNe"
-name = "Qu’est-ce que l’ADNe ?"
+name = "Qu'est-ce que l'ADNe ?"
 weight= 21
 url = "/adne"
 

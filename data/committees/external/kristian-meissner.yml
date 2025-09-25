@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Kristian
+lastname: Meissner
+image: ""
+
+# English content
+affiliation_en: "Finnish Environment Institute (SYKE)"
+title_en: "Development Manager & Head of Jyväskylä office"
+
+# French content
+affiliation_fr: "Institut finlandais de l'environnement (SYKE)"
+title_fr: "Gestionnaire de développement et chef du bureau de Jyväskylä"
+
+# Social links (shared)
+social: []

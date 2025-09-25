@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Martin
+lastname: Laporte
+image: ""
+
+# English content
+affiliation_en: "Gouvernement du Québec"
+title_en: ""
+
+# French content
+affiliation_fr: "Gouvernement du Québec"
+title_fr: ""
+
+# Social links (shared)
+social: []

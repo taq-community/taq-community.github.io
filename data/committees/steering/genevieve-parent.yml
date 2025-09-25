@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Geneviève
+lastname: Parent
+image: ""
+
+# English content
+affiliation_en: "Fisheries and Oceans Canada"
+title_en: "Research scientist"
+
+# French content
+affiliation_fr: "Pêches et océan Canada"
+title_fr: "Chercheuse"
+
+# Social links (shared)
+social: []

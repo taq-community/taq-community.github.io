@@ -1,0 +1,17 @@
+# Basic info (shared)
+firstname: Yann
+lastname: Surget-Groba
+image: "images/comitee-members/yann-surget-groba.jpg"
+
+# English content
+affiliation_en: "Université du Québec en Outaouais"
+title_en: "Professor"
+summary_en: ""
+
+# French content
+affiliation_fr: "UQO"
+title_fr: ""
+summary_fr: ""
+
+# Social links (shared)
+social: []

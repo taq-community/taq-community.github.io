@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Guillaume
+lastname: Côté
+image: ""
+
+# English content
+affiliation_en: "Direction de l'expertise sur la faune aquatique, MFFP"
+title_en: "Biologist"
+
+# French content
+affiliation_fr: "Direction de l'expertise sur la faune aquatique, MFFP"
+title_fr: "Biologiste"
+
+# Social links (shared)
+social: []

@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Diana
+lastname: Iglesias
+image: "images/comitee-members/diana-iglesias.jpg"
+
+# English content
+affiliation_en: "Genome Quebec"
+title_en: "Director, Innovation and Programs"
+
+# French content
+affiliation_fr: "Génome Québec"
+title_fr: "Directrice, Innovation et programmes"
+
+# Social links (shared)
+social: []

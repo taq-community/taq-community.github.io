@@ -1,0 +1,15 @@
+# Basic info (shared)
+firstname: Caren
+lastname: Helbing
+image: ""
+
+# English content
+affiliation_en: "University of Victoria"
+title_en: "Professor"
+
+# French content
+affiliation_fr: "Université de Victoria"
+title_fr: "Professeure"
+
+# Social links (shared)
+social: []
