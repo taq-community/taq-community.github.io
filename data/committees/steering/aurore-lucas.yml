@@ -2,6 +2,7 @@
 firstname: Aurore
 lastname: Lucas
 image: "images/comitee-members/aurore-lucas.jpeg"
+sort_order: 3
 
 # English content
 title_taq_en: "Executive Committee Member"

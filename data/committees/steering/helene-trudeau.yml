@@ -2,6 +2,7 @@
 firstname: Hélène
 lastname: Trudeau
 image: "images/comitee-members/helene-trudeau.jpg"
+sort_order: 3
 
 # English content
 title_taq_en: "Executive Committee Member"
