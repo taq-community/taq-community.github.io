@@ -54,11 +54,11 @@ La TAQ comprend les catégories de membres suivantes :
 
 La gouvernance de la TAQ respecte le modèle de gouvernance basé sur les résultats. Ce modèle peut être modifié par décision du comité de direction ou lorsqu’un processus de subvention le requière. 
 
-### 5.1 Definition des dirigeants
+### 5.1 Définition des dirigeants
 
 Le **Directeur** ou la **Directrice** est identifié.e comme le ou la responsable de la TAQ. Le mandat est de 3 ans. En cas de désistement, le co-directeur ou la co-directrice assume alors la durée résiduelle du mandat du directeur ou de la directrice. Il est recommandé que les deux postes de direction et de codirection ne se terminent pas la même année afin de favoriser le transfert de la mémoire collective. Dans ce cas, si le codirecteur ou la co-directrice ne veut pas prendre le relais, le directeur ou la directrice peut avoir un deuxième mandat de 3 ans. Un maximum de 3 mandats est possible.
 
-Le **Co-directeur** ou la **Co-directrice** assiste le directeur ou la directrice dans ses responsabilités. Le mandat du co-directeur ou de la co-directrice est de 3 ans. En cas de désistement du co-directeur ou de la co-directrice ou de sa nomination comme directeur.rice suppléant.e, un co-directeur ou une co-directrice par intérim sera nommée par le comité de direction pour la durée résiduelle du mandat. Il est préférable que le co-directeur ou la co-directrice devienne le directeur ou la directrice au terme de son mandat de 3 ans afin d’assurer le transfert de la mémoire collective.
+Le **Co-directeur** ou la **Co-directrice** assiste le directeur ou la directrice dans ses responsabilités. Le mandat du co-directeur ou de la co-directrice est de 3 ans. En cas de désistement du co-directeur ou de la co-directrice ou de sa nomination comme directeur.rice suppléant.e, un co-directeur ou une co-directrice par intérim sera nommé par le comité de direction pour la durée résiduelle du mandat. Il est préférable que le co-directeur ou la co-directrice devienne le directeur ou la directrice au terme de son mandat de 3 ans afin d’assurer le transfert de la mémoire collective.
 
 L’équipe de direction et codirection de la TAQ se partagent les rôles de direction et de gestion de la Table. Leur rôle premier est d’inspirer les membres et de faire une gestion positive et saine de la Table. À la fin de leurs mandats, un appel de candidatures est ouvert et l’équipe de direction assure une transition efficace. 
 
@@ -68,9 +68,9 @@ Le **Coordonnateur** ou la **Coordonnatrice** relève directement de l’équipe
 
 Le **Comité de direction** a la responsabilité de planifier stratégiquement les différentes activités de la Table et d’évaluer les accomplissements de celle-ci. Il est composé de l’équipe de direction et codirection de la TAQ, du coordonnateur ou de la coordonnatrice de la TAQ ainsi que de 8-10 membres fournisseurs et utilisateurs de services représentant le plus de secteurs économiques de la TAQ.
 
-Un **Comité externe d’orientation** guide le comité scientifique annuellement. Le comité d’orientation est composé de deux personnes représentant deux ministères du gouvernement fédéral canadien et trois experts internationaux, ainsi que la participation de l’équipe de direction, codirection et de coordination de la TAQ.
+Le **Comité externe d’orientation** guide le comité scientifique annuellement. Le comité d’orientation est composé de deux personnes représentant deux ministères du gouvernement fédéral canadien et trois experts internationaux, ainsi que la participation de l’équipe de direction, codirection et de coordination de la TAQ.
 
-## 6. Membership procedure
+## 6. Procédure d'adhésion
 
 Une personne ou organisation intéressée à se joindre à la TAQ doit remplir le [formulaire d’adhésion](https://forms.gle/7dGYZ1wbfJAusiRD9).
 
