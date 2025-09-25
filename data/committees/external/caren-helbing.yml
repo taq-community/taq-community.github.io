@@ -1,0 +1,17 @@
+# Basic info (shared)
+firstname: Caren
+lastname: Helbing
+image: "images/comitee-members/caren-helbing.jpg"
+
+# English content
+title_taq_en: "External Committee Member"
+affiliation_en: "University of Victoria"
+title_en: "Professor"
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Université de Victoria"
+title_fr: "Professeure"
+
+# Social links (shared)
+social: []

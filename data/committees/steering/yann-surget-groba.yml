@@ -1,0 +1,19 @@
+# Basic info (shared)
+firstname: Yann
+lastname: Surget-Groba
+image: "images/comitee-members/yann-surget-groba.jpg"
+
+# English content
+title_taq_en: "Executive Committee Member"
+affiliation_en: "Université du Québec en Outaouais"
+title_en: "Professor"
+#summary_en: ""
+
+# French content
+title_taq_fr: "Membre du comité de direction"
+affiliation_fr:  "Université du Québec en Outaouais"
+title_fr: "Professeur"
+#summary_fr: ""
+
+# Social links (shared)
+social: []

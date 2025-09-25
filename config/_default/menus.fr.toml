@@ -2,33 +2,33 @@
 
 # Menu principal
 [[main]]
-name = "Qu’est-ce que la TAQ ?"
+name = "Qu'est-ce que la TAQ?"
 weight = 1
-url = "/"
+url = "#"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Mission"
-weight = 10
+weight = 11
 url = "/"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
+name = "Comités"
+weight = 12
+url = "/committees"
+
+[[main]]
+parent = "Qu'est-ce que la TAQ?"
 name = "Gouvernance"
-weight = 20
+weight = 13
 url = "/governance"
 
 [[main]]
-parent = "Qu’est-ce que la TAQ ?"
+parent = "Qu'est-ce que la TAQ?"
 name = "Historique"
-weight = 30
+weight = 14
 url = "/history"
-
-# [[main]]
-# parent = "Qu’est-ce que la TAQ ?"
-# name = "Comité de direction"
-# weight = "40"
-# url = "/steering-committee"
 
 # Documentation
 [[main]]
@@ -44,32 +44,32 @@ weight = 2
 
 [[main]]
 parent = "Services en ADNe"
-name = "Qu’est-ce que l’ADNe ?"
-weight=10
+name = "Qu'est-ce que l'ADNe ?"
+weight= 21
 url = "/adne"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Échantillonnage"
-weight = 20
+weight = 22
 url = "/sampling"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Analyses en laboratoire"
-weight=30
+weight= 23
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Traitement des données"
-weight=40
+weight= 24
 url = "/data-processing"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Formation"
-weight=50
+weight= 5
 url = "/training"
 
 # Membres

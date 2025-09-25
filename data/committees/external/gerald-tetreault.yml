@@ -1,0 +1,17 @@
+# Basic info (shared)
+firstname: Gerald
+lastname: Tetreault
+image: ""
+
+# English content
+title_taq_en: "External Committee Member"
+affiliation_en: "Environment and Climate Change Canada"
+title_en: "Research Scientist"
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Environnement et Changement climatique Canada"
+title_fr: "Scientifique de recherche"
+
+# Social links (shared)
+social: []

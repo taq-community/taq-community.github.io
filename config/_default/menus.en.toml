@@ -4,31 +4,32 @@
 [[main]]
 name = "What's the TAQ?"
 weight = 1
-url = "/"
+url = "#"
 
 [[main]]
 parent = "What's the TAQ?"
 name = "Mission"
-weight = 10
+weight = 11
 url = "/"
 
 [[main]]
 parent = "What's the TAQ?"
+name = "Committees"
+weight = 12
+url = "/committees"
+
+[[main]]
+parent = "What's the TAQ?"
 name = "Governance"
-weight = 20
+weight = 13
 url = "/governance"
 
 [[main]]
 parent = "What's the TAQ?"
 name = "History"
-weight = 30
+weight = 14
 url = "/history"
 
-# [[main]]
-# parent = "What's the TAQ?"
-# name = "Steering Committee"
-# weight = "40"
-# url = "/steering-committee"
 
 # Documentation
 [[main]]
@@ -41,6 +42,7 @@ weight = 5
 [[main]]
 name = "ADNe Services"
 weight = 2
+url = "#"
 
 [[main]]
 parent = "ADNe Services"
@@ -76,6 +78,7 @@ url = "/training"
 [[main]]
 name = "Members"
 weight = 3
+url = "#"
 
 [[main]]
 parent = "Members"
