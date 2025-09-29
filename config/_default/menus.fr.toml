@@ -69,7 +69,7 @@ url = "/data-processing"
 [[main]]
 parent = "Services en ADNe"
 name = "Formation"
-weight= 5
+weight= 25
 url = "/training"
 
 # Membres
