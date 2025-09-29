@@ -69,4 +69,4 @@ A person or organization interested in joining TAQ must complete the [membership
 
 ## 7. Approval and Modification of Statutes
 
-The steering committee approves these statutes on its own initiative. All TAQ members may propose modifications to the statutes. Any proposed modification to the statutes must be approved by the steering committee.RetryClaude can make mistakes. Please double-check responses.Research Sonnet 4.5
+The steering committee approves these statutes on its own initiative. All TAQ members may propose modifications to the statutes. Any proposed modification to the statutes must be approved by the steering committee.

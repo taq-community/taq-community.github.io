@@ -68,4 +68,4 @@ Une personne ou organisation intéressée à se joindre à la TAQ doit remplir l
 
 ## 7. Approbation et modifications des statuts
 
-Le comité de direction approuve les présents statuts de sa propre initiative. Tous les membres de la TAQ peuvent proposer des modifications aux statuts. Toute proposition de modification des statuts doit être approuvée par le comité de direction.RetryClaude can make mistakes. Please double-check responses.Research Sonnet 4.5
+Le comité de direction approuve les présents statuts de sa propre initiative. Tous les membres de la TAQ peuvent proposer des modifications aux statuts. Toute proposition de modification des statuts doit être approuvée par le comité de direction.

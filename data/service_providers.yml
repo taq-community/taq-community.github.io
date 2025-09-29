@@ -44,7 +44,7 @@ providers:
       
     - name: "Genovalia"
       name_fr: "Genovalia"
-      type: ["analysis","storage"]
+      type: ["storage"]
       province: "Quebec"
       description: "Non-human genomic data valorization center"
       description_fr: "Centre de valorisation de données génomiques non humaines"
