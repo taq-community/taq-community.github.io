@@ -1,37 +1,39 @@
-<div class="bg-body ">
+<div class="bg-body border border-gray-200 rounded-lg border-gold shadow-sm hover:shadow-md transition-shadow overflow-hidden">
   {{ $image:= .Params.image }}
   {{ if $image }}
-    {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "mb-6 w-full rounded") }}
+  {{ partial "image" (dict "Src" $image "Context" .Page "Alt" .Title "Class" "w-full h-48 object-cover")}}
   {{ end }}
-  <h4 class="mb-3">
-    <a href="{{ .RelPermalink }}">
-      {{ .Title }}
-    </a>
-  </h4>
-  {{ $categories:= .Params.categories }}
-  {{ if $categories }}
-    <ul class="mb-4">
+  <div class="p-6">
+    <h5 class="mb-3 text-gold">
+      <a href="{{ .RelPermalink }}" class="hover:text-primary transition-colors">
+        {{ .Title }}
+      </a>
+    </h5>
+    {{ $categories:= .Params.categories }}
+    {{ if $categories }}
+    <ul class="mb-4 space-y-2">
       <li class="mr-4 inline-block">
-        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/">
+        <a href="{{ `authors/` | relLangURL }}{{ .Params.Author | urlize }}/"
+          class="hover:text-primary transition-colors">
           <i class="fa-regular fa-circle-user mr-2"></i>{{ .Params.author }}
         </a>
       </li>
       <li class="mr-4 inline-block">
         <i class="fa-regular fa-folder mr-1"></i>
-        {{ range $i,$p:= $categories }}
-          <a
-            href="{{ `categories/` | relLangURL }}{{ . | urlize | lower }}/"
-            class="ms-1"
-            >{{ . | humanize }}{{ if ne $i (sub (len $categories) 1) }}
-              {{ "," }}
-            {{ end }}
-          </a>
+        {{ range $i, $category := $categories }}
+        <a href="{{ `categories/` | relLangURL }}{{ $category | urlize | lower }}/"
+          class="ms-1 hover:text-primary transition-colors">
+          {{ $category | humanize }}
+        </a>
+        {{ if ne $i (sub (len $categories) 1) }},{{ end }}
         {{ end }}
       </li>
     </ul>
-  {{ end }}
-  <p class="mb-6">{{ .Summary | plainify }}</p>
-  <a class="btn btn-outline-primary btn-sm" href="{{ .RelPermalink }}">
-    {{ T "read_more" }}
-  </a>
+    {{ end }}
+    <p class="mb-6 text-justify">{{ .Summary }}</p>
+    <a class="btn btn-outline-primary btn-sm rounded-full hover:bg-primary hover:text-white transition-all"
+      href="{{ .RelPermalink }}">
+      {{ T "read_more" }}
+    </a>
+  </div>
 </div>

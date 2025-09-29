@@ -36,7 +36,8 @@
   @apply prose-img:max-w-full prose-img:rounded;
   @apply prose-hr:border-border;
   @apply prose-p:text-base prose-p:text-text;
-  @apply prose-blockquote:rounded-lg prose-blockquote:border prose-blockquote:border-l-[10px] prose-blockquote:border-primary prose-blockquote:bg-light prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-text-dark;
+  @apply prose-blockquote:rounded-lg prose-blockquote:border-0 prose-blockquote:bg-semigold prose-blockquote:px-8 prose-blockquote:py-10 prose-blockquote:font-secondary prose-blockquote:text-2xl prose-blockquote:not-italic prose-blockquote:text-body prose-blockquote:before:content-none prose-blockquote:after:content-none;
+  @apply prose-blockquote:prose-p:text-body;
   @apply prose-pre:rounded-lg prose-pre:bg-light;
   @apply prose-code:px-1 prose-code:text-primary;
   @apply prose-strong:text-text-dark;
@@ -51,4 +52,16 @@
 
 .content .btn {
   @apply no-underline hover:!text-white;
+}
+
+.content blockquote p em {
+  @apply text-right mt-2 block text-sm;
+}
+
+.content blockquote:before,
+.content blockquote:after,
+.content blockquote p:before,
+.content blockquote p:after {
+  content: none !important;
+  display: none !important;
 }
