@@ -7,11 +7,11 @@ image: "/images/members/steve-vissault.jpg"
 # English content
 affiliation_en: "Research associate, INRS, Quebec"
 sort_order: 99
-title_taq_en: "Executive Committee Member"
+title_taq_en: "TAQ coordinator"
 
 # French content
 title_taq_fr: "Membre du comité de direction"
-affiliation_fr: "Research associate, INRS, Québec"
+affiliation_fr: "Coordonateur de la TAQ"
 # Social links (shared)
 social:
   - name: google-scholar
