@@ -20,6 +20,6 @@ social:
   - name: linkedin
     icon: fa-brands fa-linkedin
     link: https://www.linkedin.com/in/genevi%C3%A8ve-parent-8488bb75/
-  - name: github
-    icon: fa-brands fa-github
+  - name: web
+    icon: fa-solid fa-globe
     link: https://gjparent.github.io/
