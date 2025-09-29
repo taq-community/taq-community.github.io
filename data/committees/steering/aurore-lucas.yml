@@ -1,18 +1,18 @@
 # Basic info (shared)
 firstname: Aurore
 lastname: Lucas
-image: "images/comitee-members/aurore-lucas.jpeg"
+image: "images/comitee-members/aurore-lucas.png"
 sort_order: 3
 
 # English content
 title_taq_en: "Executive Committee Member"
 affiliation_en: "City of Rouyn-Noranda"
-title_en: "Projects manager"
+title_en: "M.Sc., Projects manager"
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Ville de Rouyn-Noranda"
-title_fr: "Chargée de projets"
+title_fr: "M.Sc., Chargée de projets"
 
 # Social links (shared)
 social: []
