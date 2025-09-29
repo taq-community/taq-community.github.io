@@ -20,16 +20,16 @@ title_fr: "Gestionnaire de développement et chef du bureau de Jyväskylä"
 social:
   - name: "LinkedIn"
     icon: fa-brands fa-linkedin
-    url: "https://www.linkedin.com/in/kristian-meissner-61847661"
+    link: "https://www.linkedin.com/in/kristian-meissner-61847661"
   - name: "ORCID"
     icon: fa-brands fa-orcid
-    url: "https://orcid.org/0000-0001-6316-8554"
+    link: "https://orcid.org/0000-0001-6316-8554"
   - name: "ResearchGate"
     icon: fa-brands fa-researchgate
-    url: "https://www.researchgate.net/profile/Kristian-Meissner"
+    link: "https://www.researchgate.net/profile/Kristian-Meissner"
   - name: "Google Scholar"
     icon: fa-brands fa-google-scholar
-    url: "https://scholar.google.fi/citations?user=AvWVut8AAAAJ&hl=en"
+    link: "https://scholar.google.fi/citations?user=AvWVut8AAAAJ&hl=en"
   - name: "Website"
     icon: fa-solid fa-globe
-    url: "https://www.syke.fi/en"
+    link: "https://www.syke.fi/en"

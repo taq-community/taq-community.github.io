@@ -8,13 +8,16 @@ sort_order: 3
 title_taq_en: "Executive Committee Member"
 affiliation_en: "Université du Québec en Outaouais"
 title_en: "Professor"
-#summary_en: ""
+#summary_en: "Yann Surget-Groba is a professor in ecological and environmental genomics at the Université du Québec en Outaouais. His research focuses on conservation genetics and adaptation to climate change, as well as the development of tools for monitoring biodiversity and threatened and vulnerable species."
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr:  "Université du Québec en Outaouais"
 title_fr: "Professeur"
-#summary_fr: ""
+#summary_fr: "Yann Surget-Groba est professeur en génomique écologique et environnementale à l'Université du Québec en Outaouais. Ses recherches se concentrent sur la génétique de la conservation et l'adaptation aux changements climatiques, ainsi qu'au développement d'outils de suivi de la biodiversité et des espèces menacées et vulnérables."
 
 # Social links (shared)
-social: []
+social:
+  - name: web
+    icon: fa-solid fa-globe
+    link: https://isfort.uqo.ca/professeurs/yann-surget-groba/

@@ -1,7 +1,7 @@
 # Basic info (shared)
 firstname: Geneviève
 lastname: Parent
-image: ""
+image: "images/comitee-members/genevieve-parent.jpeg"
 sort_order: 3
 
 # English content
@@ -15,4 +15,11 @@ affiliation_fr: "Pêches et océan Canada"
 title_fr: "Chercheuse"
 
 # Social links (shared)
-social: []
+# Social links (shared)
+social:
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/genevi%C3%A8ve-parent-8488bb75/
+  - name: github
+    icon: fa-brands fa-github
+    link: https://gjparent.github.io/
