@@ -5,11 +5,6 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-<div class="p-2 bg-body border border-gold items-center text-white leading-none lg:rounded-full flex lg:inline-flex" role="alert">
-    <span class="flex rounded-full bg-gold text-body uppercase px-2 py-1 text-xs font-bold mr-3">INFO</span>
-    <span class="font-semibold mr-2 text-left flex-auto">Cette version est préliminaire</span>
-</div>
-
 ## 1. Appellation de la table
 
 La Table sur l'ADN environnemental du Québec (TAQ), ci-après nommée la « TAQ », est à la fois un facilitateur pour assurer la communication entre les différents acteurs entourant la technologie de l'ADN environnemental (ou ADNe) et un groupe de réflexion et de concertation sur divers aspects liés à l'utilisation de l'ADNe au Québec, notamment le déploiement des technologies, l'accès à des ressources fiables et la gouvernance des données.

@@ -5,12 +5,6 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-
-<div class="p-2 bg-body border border-gold items-center text-white leading-none lg:rounded-full flex lg:inline-flex" role="alert">
-    <span class="flex rounded-full bg-gold text-body uppercase px-2 py-1 text-xs font-bold mr-3">INFO</span>
-    <span class="font-semibold mr-2 text-left flex-auto">This is a draft version</span>
-</div>
-
 ## 1. Name of the Table
 
 The Table on Environmental DNA of Quebec (TAQ), hereinafter referred to as "TAQ", serves both as a facilitator to ensure communication between the various stakeholders involved in environmental DNA (or eDNA) technology and as a think tank and coordination group on various aspects related to the use of eDNA in Quebec, including technology deployment, access to reliable resources, and data governance.
