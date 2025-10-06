@@ -116,7 +116,7 @@ providers:
 
     - name: "C. Helbing Laboratory (U. Victoria)"
       name_fr: "Laboratoire C. Helbing (U. Victoria)"
-      type: ["research", "standardization", "training"]
+      type: ["research", "standardization", "training", "analysis", "sampling"]
       province: "British Columbia"
       description: "Standardization, eRNA and eDNA development, protocol validation, IntegritE-DNA method development"
       description_fr: "Standardisation, développement eRNA et eDNA, validation de protocoles, développement de la méthode IntegritE-DNA"
