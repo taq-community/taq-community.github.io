@@ -38,7 +38,7 @@ TAQ offers specialized training services to develop environmental DNA (eDNA) ski
       <span class="text-2xl mr-3">💻</span>
       <h5 class="text-body">Bioinformatics Training</h5>
     </div>
-    <p class="text-body">eDNA data processing and analysis computational methods</p>
+    <p class="text-body">eDNA Data storage and processing and analysis computational methods</p>
   </div>
 </div>
 

@@ -64,7 +64,7 @@ url = "/laboratory-analysis"
 
 [[main]]
 parent = "ADNe Services"
-name = "Data Processing"
+name = "Data storage and processing"
 weight = 24
 url = "/data-processing"
 

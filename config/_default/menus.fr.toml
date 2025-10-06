@@ -62,7 +62,7 @@ url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
-name = "Traitement des données"
+name = "Traitement et stockage des données"
 weight= 24
 url = "/data-processing"
 
