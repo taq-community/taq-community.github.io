@@ -66,10 +66,10 @@ providers:
       name_fr: "Sulys"
       type: ["analysis", "sampling", "monitoring", "platform"]
       province: "Quebec"
-      description: "Environmental DNA analysis solution for risk anticipation and protection of human, animal and environmental health with AI-powered decision support"
-      description_fr: "Solution clé en main d'analyse d'ADN environnemental pour anticiper les risques et protéger la santé humaine, animale et environnementale avec support décisionnel par IA"
+      description: "Sulys is a Québec-based startup specialized in water monitoring through environmental DNA. We offer a turnkey service that includes strategic sampling, genomic analysis, and a digital platform for data visualization and decision support. Our integrated and proactive approach enables the rapid detection of threats to human, animal, and environmental health, in both surface waters and wastewater."
+      description_fr: "Sulys est une jeune entreprise québécoise spécialisée dans la vigie des eaux par ADN environnemental. Nous offrons un service clé en main regroupant l’échantillonnage stratégique, l’analyse génomique et une plateforme numérique de visualisation et d’aide à la décision. Notre approche intégrée et proactive permet de détecter rapidement des menaces pour la santé humaine, animale et environnementale, tant dans les eaux de surface que dans les eaux usées."
       url: "https://www.sulys.ca/"
-      logo: "images/services/sulys.svg"
+      logo: "images/services/sulys.png"
       display: true
 
   # Canada (Multi-provincial/Federal)
