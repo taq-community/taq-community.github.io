@@ -1,10 +1,10 @@
 # Primary title (original language - English)
-title: "ISO/TS 24420 – Biotechnology — Massively parallel sequencing<br /> General requirements and guidance for metagenomics"
-title_fr: "ISO/TS 24420 – Biotechnologie — Séquençage massif en parallèle<br /> Exigences générales et directives pour la métagénomique"
+title: "ISO/TS 24420 – Biotechnology — Massively parallel sequencing — General requirements and guidance for metagenomics"
+title_fr: "ISO/TS 24420 – Biotechnologie — Séquençage massif en parallèle — Exigences générales et directives pour la métagénomique"
 
 # Tags for both languages - categorized system
-tags_en: ["eDNA", "International Standard", "ISO", "Analysis"]
-tags_fr: ["ADNe", "Standard international", "ISO", "Analysis"]
+tags_en: ["Analysis"]
+tags_fr: ["Analysis"]
 
 # Institution names
 institution_en: "International Organization for Standardization (ISO)"

@@ -3,8 +3,8 @@ title: "ISO/DIS 22692 – Genomics informatics — Quality control metrics for D
 title_fr: "ISO/DIS 22692 – Informatique génomique — Métriques de contrôle qualité pour le séquençage de l'ADN"
 
 # Tags for both languages - categorized system
-tags_en: ["eDNA", "International Standard", "ISO", "Bioinformatic"]
-tags_fr: ["ADNe", "Standard international", "ISO", "Bioinformatique"]
+tags_en: ["Bioinformatic"]
+tags_fr: ["Bioinformatique"]
 
 # Institution names
 institution_en: "International Organization for Standardization (ISO)"

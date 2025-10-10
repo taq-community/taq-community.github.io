@@ -3,8 +3,8 @@ title: "ISO/DIS 17805.2 – Water quality — Sampling, capture and preservation
 title_fr: "ISO/DIS 17805.2 – Échantillonnage, capture et préservation de l'ADN environnemental de l'eau"
 
 # Tags for both languages - categorized system
-tags_en: ["eDNA", "Water", "International Standard", "ISO", "Preservation", "Capture"]
-tags_fr: ["ADNe", "Eau", "Standard international", "ISO", "Préservation", "Capture"]
+tags_en: ["Water", "Preservation", "Capture"]
+tags_fr: ["Eau", "Préservation", "Capture"]
 
 # Institution names
 institution_en: "International Organization for Standardization (ISO)"
