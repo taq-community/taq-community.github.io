@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-Le Traitement et stockage des données ADNe transforme les résultats bruts de laboratoire en informations scientifiques exploitables. La TAQ vous connecte avec des experts en bioinformatique et en analyse de données qui utilisent des outils et méthodes avancés pour interpréter vos données d'ADN environnemental.
+Le Traitement et stockage des données ADNe transforme les résultats bruts de laboratoire en informations scientifiques exploitables. La TAQc vous connecte avec des experts en bioinformatique et en analyse de données qui utilisent des outils et méthodes avancés pour interpréter vos données d'ADN environnemental.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

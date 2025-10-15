@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-La TAQ offre des services de formation spécialisés pour développer les compétences en ADN environnemental (ADNe) auprès des chercheurs, gestionnaires environnementaux, consultants et autres professionnels intéressés par cette technologie émergente.
+La TAQc offre des services de formation spécialisés pour développer les compétences en ADN environnemental (ADNe) auprès des chercheurs, gestionnaires environnementaux, consultants et autres professionnels intéressés par cette technologie émergente.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

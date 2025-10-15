@@ -37,7 +37,7 @@ Site configuration can be modified in `hugo.toml`:
 
 ## Contributing
 
-This website is maintained by the TAQ community. Feel free to contribute by:
+This website is maintained by the TAQc community. Feel free to contribute by:
 
 1. Creating issues for bugs or feature requests
 2. Submitting pull requests for improvements

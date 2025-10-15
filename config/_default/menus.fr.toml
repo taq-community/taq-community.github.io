@@ -2,30 +2,30 @@
 
 # Menu principal
 [[main]]
-name = "Qu'est-ce que la TAQ?"
+name = "Qu'est-ce que la TAQc?"
 weight = 1
 url = "#"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Mission"
 weight = 11
 url = "/"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Comités"
 weight = 12
 url = "/committees"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Gouvernance"
 weight = 13
 url = "/governance"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Historique"
 weight = 14
 url = "/history"

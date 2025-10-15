@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-Environmental DNA (eDNA) sampling is the crucial first step in biodiversity analysis. TAQ connects clients with sampling experts who use standardized methods to collect water, soil, or other environmental substrate samples.
+Environmental DNA (eDNA) sampling is the crucial first step in biodiversity analysis. TAQc connects clients with sampling experts who use standardized methods to collect water, soil, or other environmental substrate samples.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

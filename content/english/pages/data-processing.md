@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-eDNA Data storage and processing transforms raw laboratory results into actionable scientific information. TAQ connects you with bioinformatics and data analysis experts who use advanced tools and methods to interpret your environmental DNA data.
+eDNA Data storage and processing transforms raw laboratory results into actionable scientific information. TAQc connects you with bioinformatics and data analysis experts who use advanced tools and methods to interpret your environmental DNA data.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

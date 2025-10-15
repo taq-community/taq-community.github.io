@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale dans l'analyse de la biodiversité. La TAQ connecte les clients avec des experts en échantillonnage qui utilisent des méthodes standardisées pour collecter des échantillons d'eau, de sol ou d'autres substrats environnementaux.
+L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale dans l'analyse de la biodiversité. La TAQc connecte les clients avec des experts en échantillonnage qui utilisent des méthodes standardisées pour collecter des échantillons d'eau, de sol ou d'autres substrats environnementaux.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">

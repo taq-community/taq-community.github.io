@@ -2,30 +2,30 @@
 
 # Main menu
 [[main]]
-name = "What's the TAQ?"
+name = "What's the TAQc?"
 weight = 1
 url = "#"
 
 [[main]]
-parent = "What's the TAQ?"
+parent = "What's the TAQc?"
 name = "Mission"
 weight = 11
 url = "/"
 
 [[main]]
-parent = "What's the TAQ?"
+parent = "What's the TAQc?"
 name = "Committees"
 weight = 12
 url = "/committees"
 
 [[main]]
-parent = "What's the TAQ?"
+parent = "What's the TAQc?"
 name = "Governance"
 weight = 13
 url = "/governance"
 
 [[main]]
-parent = "What's the TAQ?"
+parent = "What's the TAQc?"
 name = "History"
 weight = 14
 url = "/history"
