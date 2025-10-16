@@ -11,6 +11,15 @@ providers:
       url: "https://inrs.ca/la-recherche/professeurs/valerie-langlois/"
       logo: "/images/services/inrs.png"
       display: true
+    
+    - name: "Annie Claude Bélisle laboratory (UQAT)"
+      name_fr: "Laboratoire d'Annie Claude Bélisle (UQAT)"
+      type: ["research", "training", "statistical analysis", "sampling"]
+      province: "Québec"
+      description: "Training dedicated to First Nations, terrestrial wildlife detection, sampling design"
+      description_fr: " Formations dédiées aux Premières Nations, détection de la faune terrestre, design d'échantillonnage"
+      url: "https://www.cef-cfr.ca/pmwiki.php?n=Membres.AnnieClaudeBelisle"
+      logo: "images/partners/UQAT.png"
       
     - name: "McGill / Frigon"
       name_fr: "McGill / Frigon"
