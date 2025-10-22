@@ -181,7 +181,7 @@ providers:
       description_fr: "Parcs nationaux utilisant l'ADNe pour la surveillance de la biodiversité, détection d'espèces envahissantes et conservation des espèces à travers le Canada"
       url: "https://parks.canada.ca/nature/science/especes-species/adne-edna"
       logo: "/images/services/can-gov.png"
-      display: true
+      display: false
       
     - name: "Hakai Institute - Integrated Coastal Observatory (ICO)"
       name_fr: "Institut Hakai - Observatoire côtier intégré (ICO)"
