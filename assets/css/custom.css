@@ -81,3 +81,11 @@ body {
 .notice-head p {
     color: white;
 }
+
+/* Form placeholder styles */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: rgb(74, 74, 74) !important;
+    font-style: italic;
+}

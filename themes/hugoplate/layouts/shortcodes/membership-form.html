@@ -1,0 +1,232 @@
+<section>
+  <div class="max-w-4xl mx-auto p-8">
+    <h1 class="text-3xl font-bold text-gold pb-3 mb-2">
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Formulaire d'adhésion d'un membre à la TAQc
+      {{ else }}
+        TAQc Membership Form
+      {{ end }}
+    </h1>
+
+    <div class="bg-blue-50 border-l-4 border-gold p-4 my-6">
+      <strong class="text-body">Note:</strong>
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Ce formulaire est destiné aux membres individuels (chercheurs, étudiants, professionnels).
+        Si vous représentez une entreprise ou offrez des services commerciaux en ADN environnemental, veuillez utiliser le
+        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}service-providers" class="text-body hover:underline">formulaire pour fournisseurs de services</a>.
+      {{ else }}
+        This form is for individual members (researchers, students, professionals).
+        If you represent a company or offer commercial eDNA services, please use the
+        <a href="{{ .Site.BaseURL }}service-providers" class="text-body hover:underline">service provider form</a>.
+      {{ end }}
+    </div>
+
+    <form action="{{ .Get "action" | default "https://formspree.io/f/YOUR_MEMBERSHIP_FORM_ID" }}" method="POST" enctype="multipart/form-data">
+
+      <!-- Hidden field to identify form type -->
+      <input type="hidden" name="form_type" value="membership">
+
+      <!-- Section: Basic Information -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Informations de base
+        {{ else }}
+          Basic Information
+        {{ end }}
+      </div>
+
+      <div class="mb-6 text-body">
+        <label for="email" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Adresse courriel
+          {{ else }}
+            Email address
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="email" id="email" name="email" class="form-input" required>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="firstname" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Prénom
+            {{ else }}
+              First name
+            {{ end }}
+            <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="firstname" name="firstname" class="form-input" required>
+        </div>
+
+        <div>
+          <label for="lastname" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Nom
+            {{ else }}
+              Last name
+            {{ end }}
+            <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="lastname" name="lastname" class="form-input" required>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="affiliation" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Affiliation (université, institution, entreprise)
+          {{ else }}
+            Affiliation (university, institution, company)
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="affiliation" name="affiliation" class="form-input" required>
+      </div>
+
+      <div class="mb-6">
+        <label for="photo" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Photo professionnelle (optionnel)
+          {{ else }}
+            Professional photo (optional)
+          {{ end }}
+        </label>
+        <input type="file" id="photo" name="photo" accept="image/*" class="form-input">
+        <div class="text-right text-white mt-1">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Format recommandé: JPG ou PNG, max 5 MB
+          {{ else }}
+            Recommended format: JPG or PNG, max 5 MB
+          {{ end }}
+      </div>
+
+      <!-- Section: Professional Profile -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Profil professionnel
+        {{ else }}
+          Professional Profile
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label for="description_fr" class="form-label">
+          Description de vos activités professionnelles et de recherche (Français)
+          <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="description_fr"
+          name="description_fr"
+          maxlength="1000"
+          class="form-input"
+          rows="5"
+          required
+          placeholder="Décrivez brièvement vos domaines de recherche, votre expertise et vos intérêts en ADN environnemental..."></textarea>
+        <div class="text-right text-white mt-1">Max. 1000 caractères</div>
+      </div>
+
+      <!-- Section: Communication Preferences -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Préférences de communication
+        {{ else }}
+          Communication Preferences
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Souhaitez-vous recevoir les infolettres du TAQc?
+          {{ else }}
+            Would you like to receive TAQc newsletters?
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <div class="mt-2 text-white">
+          <label class="inline-flex items-center mr-6">
+            <input type="radio" id="newsletter-yes" name="newsletter" value="Oui/Yes" class="form-radio" required>
+            <span class="ml-2">
+              {{ if eq .Page.Site.Language.Lang "fr" }}Oui{{ else }}Yes{{ end }}
+            </span>
+          </label>
+
+          <label class="inline-flex items-center">
+            <input type="radio" id="newsletter-no" name="newsletter" value="Non/No" class="form-radio">
+            <span class="ml-2">
+              {{ if eq .Page.Site.Language.Lang "fr" }}Non{{ else }}No{{ end }}
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Section: Social Networks & Scientific Platforms -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Réseaux sociaux & plateformes scientifiques (optionnel)
+        {{ else }}
+          Social Networks & Scientific Platforms (optional)
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label for="website" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Site web personnel ou institutionnel
+          {{ else }}
+            Personal or institutional website
+          {{ end }}
+        </label>
+        <input type="url" id="website" name="website" class="form-input" placeholder="https://">
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="linkedin" class="form-label">LinkedIn</label>
+          <input type="url" id="linkedin" name="linkedin" class="form-input" placeholder="https://linkedin.com/in/...">
+        </div>
+
+        <div>
+          <label for="google_scholar" class="form-label">Google Scholar</label>
+          <input type="url" id="google_scholar" name="google_scholar" class="form-input" placeholder="https://scholar.google.com/...">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="researchgate" class="form-label">ResearchGate</label>
+          <input type="url" id="researchgate" name="researchgate" class="form-input" placeholder="https://researchgate.net/...">
+        </div>
+
+        <div>
+          <label for="orcid" class="form-label">ORCID</label>
+          <input type="url" id="orcid" name="orcid" class="form-input" placeholder="https://orcid.org/0000-0000-0000-0000">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="github" class="form-label">GitHub</label>
+          <input type="url" id="github" name="github" class="form-input" placeholder="https://github.com/...">
+        </div>
+
+        <div>
+          <label for="twitter" class="form-label">X (Twitter)</label>
+          <input type="url" id="twitter" name="twitter" class="form-input" placeholder="https://twitter.com/...">
+        </div>
+      </div>
+
+      <div class="text-center mt-8">
+        <button type="submit" class="btn btn-outline-primary">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Soumettre
+          {{ else }}
+            Submit
+          {{ end }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
