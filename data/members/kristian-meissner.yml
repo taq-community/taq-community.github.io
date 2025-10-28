@@ -1,0 +1,36 @@
+# Basic info (shared)
+firstname: Kristian
+lastname: Meissner
+image: "images/comitee-members/kristian-meissner-2.jpg"
+date_added: "23/09/2025 02:36:43"
+committee: "external"
+
+# English content
+title_taq_en: "External Committee Member"
+affiliation_en: "Finnish Environment Institute (SYKE)"
+title_en: "Ph.D., Development Manager & Head of Jyväskylä office"
+#summary_en: "Kristian Meissner brings over two decades of expertise in water quality research and environmental management, with a focus on strategic development in standardization and monitoring. With more than a decade in international water quality method standardization, he chairs two working groups in CEN and ISO dedicated to DNA method standards for aquatic biodiversity monitoring and bioassessment. He co-founded and co-chairs iESTF, an inclusive platform for standard seed document development of molecular methods, and led major initiatives such as renewing Finland's national environmental monitoring strategy to 2030."
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Institut finlandais de l'environnement (SYKE)"
+title_fr: "Ph.D., Gestionnaire de développement et chef du bureau de Jyväskylä"
+#summary_fr: "Kristian Meissner apporte plus de deux décennies d'expertise en recherche sur la qualité de l'eau et en gestion environnementale, avec un accent sur le développement stratégique en normalisation et surveillance. Avec plus d'une décennie en normalisation internationale des méthodes de qualité de l'eau, il préside deux groupes de travail au CEN et à l'ISO dédiés aux normes de méthodes ADN pour la surveillance de la biodiversité aquatique et la bioévaluation. Il a co-fondé et co-préside iESTF, une plateforme inclusive pour le développement de documents de référence standard des méthodes moléculaires, et a dirigé des initiatives majeures comme le renouvellement de la stratégie nationale de surveillance environnementale de la Finlande jusqu'en 2030."
+
+# Social links (shared)
+social:
+  - name: "LinkedIn"
+    icon: fa-brands fa-linkedin
+    link: "https://www.linkedin.com/in/kristian-meissner-61847661"
+  - name: "ORCID"
+    icon: fa-brands fa-orcid
+    link: "https://orcid.org/0000-0001-6316-8554"
+  - name: "ResearchGate"
+    icon: fa-brands fa-researchgate
+    link: "https://www.researchgate.net/profile/Kristian-Meissner"
+  - name: "Google Scholar"
+    icon: fa-brands fa-google-scholar
+    link: "https://scholar.google.fi/citations?user=AvWVut8AAAAJ&hl=en"
+  - name: "Website"
+    icon: fa-solid fa-globe
+    link: "https://www.syke.fi/en"

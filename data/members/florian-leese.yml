@@ -1,0 +1,18 @@
+# Basic info (shared)
+firstname: Florian
+lastname: Leese
+image: ""
+
+committee: "external"
+# English content
+title_taq_en: "External Committee Member"
+affiliation_en: "University of Duisburg-Essen, Germany"
+title_en: "Ph.D., Professor in Aquatic Ecosystem Research"
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Université de Duisburg-Essen, Allemagne"
+title_fr: "Ph.D., Professeur titulaire en recherche sur les écosystèmes aquatiques"
+
+# Social links (shared)
+social: []

@@ -3,6 +3,7 @@ firstname: Hugo
 lastname: Asselin
 email: hugo.asselin@uqat.ca
 image: "images/comitee-members/Asselin_Hugo.jpeg"
+committee: "steering"
 sort_order: 2
 
 # English content
@@ -26,5 +27,6 @@ social:
   - name: orcid
     icon: fa-brands fa-orcid
     link: https://orcid.org/0000-0002-9542-4994
-  - name: fa-brands fa-researchgate 
+  - name: researchgate
+    icon: fa-brands fa-researchgate
     link: https://www.researchgate.net/profile/Hugo_Asselin
