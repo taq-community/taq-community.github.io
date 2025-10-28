@@ -77,6 +77,7 @@
         </select>
       </div>
 
+      <!-- Logo upload - Commented out
       <div class="mb-6">
         <label for="logo" class="form-label">
           {{ if eq .Page.Site.Language.Lang "fr" }}
@@ -88,9 +89,14 @@
         </label>
         <input type="file" id="logo" name="logo" accept="image/*" class="form-input" required>
         <small class="text-white mt-1 block">
-            Format: JPG, PNG, max 5 MB
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Format: JPG, PNG ou SVG, max 5 MB
+          {{ else }}
+            Format: JPG, PNG or SVG, max 5 MB
+          {{ end }}
         </small>
       </div>
+      -->
 
       <div class="mb-6">
         <label for="website" class="form-label">
@@ -338,35 +344,29 @@
       </div>
 
       <div class="mb-6">
-        <label for="company_description_fr" class="form-label">
-          Description de l'entreprise et de vos activités (français)
+        <label for="company_description" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Description de l'entreprise et de vos activités
+          {{ else }}
+            Company and activities description
+          {{ end }}
           <span class="text-red-500">*</span>
         </label>
         <textarea
-          id="company_description_fr"
-          name="company_description_fr"
+          id="company_description"
+          name="company_description"
           maxlength="1000"
           class="form-input"
           rows="5"
           required
-          placeholder="Présentez votre entreprise, votre mission, votre expertise et vos réalisations en ADN environnemental..."></textarea>
-        <div class="text-right text-white mt-1">Max. 1000 caractères</div>
-      </div>
-
-      <div class="mb-6">
-        <label for="company_description_en" class="form-label">
-          Company and activities description (English)
-          <span class="text-red-500">*</span>
-        </label>
-        <textarea
-          id="company_description_en"
-          name="company_description_en"
-          maxlength="1000"
-          class="form-input"
-          rows="5"
-          required
-          placeholder="Present your company, mission, expertise and achievements in environmental DNA..."></textarea>
-        <div class="text-right text-white mt-1">Max. 1000 characters</div>
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Présentez votre entreprise, votre mission, votre expertise et vos réalisations en ADN environnemental...{{ else }}Present your company, mission, expertise and achievements in environmental DNA...{{ end }}"></textarea>
+        <div class="text-right text-white mt-1">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Max. 1000 caractères
+          {{ else }}
+            Max. 1000 characters
+          {{ end }}
+        </div>
       </div>
 
       <!-- Section: Communication Preferences -->
@@ -503,7 +503,7 @@
       </div>
 
       <div class="text-center mt-8">
-        <button type="submit" class="btn btn-outline-primary">
+        <button type="submit" class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-primary py-2 px-4 borde-3 border-gold hover:border-transparent rounded">
           {{ if eq .Page.Site.Language.Lang "fr" }}
             Soumettre
           {{ else }}

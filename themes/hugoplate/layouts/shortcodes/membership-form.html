@@ -85,6 +85,7 @@
         <input type="text" id="affiliation" name="affiliation" class="form-input" required>
       </div>
 
+      <!-- Photo upload - Commented out
       <div class="mb-6">
         <label for="photo" class="form-label">
           {{ if eq .Page.Site.Language.Lang "fr" }}
@@ -100,7 +101,9 @@
           {{ else }}
             Recommended format: JPG or PNG, max 5 MB
           {{ end }}
+        </div>
       </div>
+      -->
 
       <!-- Section: Professional Profile -->
       <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
@@ -112,19 +115,29 @@
       </div>
 
       <div class="mb-6">
-        <label for="description_fr" class="form-label">
-          Description de vos activités professionnelles et de recherche (Français)
+        <label for="description" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Description de vos activités professionnelles et de recherche
+          {{ else }}
+            Description of your professional and research activities
+          {{ end }}
           <span class="text-red-500">*</span>
         </label>
         <textarea
-          id="description_fr"
-          name="description_fr"
+          id="description"
+          name="description"
           maxlength="1000"
           class="form-input"
           rows="5"
           required
-          placeholder="Décrivez brièvement vos domaines de recherche, votre expertise et vos intérêts en ADN environnemental..."></textarea>
-        <div class="text-right text-white mt-1">Max. 1000 caractères</div>
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Décrivez brièvement vos domaines de recherche, votre expertise et vos intérêts en ADN environnemental...{{ else }}Briefly describe your research areas, expertise and interests in environmental DNA...{{ end }}"></textarea>
+        <div class="text-right text-white mt-1">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Max. 1000 caractères
+          {{ else }}
+            Max. 1000 characters
+          {{ end }}
+        </div>
       </div>
 
       <!-- Section: Communication Preferences -->
@@ -219,7 +232,7 @@
       </div>
 
       <div class="text-center mt-8">
-        <button type="submit" class="btn btn-outline-primary">
+        <button type="submit" class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-primary py-2 px-4 borde-3 border-gold hover:border-transparent rounded">
           {{ if eq .Page.Site.Language.Lang "fr" }}
             Soumettre
           {{ else }}
