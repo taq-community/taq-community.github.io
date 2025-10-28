@@ -6,9 +6,12 @@ features:
     content: "TAQc connects researchers, private and public organizations, first nations to support the development and application of environmental DNA (eDNA) standards."
     button:
       enable: true
-      label: "Become a TAQc member"
-      link: "https://forms.gle/7dGYZ1wbfJAusiRD9"
-      rel: "external"
+      label: "Register as a member"
+      link: "/become-a-member"
+    button2:
+      enable: true
+      label: "Register as a service provider"
+      link: "/service-provider-registration"
 
   - title: "TAQc fosters collaboration by sharing eDNA knowledge, tools, and best practices."
     image: "/images/collector.jpg"
