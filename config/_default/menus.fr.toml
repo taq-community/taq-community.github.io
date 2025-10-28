@@ -72,6 +72,12 @@ name = "Formation"
 weight= 25
 url = "/training"
 
+[[main]]
+parent = "Services en ADNe"
+name = "S'inscrire comme fournisseur de services"
+weight = 26
+url = "/service-provider-registration"
+
 # Membres
 [[main]]
 name = "Membres"
@@ -87,8 +93,7 @@ url = "/members/list"
 parent = "Membres"
 name = "Devenir membre"
 weight = 32
-url = "https://forms.gle/WCvUnvtjezjfU8x37"
-rel = 'external'
+url = "/become-a-member"
 
 # Actualités
 [[main]]
