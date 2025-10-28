@@ -297,7 +297,7 @@ providers:
       
     - name: "eDNA Explorer"
       name_fr: "eDNA Explorer"
-      type: ["analysis", "platform", "monitoring", "sampling"]
+      type: ["analysis", "platform", "monitoring"]
       province: "International"
       description: "Platform that transforms eDNA biodiversity data into clear evidence for monitoring environmental management impacts, restoration planning, and regulatory assessments"
       description_fr: "Plateforme qui transforme les données de biodiversité ADNe en preuves claires pour surveiller les impacts de gestion environnementale, planification de restauration et évaluations réglementaires"
