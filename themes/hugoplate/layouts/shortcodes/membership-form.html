@@ -11,12 +11,12 @@
     <div class="bg-blue-50 border-l-4 border-gold p-4 my-6">
       <strong class="text-body">Note:</strong>
       {{ if eq .Page.Site.Language.Lang "fr" }}
-        Ce formulaire est destiné aux membres individuels (chercheurs, étudiants, professionnels).
+        Ce formulaire est destiné aux personnes ou entités désirant devenir membres de la TAQc (chercheurs, étudiants, professionnels, OBNL, etc).
         Si vous représentez une entreprise ou offrez des services commerciaux en ADN environnemental, veuillez utiliser le
         <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}service-provider-registration" class="text-body hover:underline">formulaire pour fournisseurs de services</a>.
       {{ else }}
-        This form is for individual members (researchers, students, professionals).
-        If you represent a company or offer commercial eDNA services, please use the
+        This form is intended for individuals or entities wishing to become TAQc members (researchers, students, professionals, non-profit organizations, etc.).
+        If you represent a company or offer commercial environmental DNA services, please use the
         <a href="{{ .Site.BaseURL }}service-provider-registration" class="text-body hover:underline">service provider form</a>.
       {{ end }}
     </div>
