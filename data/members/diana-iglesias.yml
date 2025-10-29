@@ -3,16 +3,19 @@ firstname: Diana
 lastname: Iglesias
 image: "images/members/diana-iglesias.jpg"
 committee: "steering"
+sort_order: 3
 
 # English content
 title_taq_en: "Executive Committee Member"
 affiliation_en: "at Genome Quebec"
 title_en: "Director of Innovation and Programs"
+summary_en: "Diana plays a key role in the strategic development and implementation of innovative genomics projects. With expertise in scientific program management and stakeholder engagement, she actively contributes to advancing research and knowledge translation in health, environment, and agri-food sectors. Her leadership fosters interdisciplinary collaboration and enhances the visibility of Quebec research at national and international levels."
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "chez Génome Québec"
 title_fr: "Directrice de l'innovation et des programmes"
+summary_fr: "Diana joue un rôle clé dans le développement stratégique et la mise en oeuvre de projets innovants en génomique. Forte d'une expertise en gestion de programmes scientifiques, elle contribue activement à l'avancement de la recherche et à la valorisation des découvertes scientifiques en santé, en environnement et en agroalimentaire. Son leadership favorise la collaboration interdisciplinaire et le rayonnement de la recherche québécoise à l'échelle nationale et internationale."
 
 # Social links (shared)
 social: []

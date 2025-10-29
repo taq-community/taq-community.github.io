@@ -8,11 +8,13 @@ committee: "steering"
 title_taq_en: "Executive Committee Member"
 affiliation_en: "City of Rouyn-Noranda"
 title_en: "M.Sc., Head of Environment and Sustainable Development"
+summary_en: "A biologist and ecologist by training, Aurore Lucas holds two master's degrees in functional ecology and biology from Montpellier (France) and UQAT. Her professional career has led her to design and carry out various projects related to major environmental and territorial issues, such as climate change, biodiversity, and sustainable resource management."
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Ville de Rouyn-Noranda"
-title_fr: "M.Sc., Cheffe de l’environnement et du développement durable"
+title_fr: "M.Sc., Cheffe de l'environnement et du développement durable"
+summary_fr: "Biologiste et écologue de formation, Aurore Lucas a obtenu deux maîtrises en écologie fonctionnelle et en biologie, à Montpellier (France) et à l'UQAT. Son parcours professionnel l'a amenée à concevoir et réaliser divers projets en lien avec les grands enjeux environnementaux et territoriaux, tels que les changements climatiques, la biodiversité et la gestion durable des ressources."
 
 # Social links (shared)
 social: []
