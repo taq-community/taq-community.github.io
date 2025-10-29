@@ -21,7 +21,6 @@ body {
     font-weight: var(--font-weight-light);
 }
 
-
 .btn-primary {
     color: var(--color-body);
 }
@@ -33,10 +32,10 @@ body {
 }
 
 .btn-outline-primary:hover {
-    color: var(--color-body);
+    color: var(--color-body) !important;
     font-weight: var(--font-weight-semibold);
-    background-color: white;
-    border-color: var(--color-body);
+    background-color: var(--color-gold);
+    border-color: var(--color-gold);
 }
 
 .nav-dropdown-list {
