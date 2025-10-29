@@ -134,7 +134,7 @@ providers:
       display: true
       
     - name: "mBRAVE (Multiplex Barcode Research And Visualization Environment)"
-      name_fr: "mBRAVE (Environnement de recherche et visualisation de codes-barres multiplex)"
+      name_fr: "mBRAVE (Multiplex Barcode Research And Visualization Environment)"
       type: ["analysis", "platform", "storage", "sampling"]
       province: "Ontario"
       description: "Multi-user platform for metabarcoding and eDNA research with rapid genetic data processing, flexible pipeline configuration, and secure collaborative environment"
