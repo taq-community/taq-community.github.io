@@ -80,3 +80,48 @@ body {
 .notice-head p {
     color: white;
 }
+
+/* Form placeholder styles */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: rgb(74, 74, 74) !important;
+    font-style: italic;
+}
+
+/* File input button styles */
+/* Modern browsers (Firefox, Chrome, Safari, Edge) */
+input[type="file"]::file-selector-button {
+    background-color: var(--color-gold);
+    color: var(--color-body);
+    padding: 8px 16px;
+    border: 1px solid var(--color-gold);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: var(--font-weight-semibold);
+    margin-right: 12px;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: var(--color-body);
+    color: var(--color-primary);
+    border-color: var(--color-body);
+}
+
+/* Webkit browsers (Chrome, Safari, older Edge) - for better compatibility */
+input[type="file"]::-webkit-file-upload-button {
+    background-color: var(--color-gold);
+    color: var(--color-body);
+    padding: 8px 16px;
+    border: 1px solid var(--color-gold);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: var(--font-weight-semibold);
+    margin-right: 12px;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: var(--color-body);
+    color: var(--color-primary);
+    border-color: var(--color-body);
+}

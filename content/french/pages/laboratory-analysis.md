@@ -45,4 +45,4 @@ Les analyses en laboratoire permettent d'extraire et d'amplifier le mat√©riel g√
 
 <hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-{{< edna-contact-form >}}
+{{< contact-form >}}

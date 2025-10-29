@@ -1,26 +1,29 @@
 ---
 # Fonctionnalités
 features:
-  - title: "La Table sur l'ADN environnemental du Québec (TAQ) réunit les parties prenantes autour de la science de l'ADNe au Québec."
+  - title: "La Table sur l'ADN environnemental du Québec (TAQc) réunit les parties prenantes autour de la science de l'ADNe au Québec."
     image: "/images/filter.jpg"
-    content: "La TAQ connecte chercheurs, organisations privées et publiques, premières nations pour soutenir le développement et l'application des standards d'ADN environnemental (ADNe)."
+    content: "La TAQc connecte chercheurs, organisations privées et publiques, premières nations pour soutenir le développement et l'application des standards d'ADN environnemental (ADNe)."
     button:
       enable: true
-      label: "Devenir membre de la TAQ"
-      link: "https://forms.gle/7dGYZ1wbfJAusiRD9"
-      rel: "external"
+      label: "S'inscrire en tant que membre"
+      link: "/become-a-member"
+    button2:
+      enable: true
+      label: "S'inscrire en tant que fournisseur de services"
+      link: "/service-provider-registration"
 
-  - title: "La TAQ favorise la collaboration en partageant les connaissances, outils et meilleures pratiques de l'ADNe."
+  - title: "La TAQc favorise la collaboration en partageant les connaissances, outils et meilleures pratiques de l'ADNe."
     image: "/images/collector.jpg"
     content: "Accédez aux protocoles, matériels de formation et autres ressources pour vous aider à naviguer dans le domaine croissant de l'ADN environnemental."
     button:
       enable: true
-      label: "Accéder au centre de documentation de la TAQ"
+      label: "Accéder au centre de documentation de la TAQc"
       link: "/documentation"
 
-  - title: "La TAQ soutient l'utilisation de l'ADN environnemental pour relever les défis de biodiversité."
+  - title: "La TAQc soutient l'utilisation de l'ADN environnemental pour relever les défis de biodiversité."
     image: "/images/landscape.png"
-    content: "La TAQ soutient l'utilisation de l'ADNe comme outil puissant pour surveiller et évaluer la biodiversité — pour mieux comprendre la distribution des espèces clés, des animaux cryptiques et des taxons envahissants dans les écosystèmes naturels et gérés."
+    content: "La TAQc soutient l'utilisation de l'ADNe comme outil puissant pour surveiller et évaluer la biodiversité — pour mieux comprendre la distribution des espèces clés, des animaux cryptiques et des taxons envahissants dans les écosystèmes naturels et gérés."
     button:
       enable: true
       label: "Lire nos actualités"

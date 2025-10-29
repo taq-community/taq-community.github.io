@@ -2,30 +2,30 @@
 
 # Menu principal
 [[main]]
-name = "Qu'est-ce que la TAQ?"
+name = "Qu'est-ce que la TAQc?"
 weight = 1
 url = "#"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Mission"
 weight = 11
 url = "/"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Comités"
 weight = 12
 url = "/committees"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Gouvernance"
 weight = 13
 url = "/governance"
 
 [[main]]
-parent = "Qu'est-ce que la TAQ?"
+parent = "Qu'est-ce que la TAQc?"
 name = "Historique"
 weight = 14
 url = "/history"
@@ -62,15 +62,21 @@ url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
-name = "Traitement des données"
+name = "Traitement et stockage des données"
 weight= 24
 url = "/data-processing"
 
 [[main]]
 parent = "Services en ADNe"
 name = "Formation"
-weight= 5
+weight= 25
 url = "/training"
+
+[[main]]
+parent = "Services en ADNe"
+name = "S'inscrire comme fournisseur de services"
+weight = 26
+url = "/service-provider-registration"
 
 # Membres
 [[main]]
@@ -87,8 +93,7 @@ url = "/members/list"
 parent = "Membres"
 name = "Devenir membre"
 weight = 32
-url = "https://forms.gle/WCvUnvtjezjfU8x37"
-rel = 'external'
+url = "/become-a-member"
 
 # Actualités
 [[main]]

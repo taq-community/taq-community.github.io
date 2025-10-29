@@ -6,7 +6,7 @@ image: "/images/avatar.png"
 draft: false
 ---
 
-TAQ offers specialized training services to develop environmental DNA (eDNA) skills for researchers, environmental managers, consultants, and other professionals interested in this emerging technology.
+TAQc offers specialized training services to develop environmental DNA (eDNA) skills for researchers, environmental managers, consultants, and other professionals interested in this emerging technology.
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
   <div class="bg-semigold shadow-lg text-body p-6 rounded-lg border-l-4">
@@ -38,7 +38,7 @@ TAQ offers specialized training services to develop environmental DNA (eDNA) ski
       <span class="text-2xl mr-3">💻</span>
       <h5 class="text-body">Bioinformatics Training</h5>
     </div>
-    <p class="text-body">eDNA data processing and analysis computational methods</p>
+    <p class="text-body">eDNA Data storage and processing and analysis computational methods</p>
   </div>
 </div>
 
@@ -80,4 +80,4 @@ TAQ offers specialized training services to develop environmental DNA (eDNA) ski
 
 <hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-{{< edna-contact-form >}}
+{{< contact-form >}}

@@ -10,7 +10,7 @@ logo_height = "32px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = false
 # logo text will only show when logo is missing.
-logo_text = "TAQ"
+logo_text = "TAQc"
 # navbar fixed to top
 navbar_fixed = false
 # theme-mode

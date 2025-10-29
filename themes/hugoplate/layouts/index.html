@@ -32,14 +32,24 @@
                 </li>
               {{ end }}
             </ul>
-            {{ with .button }}
-              {{ if .enable }}
-                <a class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-body py-2 px-4 borde-3 border-gold hover:border-transparent rounded" href="{{ .link | absLangURL }}" {{ if eq .rel "external" }} target="_blank"{{ end }} data-aos="fade-left" data-aos-duration="900">
-                  {{ .label }}
-                  <i class="fa fa-arrow-right pl-2"></i>
-                </a>
+            <div class="inline-flex gap-4 mt-6">
+              {{ with .button }}
+                {{ if .enable }}
+                  <a class="btn btn-outline-primary inline-flex items-center" href="{{ .link | absLangURL }}" {{ if eq .rel "external" }} target="_blank"{{ end }} data-aos="fade-left" data-aos-duration="900">
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
               {{ end }}
-            {{ end }}
+              {{ with .button2 }}
+                {{ if .enable }}
+                  <a class="btn btn-outline-primary inline-flex items-center" href="{{ .link | absLangURL }}" {{ if eq .rel "external" }} target="_blank"{{ end }} data-aos="fade-left" data-aos-duration="1000">
+                    {{ .label }}
+                    <i class="fa fa-arrow-right pl-2"></i>
+                  </a>
+                {{ end }}
+              {{ end }}
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,17 @@
+# Primary title (original language - English)
+title: "ISO/DIS 22692 – Genomics informatics — Quality control metrics for DNA sequencing"
+title_fr: "ISO/DIS 22692 – Informatique génomique — Métriques de contrôle qualité pour le séquençage de l'ADN"
+
+# Tags for both languages - categorized system
+tags_en: ["Bioinformatic"]
+tags_fr: ["Bioinformatique"]
+
+# Institution names
+institution_en: "International Organization for Standardization (ISO)"
+institution_fr: "Organisation internationale de normalisation (ISO)"
+
+# Shared metadata
+year: 2020
+authors: ["ISO/TS 22692"]
+original_language: "en"
+web_url: "https://www.iso.org/standard/73693.html"

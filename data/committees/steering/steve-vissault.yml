@@ -1,0 +1,25 @@
+# Basic info (shared)
+firstname: Steve
+lastname: Vissault
+email: steve.vissault@inrs.ca
+image: "/images/members/steve-vissault.jpg"
+
+# English content
+affiliation_en: "Research associate, INRS, Quebec"
+sort_order: 99
+title_taq_en: "M.Sc., TAQc coordinator"
+
+# French content
+title_taq_fr: "Membre du comité de direction"
+affiliation_fr: "M.Sc., Coordonateur de la TAQc"
+# Social links (shared)
+social:
+  - name: google-scholar
+    icon: fa-brands fa-google-scholar
+    link: https://scholar.google.fr/citations?user=gUUVhKoAAAAJ&hl=fr
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/stevevissault/
+  - name: orcid
+    icon: fa-brands fa-orcid
+    link: https://orcid.org/
