@@ -1,18 +1,24 @@
 # Basic info (shared)
 firstname: Geneviève
 lastname: Parent
-image: "/images/members/genevieve-parent.jpeg"
+image: "images/members/genevieve-parent.jpeg"
 committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"
 affiliation_en: "Fisheries and Oceans Canada"
-title_en: "Research scientist"
+title_en: "Ph.D., Research scientist"
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Pêches et océan Canada"
-title_fr: "Chercheuse"
+title_fr: "Ph.D., Chercheuse"
 
 # Social links (shared)
-social: []
+social:
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/genevi%C3%A8ve-parent-8488bb75/
+  - name: web
+    icon: fa-solid fa-globe
+    link: https://gjparent.github.io/
