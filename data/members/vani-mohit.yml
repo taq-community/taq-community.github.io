@@ -8,13 +8,13 @@ committee: "steering"
 title_taq_en: "Executive Committee Member"
 affiliation_en: "Centre d'expertise en analyse environnementale du Québec (CEAEQ) - MELCCFP"
 title_en: "Ph.D., Biologist"
-bio_en: "Vani specialized in microbial ecology during her PhD and postdoctoral fellowship. She is now a biologist at the Direction des expertises en évaluation du risque at CEAEQ (MELCCFP). Her work focuses on the development and use of rapid detection tools for genetic material from aquatic microorganisms, invasive exotic aquatic plants, and other indicator organisms for freshwater quality."
+summary_en: "Vani specialized in microbial ecology during her PhD and postdoctoral fellowship. She is now a biologist at the Direction des expertises en évaluation du risque at CEAEQ (MELCCFP). Her work focuses on the development and use of rapid detection tools for genetic material from aquatic microorganisms, invasive exotic aquatic plants, and other indicator organisms for freshwater quality."
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Centre d'expertise en analyse environnementale du Québec (CEAEQ) - MELCCFP"
 title_fr: "Ph.D., Biologiste"
-bio_fr: "Vani s'est spécialisée en écologie microbienne au cours de son doctorat et de son stage postdoctoral. Elle est maintenant biologiste à la Direction des expertises en évaluation du risque du CEAEQ (MELCCFP). Ses travaux portent sur le développement et l'utilisation d'outils de détection rapide du matériel génétique des microorganismes aquatiques, des plantes aquatiques exotiques envahissantes ainsi que d'autres organismes indicateurs de la qualité des eaux douces."
+summary_fr: "Vani s'est spécialisée en écologie microbienne au cours de son doctorat et de son stage postdoctoral. Elle est maintenant biologiste à la Direction des expertises en évaluation du risque du CEAEQ (MELCCFP). Ses travaux portent sur le développement et l'utilisation d'outils de détection rapide du matériel génétique des microorganismes aquatiques, des plantes aquatiques exotiques envahissantes ainsi que d'autres organismes indicateurs de la qualité des eaux douces."
 
 # Social links (shared)
 social:
