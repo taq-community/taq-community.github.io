@@ -243,6 +243,16 @@ providers:
       logo: "/images/services/eDNAtec.png"
       display: true
 
+    - name: "Merieux Nutrisciences - Animal DNA Department"
+      name_fr: "Merieux Nutrisciences - Département ADN animal"
+      type: ["analysis", "certification", "storage"]
+      province: "Ontario"
+      description: "Canada's most experienced private DNA testing laboratory with over 30 years of experience. ISO 17025 accredited for Animal DNA and Environmental DNA (eDNA) testing. Offers industry-leading quality control, 10-day turnaround, competitive pricing, and secure long-term sample storage."
+      description_fr: "Le laboratoire privé de tests ADN le plus expérimenté au Canada avec plus de 30 ans d'expérience. Accrédité ISO 17025 pour les tests d'ADN animal et d'ADN environnemental (ADNe). Offre un contrôle qualité de premier ordre, délai de 10 jours, prix compétitifs et stockage sécurisé à long terme des échantillons."
+      url: "https://na.mxns.com/dna-drug/environmental"
+      logo: "images/services/mxns.svg"
+      display: true
+
   # International
   international:
     - name: "GBIF (Global Biodiversity Information Facility)"
