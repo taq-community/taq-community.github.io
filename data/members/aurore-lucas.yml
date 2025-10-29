@@ -1,7 +1,8 @@
 # Basic info (shared)
 firstname: Aurore
 lastname: Lucas
-image: "images/comitee-members/aurore-lucas.jpeg"
+image: "/images/members/aurore-lucas.png"
+committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

@@ -1,0 +1,516 @@
+<section>
+  <div class="max-w-4xl mx-auto p-8">
+    <h1 class="text-3xl font-bold text-gold pb-3 mb-2">
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Formulaire fournisseur de services en ADN environmental
+      {{ else }}
+        eDNA Service provider form
+      {{ end }}
+    </h1>
+
+    <div class="bg-blue-50 border-l-4 border-gold p-4 my-6">
+      {{ if eq .Page.Site.Language.Lang "fr" }}
+        Ce formulaire est destiné aux entreprises, laboratoires commerciaux et consultants offrant des services en ADN environnemental.
+        Si vous êtes un chercheur ou étudiant, veuillez utiliser le
+        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}become-a-member" class="text-body hover:underline">formulaire d'adhésion individuel</a>.
+      {{ else }}
+        This form is for companies, commercial laboratories and consultants offering environmental DNA services.
+        If you are a researcher or student, please use the
+        <a href="{{ .Site.BaseURL }}become-a-member" class="text-body hover:underline">individual membership form</a>.
+      {{ end }}
+    </div>
+
+    <form action="{{ .Get "action" | default "https://formspree.io/f/YOUR_SERVICE_PROVIDER_FORM_ID" }}" method="POST" enctype="multipart/form-data">
+
+      <!-- Hidden field to identify form type -->
+      <input type="hidden" name="form_type" value="service_provider">
+
+      <!-- Section: Company Information -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Informations sur l'entreprise
+        {{ else }}
+          Company Information
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label for="company_name" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Nom de l'entreprise
+          {{ else }}
+            Company name
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="company_name" name="company_name" class="form-input" required>
+      </div>
+
+      <div class="mb-6">
+        <label for="company_type" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Type d'organisation
+          {{ else }}
+            Organization type
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <select id="company_type" name="company_type" class="form-input" required>
+          <option value="">
+            {{ if eq .Page.Site.Language.Lang "fr" }}-- Sélectionnez --{{ else }}-- Select --{{ end }}
+          </option>
+          <option value="Laboratoire commercial / Commercial laboratory">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Laboratoire commercial{{ else }}Commercial laboratory{{ end }}
+          </option>
+          <option value="Consultant indépendant / Independent consultant">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Consultant indépendant{{ else }}Independent consultant{{ end }}
+          </option>
+          <option value="Entreprise de services environnementaux / Environmental services company">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Entreprise de services environnementaux{{ else }}Environmental services company{{ end }}
+          </option>
+          <option value="Entreprise de biotechnologie / Biotechnology company">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Entreprise de biotechnologie{{ else }}Biotechnology company{{ end }}
+          </option>
+          <option value="Autre / Other">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Autre{{ else }}Other{{ end }}
+          </option>
+        </select>
+      </div>
+
+      <!-- Logo upload - Commented out
+      <div class="mb-6">
+        <label for="logo" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Logo de l'entreprise
+          {{ else }}
+            Company logo
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="file" id="logo" name="logo" accept="image/*" class="form-input" required>
+        <small class="text-white mt-1 block">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Format: JPG, PNG ou SVG, max 5 MB
+          {{ else }}
+            Format: JPG, PNG or SVG, max 5 MB
+          {{ end }}
+        </small>
+      </div>
+      -->
+
+      <div class="mb-6">
+        <label for="website" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Site web de l'entreprise
+          {{ else }}
+            Company website
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="url" id="website" name="website" class="form-input" placeholder="https://" required>
+      </div>
+
+      <!-- Section: Primary Contact Person -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Personne-ressource principale
+        {{ else }}
+          Primary Contact Person
+        {{ end }}
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="contact_firstname" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Prénom
+            {{ else }}
+              First name
+            {{ end }}
+            <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="contact_firstname" name="contact_firstname" class="form-input" required>
+        </div>
+
+        <div>
+          <label for="contact_lastname" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Nom
+            {{ else }}
+              Last name
+            {{ end }}
+            <span class="text-red-500">*</span>
+          </label>
+          <input type="text" id="contact_lastname" name="contact_lastname" class="form-input" required>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="contact_title" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Titre
+          {{ else }}
+            Position
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="contact_title" name="contact_title" class="form-input"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}ex: Directeur scientifique, CEO, Consultant principal...{{ else }}e.g.: Scientific Director, CEO, Lead Consultant...{{ end }}" required>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="email" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Adresse courriel professionnelle
+            {{ else }}
+              Professional email address
+            {{ end }}
+            <span class="text-red-500">*</span>
+          </label>
+          <input type="email" id="email" name="email" class="form-input" required>
+        </div>
+
+        <div>
+          <label for="phone" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              Téléphone
+            {{ else }}
+              Phone number
+            {{ end }}
+          </label>
+          <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (514) 123-4567">
+        </div>
+      </div>
+
+      <!-- Section: Environmental DNA Services -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Services en ADN environnemental
+        {{ else }}
+          Environmental DNA Services
+        {{ end }}
+      </div>
+
+      <div class="mb-6 text-white">
+        <label class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Types de services offerts
+          {{ else }}
+            Types of services offered
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <p class="mb-2">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Sélectionnez tous les services applicables
+          {{ else }}
+            Select all that apply
+          {{ end }}
+        </p>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Échantillonnage sur le terrain / Field sampling" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Échantillonnage sur le terrain{{ else }}Field sampling{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Extraction d'ADN / DNA extraction" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Extraction d'ADN{{ else }}DNA extraction{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Amplification PCR / PCR amplification" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Amplification PCR{{ else }}PCR amplification{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Séquençage / Sequencing" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Séquençage (Illumina, Nanopore, etc.){{ else }}Sequencing (Illumina, Nanopore, etc.){{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Analyse bioinformatique / Bioinformatics analysis" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Analyse bioinformatique{{ else }}Bioinformatics analysis{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Interprétation des résultats / Results interpretation" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Interprétation des résultats{{ else }}Results interpretation{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Consultation et formation / Consulting and training" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Consultation et formation{{ else }}Consulting and training{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Développement de méthodes / Method development" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Développement de méthodes{{ else }}Method development{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="services[]" value="Autre / Other" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Autre{{ else }}Other{{ end }}</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="services_description" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Description détaillée de vos services
+          {{ else }}
+            Detailed description of your services
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="services_description"
+          name="services_description"
+          maxlength="1000"
+          class="form-input"
+          rows="5"
+          required
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Décrivez vos services, votre expertise technique, vos capacités de séquençage, vos marchés cibles, etc...{{ else }}Describe your services, technical expertise, sequencing capabilities, target markets, etc...{{ end }}"></textarea>
+        <div class="text-right text-white mt-1">
+          {{ if eq .Page.Site.Language.Lang "fr" }}Max. 1000 caractères{{ else }}Max. 1000 characters{{ end }}
+        </div>
+      </div>
+
+      <div class="mb-6 text-white">
+        <label class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Types de services offerts
+          {{ else }}
+            Types of services offered
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <p class="mb-2">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Sélectionnez tous les services applicables
+          {{ else }}
+            Select all that apply
+          {{ end }}
+        </p>
+        <div class="grid md:grid-cols-2 gap-3">
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Biodiversité et conservation / Biodiversity and conservation" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Biodiversité et conservation{{ else }}Biodiversity and conservation{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Qualité de l'eau / Water quality" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Qualité de l'eau{{ else }}Water quality{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Pêches et aquaculture / Fisheries and aquaculture" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Pêches et aquaculture{{ else }}Fisheries and aquaculture{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Espèces envahissantes / Invasive species" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Espèces envahissantes{{ else }}Invasive species{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Évaluations environnementales / Environmental assessments" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Évaluations environnementales{{ else }}Environmental assessments{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Sols et sédiments / Soils and sediments" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Sols et sédiments{{ else }}Soils and sediments{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Recherche et développement / Research and development" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Recherche et développement{{ else }}Research and development{{ end }}</span>
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" name="sectors[]" value="Autre / Other" class="form-checkbox mr-2">
+            <span>{{ if eq .Page.Site.Language.Lang "fr" }}Autre{{ else }}Other{{ end }}</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label for="geographic_coverage" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Couverture géographique
+          {{ else }}
+            Geographic coverage
+          {{ end }}
+        </label>
+        <input type="text" id="geographic_coverage" name="geographic_coverage" class="form-input"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}ex: Québec, Canada, International...{{ else }}e.g.: Quebec, Canada, International...{{ end }}">
+      </div>
+
+      <!-- Section: Company Profile -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Profil de l'entreprise
+        {{ else }}
+          Company Profile
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label for="company_description" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Description de l'entreprise et de vos activités
+          {{ else }}
+            Company and activities description
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <textarea
+          id="company_description"
+          name="company_description"
+          maxlength="1000"
+          class="form-input"
+          rows="5"
+          required
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Présentez votre entreprise, votre mission, votre expertise et vos réalisations en ADN environnemental...{{ else }}Present your company, mission, expertise and achievements in environmental DNA...{{ end }}"></textarea>
+        <div class="text-right text-white mt-1">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Max. 1000 caractères
+          {{ else }}
+            Max. 1000 characters
+          {{ end }}
+        </div>
+      </div>
+
+      <!-- Section: Communication Preferences -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Préférences de communication
+        {{ else }}
+          Communication Preferences
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Souhaitez-vous recevoir les communications du TAQc?
+          {{ else }}
+            Would you like to receive TAQc communications?
+          {{ end }}
+          <span class="text-red-500">*</span>
+        </label>
+        <div class="mt-2 text-white">
+          <label class="inline-flex items-center mr-6">
+            <input type="radio" name="newsletter" value="Oui/Yes" class="form-radio" required>
+            <span class="ml-2">
+              {{ if eq .Page.Site.Language.Lang "fr" }}Oui{{ else }}Yes{{ end }}
+            </span>
+          </label>
+
+          <label class="inline-flex items-center">
+            <input type="radio" name="newsletter" value="Non/No" class="form-radio">
+            <span class="ml-2">
+              {{ if eq .Page.Site.Language.Lang "fr" }}Non{{ else }}No{{ end }}
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Section: Social Media & Platforms -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Réseaux sociaux & plateformes (optionnel)
+        {{ else }}
+          Social Media & Platforms (optional)
+        {{ end }}
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="linkedin" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              LinkedIn (entreprise ou page professionnelle)
+            {{ else }}
+              LinkedIn (company or professional page)
+            {{ end }}
+          </label>
+          <input type="url" id="linkedin" name="linkedin" class="form-input" placeholder="https://linkedin.com/company/...">
+        </div>
+
+        <div>
+          <label for="twitter" class="form-label">X (Twitter)</label>
+          <input type="url" id="twitter" name="twitter" class="form-input" placeholder="https://twitter.com/...">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="facebook" class="form-label">Facebook</label>
+          <input type="url" id="facebook" name="facebook" class="form-input" placeholder="https://facebook.com/...">
+        </div>
+
+        <div>
+          <label for="instagram" class="form-label">Instagram</label>
+          <input type="url" id="instagram" name="instagram" class="form-input" placeholder="https://instagram.com/...">
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4 mb-6">
+        <div>
+          <label for="youtube" class="form-label">YouTube</label>
+          <input type="url" id="youtube" name="youtube" class="form-input" placeholder="https://youtube.com/...">
+        </div>
+
+        <div>
+          <label for="github" class="form-label">
+            {{ if eq .Page.Site.Language.Lang "fr" }}
+              GitHub (si applicable)
+            {{ else }}
+              GitHub (if applicable)
+            {{ end }}
+          </label>
+          <input type="url" id="github" name="github" class="form-input" placeholder="https://github.com/...">
+        </div>
+      </div>
+
+      <!-- Section: Additional Information -->
+      <div class="text-gold text-xl border-b-3 border-gold mb-6 mt-8">
+        {{ if eq .Page.Site.Language.Lang "fr" }}
+          Informations supplémentaires
+        {{ else }}
+          Additional Information
+        {{ end }}
+      </div>
+
+      <div class="mb-6">
+        <label for="certifications" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Certifications, accréditations ou affiliations pertinentes
+          {{ else }}
+            Relevant certifications, accreditations or affiliations
+          {{ end }}
+        </label>
+        <textarea
+          id="certifications"
+          name="certifications"
+          class="form-input"
+          rows="3"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}ex: ISO 17025, certifications de laboratoire, associations professionnelles, etc...{{ else }}e.g.: ISO 17025, laboratory certifications, professional associations, etc...{{ end }}"></textarea>
+      </div>
+
+      <div class="mb-6">
+        <label for="additional_info" class="form-label">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Informations additionnelles
+          {{ else }}
+            Additional information
+          {{ end }}
+        </label>
+        <textarea
+          id="additional_info"
+          name="additional_info"
+          class="form-input"
+          rows="3"
+          placeholder="{{ if eq .Page.Site.Language.Lang "fr" }}Toute autre information que vous souhaitez partager...{{ else }}Any other information you would like to share...{{ end }}"></textarea>
+      </div>
+
+      <div class="text-center mt-8">
+        <button type="submit" class="btn btn-default bg-transparent hover:bg-white text-gold font-semibold hover:text-primary py-2 px-4 borde-3 border-gold hover:border-transparent rounded">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Soumettre
+          {{ else }}
+            Submit
+          {{ end }}
+        </button>
+      </div>
+    </form>
+  </div>
+</section>

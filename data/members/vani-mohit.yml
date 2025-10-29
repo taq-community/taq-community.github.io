@@ -1,7 +1,8 @@
 # Basic info (shared)
-firstname: Martin
-lastname: Laporte
-image: "images/comitee-members/martin-laporte.webp"
+firstname: Vani
+lastname: Mohit
+image: "/images/members/vani-mohit.jpg"
+committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

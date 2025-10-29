@@ -1,7 +1,8 @@
 # Basic info (shared)
 firstname: Yann
 lastname: Surget-Groba
-image: "images/comitee-members/yann-surget-groba.jpg"
+image: "/images/members/yann-surget-groba.jpg"
+committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

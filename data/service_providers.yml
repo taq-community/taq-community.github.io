@@ -61,9 +61,49 @@ providers:
       url: "https://www.bvna.com/environmental-ih-laboratories/services/environmental-dna"
       logo: ""
       display: false
+      
+    - name: "Sulys"
+      name_fr: "Sulys"
+      type: ["analysis", "sampling", "monitoring", "platform"]
+      province: "Quebec"
+      description: "Sulys is a Québec-based startup specialized in water monitoring through environmental DNA. We offer a turnkey service that includes strategic sampling, genomic analysis, and a digital platform for data visualization and decision support. Our integrated and proactive approach enables the rapid detection of threats to human, animal, and environmental health, in both surface waters and wastewater."
+      description_fr: "Sulys est une jeune entreprise québécoise spécialisée dans la vigie des eaux par ADN environnemental. Nous offrons un service clé en main regroupant l'échantillonnage stratégique, l'analyse génomique et une plateforme numérique de visualisation et d'aide à la décision. Notre approche intégrée et proactive permet de détecter rapidement des menaces pour la santé humaine, animale et environnementale, tant dans les eaux de surface que dans les eaux usées."
+      url: "https://www.sulys.ca/"
+      logo: "images/services/sulys.png"
+      display: true
 
-  # Ontario
-  ontario:
+    - name: "Association des biologistes du Québec (ABQ)"
+      name_fr: "Association des biologistes du Québec (ABQ)"
+      type: ["training", "coordination"]
+      province: "Quebec"
+      description: "The ABQ is a non-profit organization that brings together more than 1,000 members from the vast field of biological sciences. In addition to its annual general meeting, the ABQ offers its members an annual conference and cutting-edge training adapted to the needs of professionals, including continuous training in environmental DNA."
+      description_fr: "L'ABQ est un organisme à but non lucratif qui regroupe plus de 1 000 membres appartenant au vaste champ des sciences biologiques. En plus de son assemblée générale annuelle, l'ABQ offre à ses membres un congrès annuel ainsi que des formations de pointe adaptées aux besoins des professionnels, incluant la formation continue en ADN environnemental."
+      url: "https://www.abq.qc.ca/"
+      logo: "/images/services/abq.jpg"
+      display: true
+
+    - name: "Jean-Sébastien Moore Laboratory (Université Laval)"
+      name_fr: "Laboratoire de Jean-Sébastien Moore (Université Laval)"
+      type: ["research", "sampling", "analysis", "training"]
+      province: "Quebec"
+      description: "Ecology and evolution of northern fish, particularly anadromous salmonids. Molecular ecology and genomics of populations in the context of aquatic resource conservation and management. Services include sampling, sequencing, and data processing for eDNA research."
+      description_fr: "Écologie et évolution des poissons nordiques, particulièrement les salmonidés anadromes. Écologie moléculaire et génomique des populations dans un contexte de conservation et de gestion des ressources aquatiques. Services incluant l'échantillonnage, le séquençage et le traitement de données pour la recherche en ADNe."
+      url: "https://jean-sebastienmoore.weebly.com/"
+      logo: ""
+      display: false
+
+    - name: "Olivier Morissette Laboratory (UQAC)"
+      name_fr: "Laboratoire d'Olivier Morissette (UQAC)"
+      type: ["research", "sampling", "analysis", "training"]
+      province: "Quebec"
+      description: "Research on eco-evolutionary impacts of anthropogenic disturbances on freshwater fish populations. Services include sampling, DNA extraction, qPCR analysis, and data analysis for conservation and sustainable fisheries management."
+      description_fr: "Recherche sur les impacts éco-évolutifs des perturbations anthropiques sur les populations de poissons d'eau douce. Services incluant l'échantillonnage, l'extraction d'ADN, l'analyse qPCR et le traitement de données pour la conservation et la gestion durable des pêches."
+      url: "https://portfolio.uqac.ca/oliviermorissette/"
+      logo: "/images/services/uqac.png"
+      display: true
+
+  # Canada (Multi-provincial/Federal)
+  canada:
     - name: "Natural Resources DNA Profiling and Forensic Centre (NRDPFC)"
       name_fr: "Centre de profilage ADN et de criminalistique des ressources naturelles (NRDPFC)"
       type: ["analysis", "research", "forensic"]
@@ -94,8 +134,6 @@ providers:
       logo: ""
       display: false
 
-  # Canada (Multi-provincial/Federal)
-  canada:
     - name: "Helbing Lab (U. Victoria)"
       name_fr: "Laboratoire Helbing (U. Victoria)"
       type: ["research", "standardization", "training"]

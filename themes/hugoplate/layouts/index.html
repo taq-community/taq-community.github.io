@@ -47,6 +47,114 @@
   {{ end }}
   <!-- /Features -->
 
+  <!-- Stats Section -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-8" data-aos="fade-up" data-aos-duration="500">
+          <h2 class="text-gold font-bold mb-4">
+            {{ if eq site.Language.Lang "fr" }}
+              Le réseau de la TAQc
+            {{ else }}
+              The TAQc network
+            {{ end }}
+          </h2>
+        </div>
+      </div>
+      <div class="row justify-center">
+        <!-- Members Counter -->
+        <div class="md:col-6 lg:col-4 mb-8" data-aos="fade-up" data-aos-duration="600">
+          <div class="text-center p-8 bg-[#d0f5ff] rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-body text-6xl font-bold mb-4">
+              <span class="counter" data-target="{{ len site.Data.members }}">0</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-body mb-2">
+              {{ if eq site.Language.Lang "fr" }}
+                Membres
+              {{ else }}
+                Members
+              {{ end }}
+            </h3>
+            <p class="text-gray-600">
+              {{ if eq site.Language.Lang "fr" }}
+                Chercheurs, professionnels et experts
+              {{ else }}
+                Researchers, professionals and experts
+              {{ end }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Service Providers Counter -->
+        <div class="md:col-6 lg:col-4 mb-8" data-aos="fade-up" data-aos-duration="700">
+          <div class="text-center p-8 bg-[#d0f5ff] rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+            <div class="text-body text-6xl font-bold mb-4">
+              {{ $activeProviders := 0 }}
+              {{ range $province, $providers := site.Data.service_providers.providers }}
+                {{ range $providers }}
+                  {{ if .display }}
+                    {{ $activeProviders = add $activeProviders 1 }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+              <span class="counter" data-target="{{ $activeProviders }}">0</span>
+            </div>
+            <h3 class="text-2xl font-semibold text-body mb-2">
+              {{ if eq site.Language.Lang "fr" }}
+                Fournisseurs de services
+              {{ else }}
+                Service Providers
+              {{ end }}
+            </h3>
+            <p class="text-gray-600">
+              {{ if eq site.Language.Lang "fr" }}
+                Laboratoires et organisations
+              {{ else }}
+                Laboratories and organizations
+              {{ end }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Stats Section -->
+
+  <script>
+    // Counter animation
+    document.addEventListener('DOMContentLoaded', function() {
+      const counters = document.querySelectorAll('.counter');
+      const speed = 200; // Animation speed
+
+      counters.forEach(counter => {
+        const animate = () => {
+          const target = +counter.getAttribute('data-target');
+          const count = +counter.innerText;
+          const increment = target / speed;
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(animate, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+
+        // Trigger animation when element is in viewport
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              animate();
+              observer.unobserve(entry.target);
+            }
+          });
+        });
+
+        observer.observe(counter);
+      });
+    });
+  </script>
+
   <!-- Partners -->
   {{ with site.GetPage "sections/partners" }}
     {{ if .Params.enable }}

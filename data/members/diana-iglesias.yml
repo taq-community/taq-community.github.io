@@ -1,7 +1,8 @@
 # Basic info (shared)
 firstname: Diana
 lastname: Iglesias
-image: "images/comitee-members/diana-iglesias.jpg"
+image: "/images/members/diana-iglesias.jpg"
+committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

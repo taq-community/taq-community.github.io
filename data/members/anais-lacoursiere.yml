@@ -1,0 +1,28 @@
+# Basic info (shared)
+firstname: Anaïs
+lastname: Lacoursière
+image: "/images/members/anais-lacoursiere.jpg"
+
+committee: "external"
+# English content
+title_taq_en: "External Committee Member"
+affiliation_en: "Fisheries and Oceans Canada"
+title_en: "Ph.D., Research scientist"
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Pêches et Océans Canada"
+title_fr: "Ph.D., Chercheuse"
+
+# Social links (shared)
+social:
+  - name: "ResearchGate"
+    icon: fa-brands fa-researchgate
+    link: "https://www.researchgate.net/profile/Anais-Lacoursiere-Roussel"
+  - name: "Google Scholar"
+    icon: fa-brands fa-google-scholar
+    link: "https://scholar.google.com/citations?user=hDRu00YAAAAJ&hl=en"
+  - name: "Website"
+    icon: fa-solid fa-globe
+    link: "https://sites.google.com/view/gotedna/the-team"
+

@@ -1,7 +1,8 @@
 # Basic info (shared)
 firstname: Geneviève
 lastname: Parent
-image: ""
+image: "/images/members/genevieve-parent.jpeg"
+committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

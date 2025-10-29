@@ -12,10 +12,6 @@ h6 {
     font-weight: var(--font-weight-light);
 }
 
-.nav-dropdown-link {
-    font-weight: var(--font-weight-light);
-}
-
 content {
     font-weight: var(--font-weight-light);
     text-align: justify;
@@ -24,6 +20,7 @@ content {
 body {
     font-weight: var(--font-weight-light);
 }
+
 
 .btn-primary {
     color: var(--color-body);
@@ -49,6 +46,8 @@ body {
 
 .nav-dropdown-link {
     color: var(--color-body);
+    font-weight: var(--font-weight-light);
+    min-width: 250px;
 }
 
 .nav-dropdown-item :hover {
