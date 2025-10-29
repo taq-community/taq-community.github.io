@@ -5,17 +5,15 @@ email: steve.vissault@inrs.ca
 image: "/images/members/steve-vissault.jpg"
 committee: "steering"
 
-sort_order: 99
-
 # English content
-title_en: "M.Sc., Research associate at the TAQc"
-title_taq_en: "M.Sc., TAQc coordinator"
+title_en: "M.Sc., Research associate"
+title_taq_en: "TAQc coordinator"
 affiliation_en: "INRS, Quebec"
 summary_en: "Steve has a Master's degree in Computational Ecology from Université du Québec à Rimouski. He led the development of serveral scientific platforms such as mangal.io and Biodiversité Québec, creating R libraries, databases, and web interfaces."
 
 # French content
-title_fr: "M.Sc., Associé de recherche à la TAQc"
-title_taq_fr: "M.Sc., Coordonateur de la TAQc"
+title_fr: "M.Sc., Associé de recherche"
+title_taq_fr: "Coordonateur de la TAQc"
 affiliation_fr: "INRS, Québec"
 summary_fr: "Steve détient une maîtrise en Écologie computationnelle de l'Université du Québec à Rimouski. Il a dirigé le développement de plusieurs plateformes scientifiques telles que mangal.io et Biodiversité Québec, créant des librairies R, des bases de données et des interfaces web."
 

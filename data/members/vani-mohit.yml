@@ -1,9 +1,8 @@
 # Basic info (shared)
 firstname: Vani
 lastname: Mohit
-image: "/images/comitee-members/vani-mohit.jpg"
+image: "/images/members/vani-mohit.jpg"
 sort_order: 3
-committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"

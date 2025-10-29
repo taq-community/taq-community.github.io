@@ -1,8 +1,7 @@
 # Basic info (shared)
 firstname: Martin
 lastname: Laporte
-image: "images/comitee-members/martin-laporte.webp"
-sort_order: 3
+image: "/images/members/martin-laporte.webp"
 committee: "steering"
 
 # English content

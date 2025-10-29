@@ -1,9 +1,9 @@
 # Basic info (shared)
 firstname: Caren
 lastname: Helbing
-image: "images/comitee-members/caren-helbing.jpg"
-
+image: "/images/members/caren-helbing.jpg"
 committee: "external"
+
 # English content
 title_taq_en: "External Committee Member"
 affiliation_en: "University of Victoria"

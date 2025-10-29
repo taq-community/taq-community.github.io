@@ -4,8 +4,28 @@
   <section class="section-sm">
     <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
       <div class="row">
-        {{/* Get all members from data/members/ directory - sorted alphabetically by lastname */}}
-        {{ range $member := sort site.Data.members "lastname" "asc" }}
+        {{/* Display directors first by sort_order, then other members alphabetically */}}
+        {{ $withSortOrder := slice }}
+        {{ $withoutSortOrder := slice }}
+
+        {{/* Separate members with sort_order from those without */}}
+        {{ range $member := site.Data.members }}
+          {{ if isset $member "sort_order" }}
+            {{ $withSortOrder = $withSortOrder | append $member }}
+          {{ else }}
+            {{ $withoutSortOrder = $withoutSortOrder | append $member }}
+          {{ end }}
+        {{ end }}
+
+        {{/* Sort members with sort_order numerically */}}
+        {{ range $member := sort $withSortOrder "sort_order" "asc" }}
+          <div class="md:col-3 lg:col-4 mb-14">
+            {{ partial "components/author-card" $member }}
+          </div>
+        {{ end }}
+
+        {{/* Sort other members alphabetically by lastname */}}
+        {{ range $member := sort $withoutSortOrder "lastname" "asc" }}
           <div class="md:col-3 lg:col-4 mb-14">
             {{ partial "components/author-card" $member }}
           </div>

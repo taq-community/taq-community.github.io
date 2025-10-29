@@ -2,9 +2,9 @@
   <div class="max-w-4xl mx-auto p-8">
     <h1 class="text-3xl font-bold text-gold pb-3 mb-2">
       {{ if eq .Page.Site.Language.Lang "fr" }}
-        Formulaire fournisseur de services en eDNA
+        Formulaire fournisseur de services en ADN environmental
       {{ else }}
-        eDNA Service Provider Form
+        eDNA Service provider form
       {{ end }}
     </h1>
 
@@ -12,11 +12,11 @@
       {{ if eq .Page.Site.Language.Lang "fr" }}
         Ce formulaire est destiné aux entreprises, laboratoires commerciaux et consultants offrant des services en ADN environnemental.
         Si vous êtes un chercheur ou étudiant, veuillez utiliser le
-        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}members/become-a-member" class="text-body hover:underline">formulaire d'adhésion individuel</a>.
+        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}become-a-member" class="text-body hover:underline">formulaire d'adhésion individuel</a>.
       {{ else }}
         This form is for companies, commercial laboratories and consultants offering environmental DNA services.
         If you are a researcher or student, please use the
-        <a href="{{ .Site.BaseURL }}members/become-a-member" class="text-body hover:underline">individual membership form</a>.
+        <a href="{{ .Site.BaseURL }}become-a-member" class="text-body hover:underline">individual membership form</a>.
       {{ end }}
     </div>
 

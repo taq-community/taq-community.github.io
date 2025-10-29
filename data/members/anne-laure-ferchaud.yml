@@ -1,0 +1,36 @@
+# Basic info (shared)
+firstname: Anne-Laure
+lastname: Ferchaud
+email: anne-laure.ferchaud@pc.gc.ca
+image: "/images/members/anne-laure-ferchaud.png"
+
+# English content
+title_en: "Scientific Advisor"
+affiliation_en: "Parks Canada"
+summary_en: "I provide scientific expertise, manage applied science projects, and offer expert advice on ecological integrity, species at risk, and climate change issues within national parks and national marine conservation areas. A key focus is on evaluating and advancing innovative methodologies—including artificial intelligence, genomics, and environmental DNA (eDNA)—to support evidence-based decision-making. I also coordinate a national community of practice in conservation genetics and contribute to international conservation efforts."
+
+# French content
+title_fr: "Conseillère scientifique"
+affiliation_fr: "Parcs Canada"
+summary_fr: "Je fournis une expertise scientifique, je gère des projets de science appliquée et j'offre des conseils spécialisés sur l'intégrité écologique, les espèces en péril et les enjeux liés aux changements climatiques dans les parcs nationaux et les aires marines nationales de conservation. Une priorité est accordée à l'évaluation et au développement de méthodologies innovantes — notamment l'intelligence artificielle, la génomique et l'ADN environnemental (ADNe) — afin de soutenir la prise de décision fondée sur des données probantes."
+
+# Social links (shared)
+social:
+  - name: web
+    icon: fa-solid fa-globe
+    link: https://annelaureferchaud.wixsite.com/curriculum-vitae
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/anne-laure-ferchaud-6b004375/
+  - name: google-scholar
+    icon: fa-brands fa-google-scholar
+    link: https://scholar.google.com/citations?user=vwn6A9AAAAAJ&hl=fr&inst=10807683942739851211
+  - name: researchgate
+    icon: fa-brands fa-researchgate
+    link: https://www.researchgate.net/profile/A-L-Ferchaud
+  - name: orcid
+    icon: fa-brands fa-orcid
+    link: https://orcid.org/0000-0002-9577-5508
+  - name: github
+    icon: fa-brands fa-github
+    link: https://github.com/anne-laureferchaud

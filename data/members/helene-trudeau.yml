@@ -1,21 +1,20 @@
 # Basic info (shared)
 firstname: Hélène
 lastname: Trudeau
-image: "images/comitee-members/helene-trudeau.jpg"
-sort_order: 3
+image: "/images/members/helene-trudeau.jpg"
 committee: "steering"
 
 # English content
 title_taq_en: "Executive Committee Member"
 affiliation_en: "Université de Montréal"
 title_en: "Ph.D., Professor"
-#summary_en: "Hélène Trudeau focuses her research on normative systems in international law, constitutional law, and administrative law to ensure global environmental protection. "
+summary_en: "Hélène Trudeau focuses her research on normative systems in international law, constitutional law, and administrative law to ensure global environmental protection. "
 
 # French content
 title_taq_fr: "Membre du comité de direction"
 affiliation_fr: "Université de Montréal"
 title_fr: "Ph.D., Professeure"
-#summary_fr: "Hélène Trudeau concentre ses recherches sur les systèmes normatifs du droit international, du droit constitutionnel et du droit administratif pour assurer la protection de l'environnement global."
+summary_fr: "Hélène Trudeau concentre ses recherches sur les systèmes normatifs du droit international, du droit constitutionnel et du droit administratif pour assurer la protection de l'environnement global."
 
 # Social links (shared)
 social: []

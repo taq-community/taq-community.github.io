@@ -1,0 +1,18 @@
+# Basic info (shared)
+firstname: Julia
+lastname: Mlynarek
+email: julia.mlynarek@montreal.ca
+image: ""
+
+# English content
+title_en: "Researcher"
+affiliation_en: "Insectarium de Montréal"
+summary_en: "Our research activities focus on developing effective tools to detect and monitor species with conservation status, particularly in the context of climate change and habitat degradation, and on strengthening the capacity to detect and analyze insect communities, while enhancing the value of entomological collections and available genetic data."
+
+# French content
+title_fr: "Chercheuse"
+affiliation_fr: "Insectarium de Montréal"
+summary_fr: "Nos activités de recherche se concentrent sur le développement des outils efficaces pour détecter et surveiller les espèces à statut précaire, notamment dans le contexte des changements climatiques et de la dégradation des habitats et de renforcer les capacités de détection et d'analyse des communautés d'insectes, tout en valorisant les collections entomologiques et les données génétiques disponibles."
+
+# Social links (shared)
+social: []
