@@ -59,6 +59,9 @@
           <option value="">
             {{ if eq .Page.Site.Language.Lang "fr" }}-- Sélectionnez --{{ else }}-- Select --{{ end }}
           </option>
+          <option value="Organisme à but non lucratif / Non-profit organization">
+            {{ if eq .Page.Site.Language.Lang "fr" }}Organisme à but non lucratif{{ else }}Non-profit organization{{ end }}
+          </option>
           <option value="Laboratoire commercial / Commercial laboratory">
             {{ if eq .Page.Site.Language.Lang "fr" }}Laboratoire commercial{{ else }}Commercial laboratory{{ end }}
           </option>
