@@ -3,30 +3,41 @@
 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 group">
   <!-- Service Type Indicator -->
   <div class="flex flex-wrap gap-2 mb-4">
-    {{ if reflect.IsSlice $provider.type }}
-      {{ range $provider.type }}
-        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium
-          {{ if eq . "analysis" }}bg-blue-100 text-blue-800 border border-blue-200{{ end }}
-          {{ if eq . "research" }}bg-green-100 text-green-800 border border-green-200{{ end }}
-          {{ if eq . "storage" }}bg-purple-100 text-purple-800 border border-purple-200{{ end }}
-          {{ if eq . "database" }}bg-orange-100 text-orange-800 border border-orange-200{{ end }}">
-          {{ if eq . "analysis" }}🔬 Analysis{{ end }}
-          {{ if eq . "research" }}🧬 Research{{ end }}
-          {{ if eq . "storage" }}💾 Storage{{ end }}
-          {{ if eq . "database" }}🗃️ Database{{ end }}
+    {{ range $provider.type }}
+      {{ $typeData := dict }}
+
+      {{ if eq . "analysis" }}
+        {{ $typeData = dict "class" "bg-blue-100 text-blue-800 border border-blue-200" "icon" "🔬" "label" "Analysis" "labelFr" "Analyse" }}
+      {{ else if eq . "research" }}
+        {{ $typeData = dict "class" "bg-green-100 text-green-800 border border-green-200" "icon" "🧬" "label" "Research" "labelFr" "Recherche" }}
+      {{ else if eq . "storage" }}
+        {{ $typeData = dict "class" "bg-purple-100 text-purple-800 border border-purple-200" "icon" "💾" "label" "Storage" "labelFr" "Stockage" }}
+      {{ else if eq . "database" }}
+        {{ $typeData = dict "class" "bg-orange-100 text-orange-800 border border-orange-200" "icon" "🗃️" "label" "Database" "labelFr" "Base de données" }}
+      {{ else if eq . "sampling" }}
+        {{ $typeData = dict "class" "bg-teal-100 text-teal-800 border border-teal-200" "icon" "🧪" "label" "Sampling" "labelFr" "Échantillonnage" }}
+      {{ else if eq . "training" }}
+        {{ $typeData = dict "class" "bg-yellow-100 text-yellow-800 border border-yellow-200" "icon" "📚" "label" "Training" "labelFr" "Formation" }}
+      {{ else if eq . "consulting" }}
+        {{ $typeData = dict "class" "bg-pink-100 text-pink-800 border border-pink-200" "icon" "💼" "label" "Consulting" "labelFr" "Conseil" }}
+      {{ else if eq . "platform" }}
+        {{ $typeData = dict "class" "bg-cyan-100 text-cyan-800 border border-cyan-200" "icon" "🖥️" "label" "Platform" "labelFr" "Plateforme" }}
+      {{ else if eq . "kits" }}
+        {{ $typeData = dict "class" "bg-rose-100 text-rose-800 border border-rose-200" "icon" "📦" "label" "Kits" "labelFr" "Kits" }}
+      {{ else if eq . "standardization" }}
+        {{ $typeData = dict "class" "bg-sky-100 text-sky-800 border border-sky-200" "icon" "📋" "label" "Standardization" "labelFr" "Normalisation" }}
+      {{ end }}
+
+      {{ if $typeData }}
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium {{ index $typeData "class" }}">
+          {{ index $typeData "icon" }}
+          {{ if eq site.Language.Lang "fr" }}
+            {{ index $typeData "labelFr" }}
+          {{ else }}
+            {{ index $typeData "label" }}
+          {{ end }}
         </span>
       {{ end }}
-    {{ else }}
-      <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium
-        {{ if eq $provider.type "analysis" }}bg-blue-100 text-blue-800 border border-blue-200{{ end }}
-        {{ if eq $provider.type "research" }}bg-green-100 text-green-800 border border-green-200{{ end }}
-        {{ if eq $provider.type "storage" }}bg-purple-100 text-purple-800 border border-purple-200{{ end }}
-        {{ if eq $provider.type "database" }}bg-orange-100 text-orange-800 border border-orange-200{{ end }}">
-        {{ if eq $provider.type "analysis" }}🔬 Analysis{{ end }}
-        {{ if eq $provider.type "research" }}🧬 Research{{ end }}
-        {{ if eq $provider.type "storage" }}💾 Storage{{ end }}
-        {{ if eq $provider.type "database" }}🗃️ Database{{ end }}
-      </span>
     {{ end }}
   </div>
 
@@ -54,7 +65,11 @@
         {{ end }}
       </p>
       <div class="flex items-center justify-between">
-        <a href="{{ $provider.url }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-body hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
+        {{ $providerUrl := $provider.url }}
+        {{ if and (eq site.Language.Lang "en") $provider.url_en }}
+          {{ $providerUrl = $provider.url_en }}
+        {{ end }}
+        <a href="{{ $providerUrl }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-body hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
           {{ if eq site.Language.Lang "fr" }}
             En savoir plus
           {{ else }}
