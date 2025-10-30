@@ -23,7 +23,7 @@ providers:
       
     - name: "McGill / Frigon"
       name_fr: "McGill / Frigon"
-      type: "research"
+      type: ["research"]
       province: "Quebec"
       description: "Metagenomics and wastewater treatment"
       description_fr: "Métagénomique et traitement des eaux usées"
@@ -41,13 +41,14 @@ providers:
       logo: ""
       display: false
       
-    - name: "IBIS (Institut de biologie intégrative et des systèmes)"
-      name_fr: "IBIS (Institut de biologie intégrative et des systèmes)"
-      type: ["analysis", "sampling"]
+    - name: "Institut de Biologie Intégrative et des Systèmes (IBIS, Université Laval)"
+      name_fr: "Institut de Biologie Intégrative et des Systèmes (IBIS, Université Laval)"
+      type: ["research", "analysis", "storage"]
       province: "Quebec"
-      description: "Integrative biology institute at Université Laval with genomic analysis platform and bioinformatics capabilities for eDNA research, including environmental DNA and RNA ecology studies"
-      description_fr: "Institut de biologie intégrative à l'Université Laval avec plateforme d'analyses génomiques et capacités bioinformatiques pour la recherche ADNe, incluant les études d'écologie de l'ADN et ARN environnemental"
-      url: "https://www.ibis.ulaval.ca/"
+      description: "Since 2012, the IBIS genomic analysis and bioinformatics platforms offer complete environmental DNA services that are tailored to your needs: project design, sampling support, eDNA extractions, libraries and sequencing, analyses, interpretation and reports. They analyze over 1000 samples per year and their support is adapted to the needs of their clients: academic, government, not-for-profit catchment organisms, municipalities, first nations, parks and zecs, and more."
+      description_fr: "Les plateformes d'analyses génomiques et de bio-informatique de l'IBIS offrent depuis 2012 un service d'ADN environnemental sur mesure et complet : design de projets, support pour l'échantillonnage, extractions d'ADNe, librairies et séquençage, analyses, interprétation et rapports. Elles traitent au-delà de 1000 échantillons par année et leur accompagnement est adapté aux besoins de leurs clients : équipes de recherche universitaire, ministères, organismes de bassins versants, municipalités, premières nations, parcs et zecs, firmes de consultation, etc."
+      url: "https://www.ibis.ulaval.ca/services/analyse-genomique/"
+      url_en: "https://www.ibis.ulaval.ca/en/services-2/genomic-analysis-platform/"
       logo: "/images/services/ibis.png"
       display: true
       
@@ -257,7 +258,7 @@ providers:
   international:
     - name: "GBIF (Global Biodiversity Information Facility)"
       name_fr: "GBIF (Infrastructure mondiale d'information sur la biodiversité)"
-      type: "storage"
+      type: ["storage", "database"]
       province: "International"
       description: "Global network and data infrastructure providing open access to biodiversity data, including eDNA-derived occurrence records and sequence data"
       description_fr: "Réseau mondial et infrastructure de données fournissant un accès libre aux données de biodiversité, incluant les enregistrements d'occurrence et données de séquences dérivées de l'ADNe"
