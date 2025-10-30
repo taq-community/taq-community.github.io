@@ -43,7 +43,7 @@ providers:
       
     - name: "Institut de Biologie Intégrative et des Systèmes (IBIS, Université Laval)"
       name_fr: "Institut de Biologie Intégrative et des Systèmes (IBIS, Université Laval)"
-      type: ["research", "analysis", "storage"]
+      type: ["consulting", "platform", "sampling", "research", "analysis", "storage"]
       province: "Quebec"
       description: "Since 2012, the IBIS genomic analysis and bioinformatics platforms offer complete environmental DNA services that are tailored to your needs: project design, sampling support, eDNA extractions, libraries and sequencing, analyses, interpretation and reports. They analyze over 1000 samples per year and their support is adapted to the needs of their clients: academic, government, not-for-profit catchment organisms, municipalities, first nations, parks and zecs, and more."
       description_fr: "Les plateformes d'analyses génomiques et de bio-informatique de l'IBIS offrent depuis 2012 un service d'ADN environnemental sur mesure et complet : design de projets, support pour l'échantillonnage, extractions d'ADNe, librairies et séquençage, analyses, interprétation et rapports. Elles traitent au-delà de 1000 échantillons par année et leur accompagnement est adapté aux besoins de leurs clients : équipes de recherche universitaire, ministères, organismes de bassins versants, municipalités, premières nations, parcs et zecs, firmes de consultation, etc."
