@@ -8,6 +8,7 @@ h6 {
     font-weight: var(--font-weight-semi-bold);
 }
 
+
 .nav-link {
     font-weight: var(--font-weight-light);
 }
@@ -123,4 +124,32 @@ input[type="file"]::-webkit-file-upload-button:hover {
     background-color: var(--color-body);
     color: var(--color-primary);
     border-color: var(--color-body);
+}
+
+/* Marker Cluster Styling */
+/* Small clusters (2-10 markers) */
+.marker-cluster-small {
+    background-color: rgba(23, 83, 123, 0.6);
+}
+
+.marker-cluster-small div {
+    background-color: rgba(23, 83, 123, 0.6);
+}
+
+/* Medium clusters (11-50 markers) */
+.marker-cluster-medium {
+    background-color: rgba(23, 83, 123, 0.6);
+}
+
+.marker-cluster-medium div {
+    background-color: rgba(23, 83, 123, 0.6);
+}
+
+/* Large clusters (50+ markers) */
+.marker-cluster-large {
+    background-color: rgba(23, 83, 123, 0.6);
+}
+
+.marker-cluster-large div {
+    background-color: rgba(23, 83, 123, 0.8);
 }

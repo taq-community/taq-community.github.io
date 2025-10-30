@@ -54,5 +54,12 @@ Le Traitement et stockage des données ADNe transforme les résultats bruts de l
 
 <hr class="w-48 h-1 mx-auto mt-6 bg-gold border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-{{< contact-form >}}
+<div class="row mt-8">
+  <div class="col-12 text-center" data-aos="fade-up" data-aos-duration="800">
+    <a class="btn btn-outline-primary inline-flex items-center" href="/fr/service-provider-registration">
+        S'inscrire en tant que fournisseur de services
+      <i class="fa fa-arrow-right pl-2"></i>
+    </a>
+  </div>
+</div>
 

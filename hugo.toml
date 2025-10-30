@@ -143,6 +143,15 @@ lazy = true
 [[params.plugins.css]]
 link = "plugins/font-awesome/v6/icons.css"
 lazy = true
+[[params.plugins.css]]
+link = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+lazy = false
+[[params.plugins.css]]
+link = "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+lazy = false
+[[params.plugins.css]]
+link = "https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+lazy = false
 
 # JS Plugins
 [[params.plugins.js]]
@@ -172,3 +181,9 @@ lazy = true
 [[params.plugins.js]]
 link = "plugins/youtube-lite.js"
 lazy = true
+[[params.plugins.js]]
+link = "https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+lazy = false
+[[params.plugins.js]]
+link = "https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"
+lazy = false

@@ -1,0 +1,114 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12" data-aos="fade-up" data-aos-duration="700">
+      {{- $providersData := slice -}}
+      {{- range $region_name, $providers := site.Data.service_providers.providers -}}
+        {{- range $providers -}}
+          {{- if and .lat .lon .city -}}
+            {{- $provider := dict "name" .name "name_fr" .name_fr "city" .city "province" .province "lat" .lat "lon" .lon "url" .url "description" .description "description_fr" .description_fr "type" .type "display" .display -}}
+            {{- $providersData = $providersData | append $provider -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      <div
+        id="providers-map"
+        data-providers="{{ $providersData | jsonify }}"
+        data-lang="{{ site.Language.Lang }}"
+        style="height: 600px; border-radius: 1rem; overflow: hidden; box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Initialize map for service providers
+  function initializeMap() {
+    const mapElement = document.getElementById('providers-map');
+    if (!mapElement) {
+      console.error('Map element not found');
+      return;
+    }
+
+    if (typeof L === 'undefined' || typeof L.MarkerClusterGroup === 'undefined') {
+      console.log('Leaflet or MarkerCluster not loaded yet, retrying...');
+      setTimeout(initializeMap, 100);
+      return;
+    }
+
+    try {
+      const providersData = JSON.parse(mapElement.getAttribute('data-providers') || '[]');
+      const lang = mapElement.getAttribute('data-lang') || 'en';
+      const isEnglish = lang === 'en';
+
+      console.log('Initializing map with', providersData.length, 'providers');
+
+      const map = L.map('providers-map').setView([56, -95], 3.5);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        maxZoom: 18
+      }).addTo(map);
+
+      var markers = L.markerClusterGroup({
+        iconCreateFunction: function (cluster) {
+          var childCount = cluster.getChildCount();
+          var c = ' marker-cluster-';
+          if (childCount < 10) {
+            c += 'small';
+          } else if (childCount < 100) {
+            c += 'medium';
+          } else {
+            c += 'large';
+          }
+
+          return L.divIcon({
+            html: '<div><span>' + childCount + '</span></div>',
+            className: 'marker-cluster' + c,
+            iconSize: new L.Point(40, 40)
+          });
+        }
+      });
+
+      providersData.forEach(provider => {
+        if (provider.display) {
+          const marker = L.marker([provider.lat, provider.lon]);
+
+          const name = isEnglish ? provider.name : provider.name_fr;
+          const description = isEnglish ? provider.description : provider.description_fr;
+
+          let popupContent = `
+            <div style="max-width: 250px;">
+              <h3 class="text-body" style="margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">${name}</h3>
+              <p style="margin: 0 0 8px 0;">
+                ${description && description.length > 150 ? description.substring(0, 150) + '...' : (description || '')}
+              </p>
+              <p style="margin: 0 0 4px 0;">
+                <strong>${isEnglish ? 'Location' : 'Emplacement'}:</strong> ${provider.city}, ${provider.province}
+              </p>
+          `;
+
+          if (provider.url) {
+            popupContent += `
+              <a href="${provider.url}" target="_blank">
+                ${isEnglish ? 'Learn more →' : 'En savoir plus →'}
+              </a>
+            `;
+          }
+
+          popupContent += `</div>`;
+
+          marker.bindPopup(popupContent);
+          markers.addLayer(marker);
+        }
+      });
+
+      markers.addTo(map);
+
+      console.log('Map initialized successfully');
+    } catch (error) {
+      console.error('Error initializing map:', error);
+    }
+  }
+
+  initializeMap();
+</script>
