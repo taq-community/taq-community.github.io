@@ -17,7 +17,7 @@ providers:
     
     - name: "Annie Claude Bélisle laboratory (UQAT)"
       name_fr: "Laboratoire d'Annie Claude Bélisle (UQAT)"
-      type: ["research", "training", "statistical analysis", "sampling"]
+      type: ["research", "training", "statistical analysis", "sampling", "consulting"]
       province: "Québec"
       city: "Rouyn-Noranda"
       lat: 48.2359
