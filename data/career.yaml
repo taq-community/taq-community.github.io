@@ -1,0 +1,10 @@
+---
+careers:
+  - deadline: "2025-12-01"
+    type: "student"  # Options: "student" or "professional"
+    position:
+      fr: "Projet de maîtrise - Meilleures pratiques de suivi de la biodiversité par ADN environnemental au Québec"
+      en: "Master's Project - Best Practices for Biodiversity Monitoring using Environmental DNA in Quebec"
+    institution: "UQAT"
+    pdf: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/career/OffreMSc1_BADAS-UQAT.pdf"
+    active: true

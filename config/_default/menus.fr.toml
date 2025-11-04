@@ -104,6 +104,11 @@ weight = 4
 
 # Menu de pied de page
 [[footer]]
+name = "Carrières"
+url = "/careers"
+weight = 3
+
+[[footer]]
 name = "Contact"
 url = "/contact"
 weight = 4
