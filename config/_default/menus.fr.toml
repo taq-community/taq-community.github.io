@@ -62,6 +62,12 @@ url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services en ADNe"
+name = "Instrumentation ADNe"
+weight= 23.5
+url = "/edna-instrumentation"
+
+[[main]]
+parent = "Services en ADNe"
 name = "Traitement et stockage des données"
 weight= 24
 url = "/data-processing"
