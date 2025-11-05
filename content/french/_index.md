@@ -1,7 +1,7 @@
 ---
 # Fonctionnalités
 features:
-  - title: "La Table sur l'ADN environnemental du Québec  réunit les parties prenantes autour de la science de l'ADNe qu Québec et au Canada."
+  - title: "La Table sur l'ADN environnemental du Québec  réunit les parties prenantes autour de la science de l'ADNe au Québec et au Canada."
     image: "/images/filter.jpg"
     content: "La TAQc connecte chercheurs, organisations privées et publiques, premières nations pour soutenir le développement et l'application des standards d'ADN environnemental (ADNe)."
     button:

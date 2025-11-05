@@ -1,7 +1,7 @@
 ---
 # Features
 features:
-  - title: "The Québec Environmental DNA Table  brings together stakeholders around eDNA science in Québec."
+  - title: "The Québec Environmental DNA Table  brings together stakeholders around eDNA science in Québec and Canada."
     image: "/images/filter.jpg"
     content: "TAQc connects researchers, private and public organizations, first nations to support the development and application of environmental DNA (eDNA) standards."
     button:
