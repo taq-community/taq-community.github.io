@@ -13,7 +13,6 @@ institution_fr: "U.S. Environmental Protection Agency"
 # Shared metadata
 year: 2013
 authors: ["US EPA – National Rivers and Streams Assessment"]
-pdf: "documents/Protol_Stream (USA).pdf"
 pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protol_Stream (USA).pdf"
 thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protol_Stream (USA).png"
 original_language: "en"
