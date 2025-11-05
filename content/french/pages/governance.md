@@ -7,7 +7,7 @@ draft: false
 
 ## 1. Appellation de la table
 
-La Table sur l'ADN environnemental du Québec (TAQc), ci-après nommée la « TAQc », est à la fois un facilitateur pour assurer la communication entre les différents acteurs entourant la technologie de l'ADN environnemental (ou ADNe) et un groupe de réflexion et de concertation sur divers aspects liés à l'utilisation de l'ADNe au Québec, notamment le déploiement des technologies, l'accès à des ressources fiables et la gouvernance des données.
+La Table sur l'ADN environnemental du Québec , ci-après nommée la « TAQc », est à la fois un facilitateur pour assurer la communication entre les différents acteurs entourant la technologie de l'ADN environnemental (ou ADNe) et un groupe de réflexion et de concertation sur divers aspects liés à l'utilisation de l'ADNe au Québec, notamment le déploiement des technologies, l'accès à des ressources fiables et la gouvernance des données.
 
 ## 2. Rattachement universitaire
 
