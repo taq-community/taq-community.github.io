@@ -16,10 +16,14 @@ features:
   - title: "La TAQc favorise la collaboration en partageant les connaissances, outils et meilleures pratiques de l'ADNe."
     image: "/images/collector.jpg"
     content: "Accédez aux protocoles, matériels de formation et autres ressources pour vous aider à naviguer dans le domaine croissant de l'ADN environnemental."
+    button2:
+      enable: true
+      label: "Accéder au standards internationnaux"
+      link: "/standards"
     button:
       enable: true
-      label: "Accéder au centre de documentation de la TAQc"
-      link: "/documentation"
+      label: "Accéder aux protocoles"
+      link: "/protocols"
 
   - title: "La TAQc soutient l'utilisation de l'ADN environnemental pour relever les défis de biodiversité."
     image: "/images/landscape.png"

@@ -16,10 +16,14 @@ features:
   - title: "TAQc fosters collaboration by sharing eDNA knowledge, tools, and best practices."
     image: "/images/collector.jpg"
     content: "Access protocols, training materials, and other resources to help you navigate the growing field of environmental DNA."
+    button2:
+      enable: true
+      label: "Access international standards"
+      link: "/standards"
     button:
       enable: true
-      label: "Access the TAQc documentation center"
-      link: "/documentation"
+      label: "Access protocols"
+      link: "/protocols"
 
   - title: "TAQc supports the use Environmental DNA to address biodiversity challenges."
     image: "/images/landscape.png"

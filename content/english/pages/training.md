@@ -2,8 +2,6 @@
 title: "Training"
 meta_title: "Training"
 description: "Environmental DNA training services"
-image: "/images/avatar.png"
-draft: false
 ---
 
 TAQc offers specialized training services to develop environmental DNA (eDNA) skills for researchers, environmental managers, consultants, and other professionals interested in this emerging technology.

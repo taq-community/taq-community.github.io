@@ -1,0 +1,147 @@
+{{ define "main" }}
+{{ partial "page-header" . }}
+
+<section class="section-xsm">
+  <div class="container">
+    <div class="mb-8">
+      {{ .Content }}
+    </div>
+
+    <div class="my-8">
+      <!-- Quebec Section -->
+      {{ $quebecItems := slice }}
+      {{ range .Site.Data.documentation.standards }}
+        {{ $isQuebec := false }}
+        {{ if or (in .institution_en "Quebec") (in .institution_en "Québec") (in .institution_fr "Québec") (in .institution_fr "Quebec") }}
+          {{ $isQuebec = true }}
+        {{ end }}
+        {{ if $isQuebec }}
+          {{ if ne .display false }}
+            {{ $quebecItems = $quebecItems | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if gt (len $quebecItems) 0 }}
+        <div class="flex items-center mb-6">
+          <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+            <span class="text-xl">🏴󠁣󠁡󠁱󠁣󠁿</span>
+          </div>
+          <div>
+            <h2 class="text-gold mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                Québec
+              {{ else }}
+                Quebec
+              {{ end }}
+            </h2>
+            <p class="text-white text-sm mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                Normes du Québec
+              {{ else }}
+                Quebec standards
+              {{ end }}
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {{ range $quebecItems }}
+            {{ partial "components/standard-card" . }}
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <!-- Canada Section -->
+      {{ $canadaItems := slice }}
+      {{ range .Site.Data.documentation.standards }}
+        {{ $isCanada := false }}
+        {{ if or (in .institution_en "Canadian") (in .institution_en "Canada") (in .institution_fr "canadienne") (in .institution_fr "Canada") }}
+          {{ if not (or (in .institution_en "Quebec") (in .institution_en "Québec") (in .institution_fr "Québec") (in .institution_fr "Quebec")) }}
+            {{ $isCanada = true }}
+          {{ end }}
+        {{ end }}
+        {{ if $isCanada }}
+          {{ if ne .display false }}
+            {{ $canadaItems = $canadaItems | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if gt (len $canadaItems) 0 }}
+        <div class="flex items-center mb-6">
+          <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+            <span class="text-xl">🇨🇦</span>
+          </div>
+          <div>
+            <h2 class="text-gold mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                Canada
+              {{ else }}
+                Canada
+              {{ end }}
+            </h2>
+            <p class="text-white text-sm mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                Normes canadiennes
+              {{ else }}
+                Canadian standards
+              {{ end }}
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {{ range $canadaItems }}
+            {{ partial "components/standard-card" . }}
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <!-- International Section -->
+      {{ $internationalItems := slice }}
+      {{ range .Site.Data.documentation.standards }}
+        {{ $isInternational := false }}
+        {{ if or (in .institution_en "International") (in .institution_fr "internationale") (in .institution_en "ISO") }}
+          {{ $isInternational = true }}
+        {{ end }}
+        {{ if $isInternational }}
+          {{ if ne .display false }}
+            {{ $internationalItems = $internationalItems | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if gt (len $internationalItems) 0 }}
+        <div class="flex items-center mb-6">
+          <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+            <span class="text-xl">🌍</span>
+          </div>
+          <div>
+            <h2 class="text-gold mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                International
+              {{ else }}
+                International
+              {{ end }}
+            </h2>
+            <p class="text-white text-sm mb-0">
+              {{ if eq .Site.Language.Lang "fr" }}
+                Normes internationales
+              {{ else }}
+                International standards
+              {{ end }}
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {{ range $internationalItems }}
+            {{ partial "components/standard-card" . }}
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -2,8 +2,6 @@
 title: "eDNA sampling"
 meta_title: "eDNA sampling"
 description: "Environmental DNA sampling services"
-image: "/images/avatar.png"
-draft: false
 ---
 
 Environmental DNA (eDNA) sampling is the crucial first step in biodiversity analysis. TAQc connects clients with sampling experts who use standardized methods to collect water, soil, or other environmental substrate samples.

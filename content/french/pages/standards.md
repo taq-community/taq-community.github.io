@@ -1,0 +1,4 @@
+---
+title: "Normes"
+layout: "standards"
+---

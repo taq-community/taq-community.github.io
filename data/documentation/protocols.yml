@@ -1,0 +1,141 @@
+quebec:
+  - title: "Protocole standardisé des procédures de stérilisation et d'échantillonnage d'eau afin de déterminer la présence d'espèces fauniques dans les milieux hydriques par l'analyse d'ADNe au Québec"
+    title_en: "Standardized protocol for sterilization and water sampling procedures to determine the presence of wildlife species in aquatic environments through eDNA analysis in Quebec"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "Ministry of Forests, Wildlife and Parks (Quebec)"
+    institution_fr: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
+    year: 2021
+    authors: [""]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/PT_standardise_sterilisation_echantillonnage_eau_ADNe (Version 2021).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/PT_standardise_sterilisation_echantillonnage_eau_ADNe (Version 2021).png"
+    original_language: "fr"
+    display: true
+
+  - title: "Comparaison des méthodes de piégeage et d'ADN environnemental pour la détection et la quantification de la tortue mouchetée en Outaouais"
+    title_en: "Comparison of trapping and environmental DNA methods for spotted turtle detection and quantification in Outaouais"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "Ministry of Forests, Wildlife and Parks (Quebec)"
+    institution_fr: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
+    year: 2022
+    authors: [""]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protocole pour la tortue mouchetee (Québec).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protocole pour la tortue mouchetee (Québec).png"
+    original_language: "fr"
+    display: true
+
+  - title: "Protocole standardisé pour l'inventaire des tortues d'eau douce à l'aide de l'ADNe au Québec"
+    title_en: "Standardized protocol for freshwater turtle inventory using eDNA in Quebec"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "Ministry of Forests, Wildlife and Parks (Quebec)"
+    institution_fr: "Ministère des Forêts, de la Faune et des Parcs (Québec)"
+    year: 2022
+    authors: [""]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protocole standardisé pour les tortues au Québec.pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protocole standardisé pour les tortues au Québec.png"
+    original_language: "fr"
+    display: true
+
+  - title: "Protocoles, instructions et formulaires pour l’échantillonnage de l’ADNe"
+    title_en: "Protocols, instructions and forms for eDNA sampling"
+    tags_en: ["Sampling", "Protocol", "Training", "Indigenous", "eDNA"]
+    tags_fr: ["Échantillonnage", "Protocole", "Formation", "Autochtone", "ADNe"]
+    institution_en: "INRS, FNQLSDI, and Conseil de la Première Nation Abitibiwinni"
+    institution_fr: "INRS, IDDPNQL et Conseil de la Première Nation Abitibiwinni"
+    year: 2025
+    authors:
+      - "Annie Claude Bélisle (Conseil de la Première Nation Abitibiwinni, INRS)"
+      - "Benoit Croteau (Conseil de la Première Nation Abitibiwinni)"
+      - "Tuan Anh To (INRS)"
+      - "Julie Couillard (INRS)"
+      - "Glenn Polson (Conseil de la Première Nation Abitibiwinni)"
+      - "Julie-Christine Martin (IDDPNQL)"
+      - "Valérie Langlois (INRS)"
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protocoles&Formulaires_PN.pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/protocols_PN.png"
+    original_language: "fr"
+    display: true
+
+# Canada
+canada:
+  - title: "STREAM Benthic Metabarcoding Lab Protocol"
+    title_en: "STREAM Benthic Metabarcoding Lab Protocol"
+    tags_en: ["Protocol", "Metabarcoding", "Benthic"]
+    tags_fr: ["Protocole", "Métabarcoding", "Benthos"]
+    institution_en: "STREAM Environmental Genomics Program / University of Guelph"
+    institution_fr: "Programme de génomique environnementale STREAM / Université de Guelph"
+    year: 2024
+    authors: ["Carley Maitland", "Michael Wright", "Mehrdad Hajibabaei"]
+    pdf_url: "https://dx.doi.org/10.17504/protocols.io.5jyl8ppb6g2w/v2"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/stream.png"
+    original_language: "en"
+    display: true
+
+  - title: "Salamander Mussel (Simpsonaias ambigua) eDNA Protocol"
+    title_fr: "Protocole d'ADNe de la mulette de la salamandre (Simpsonaias ambigua)"
+    tags_en: ["eDNA", "Freshwater", "Mollusks", "Conservation", "Canada", "qPCR"]
+    tags_fr: ["ADNe", "Eau douce", "Mollusques", "Conservation", "Canada", "qPCR"]
+    institution_en: "Environment and Climate Change Canada"
+    institution_fr: "Environnement et Changement climatique Canada"
+    year: 2021
+    authors: ["Sabel Porto-Hannes, Kelly McNichols-O'Rourke, Margaret Goguen, Maggie Fang and Todd J. Morris"]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protocole Salamander Mussel (Canada, V2021).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protocole Salamander Mussel (Canada, V2021).png"
+    original_language: "en"
+    display: true
+
+  - title: "Open Water Wetland Environmental DNA (eDNA) Field Collection Protocols"
+    title_fr: "Protocoles de collecte sur le terrain d'ADN environnemental (ADNe) des milieux humides en eau libre"
+    tags_en: ["eDNA", "Wetlands", "Biodiversity", "Monitoring", "Canada", "Field Collection"]
+    tags_fr: ["ADNe", "Milieux humides", "Biodiversité", "Surveillance", "Canada", "Collecte terrain"]
+    institution_en: "Alberta Biodiversity Monitoring Institute"
+    institution_fr: "Alberta Biodiversity Monitoring Institute"
+    year: 2021
+    authors: [""]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/WetlandeDNAProtocols_(Alberta, 2021).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/WetlandeDNAProtocols_(Alberta, 2021).png"
+    original_language: "en"
+    display: true
+
+# International
+international:
+  - title: "Standard Operating Procedure for eDNA Sampling - Japan"
+    title_fr: "Procédure opérationnelle standard pour l'échantillonnage d'ADNe - Japon"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "Ministry of the Environment, Japan"
+    institution_fr: "Ministère de l'Environnement, Japon"
+    year: 2020
+    authors: ["Nagayasu N. et al."]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/sampling (Japan).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/sampling (Japan).png"
+    original_language: "en"
+    display: true
+
+  - title: "Protocol for Stream Macroinvertebrate Sampling (USA)"
+    title_fr: "Protocole d'échantillonnage des macroinvertébrés des cours d'eau (USA)"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "U.S. Environmental Protection Agency"
+    institution_fr: "U.S. Environmental Protection Agency"
+    year: 2013
+    authors: ["US EPA – National Rivers and Streams Assessment"]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protol_Stream (USA).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protol_Stream (USA).png"
+    original_language: "en"
+    display: true
+
+  - title: "UNESCO Expeditions Protocols"
+    title_fr: "Protocoles des expéditions UNESCO"
+    tags_en: ["Sampling", "Protocol"]
+    tags_fr: ["Échantillonnage", "Protocole"]
+    institution_en: "UNESCO"
+    institution_fr: "UNESCO"
+    year: 2020
+    authors: ["UNESCO Intergovernmental Oceanographic Commission"]
+    pdf_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/Protocoles_expeditions_protocols_(UNESCO).pdf"
+    thumbnail_url: "https://object-arbutus.cloud.computecanada.ca/website-static-docs/protocols-eDNA/thumbnails/Protocoles_expeditions_protocols_(UNESCO).png"
+    original_language: "en"
+    display: true

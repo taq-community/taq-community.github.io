@@ -31,49 +31,60 @@ weight = 14
 url = "/history"
 
 # Documentation
+# Documentation
 [[main]]
 name = "Documentation"
-url = "/documentation"
 weight = 5
 
-
-# Services en ADNe
 [[main]]
-name = "Services en ADNe"
+parent = "Documentation"
+name = "Protocoles"
+weight = 51
+url = "/protocols"
+
+[[main]]
+parent = "Documentation"
+name = "Standards"
+weight = 52
+url = "/standards"
+
+# Services
+[[main]]
+name = "Services"
 weight = 2
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "Qu'est-ce que l'ADNe ?"
 weight= 21
 url = "/adne"
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "Échantillonnage"
 weight = 22
 url = "/sampling"
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "Analyses en laboratoire"
 weight= 23
 url = "/laboratory-analysis"
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "Traitement et stockage des données"
 weight= 24
 url = "/data-processing"
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "Formation"
 weight= 25
 url = "/training"
 
 [[main]]
-parent = "Services en ADNe"
+parent = "Services"
 name = "S'inscrire comme fournisseur de services"
 weight = 26
 url = "/service-provider-registration"

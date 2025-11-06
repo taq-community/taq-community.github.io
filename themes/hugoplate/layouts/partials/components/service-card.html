@@ -69,7 +69,7 @@
         {{ if and (eq site.Language.Lang "en") $provider.url_en }}
           {{ $providerUrl = $provider.url_en }}
         {{ end }}
-        <a href="{{ $providerUrl }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-body hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
+        <a href="{{ $providerUrl }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-body hover:bg-sky-600 text-white text-sm font-medium rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
           {{ if eq site.Language.Lang "fr" }}
             En savoir plus
           {{ else }}

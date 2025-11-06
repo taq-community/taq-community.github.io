@@ -1,0 +1,123 @@
+{{ $filterTag := .Get "tag" }}
+
+<div class="my-8">
+  <!-- Quebec Section -->
+  {{ $quebecItems := slice }}
+  {{ range .Page.Site.Data.documentation.protocols.quebec }}
+    {{ if ne .display false }}
+      {{ if or (not $filterTag) (in .tags_en $filterTag) (in .tags_fr $filterTag) }}
+        {{ $quebecItems = $quebecItems | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $quebecItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🏴󠁣󠁡󠁱󠁣󠁿</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Québec
+          {{ else }}
+            Quebec
+          {{ end }}
+        </h2>
+        <p class="text-white text-sm mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Protocoles du Québec
+          {{ else }}
+            Quebec protocols
+          {{ end }}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      {{ range $quebecItems }}
+        {{ partial "components/protocol-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- Canada Section -->
+  {{ $canadaItems := slice }}
+  {{ range .Page.Site.Data.documentation.protocols.canada }}
+    {{ if ne .display false }}
+      {{ if or (not $filterTag) (in .tags_en $filterTag) (in .tags_fr $filterTag) }}
+        {{ $canadaItems = $canadaItems | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $canadaItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🇨🇦</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Canada
+          {{ else }}
+            Canada
+          {{ end }}
+        </h2>
+        <p class="text-white text-sm mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Protocoles canadiens
+          {{ else }}
+            Canadian protocols
+          {{ end }}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+      {{ range $canadaItems }}
+        {{ partial "components/protocol-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <!-- International Section -->
+  {{ $internationalItems := slice }}
+  {{ range .Page.Site.Data.documentation.protocols.international }}
+    {{ if ne .display false }}
+      {{ if or (not $filterTag) (in .tags_en $filterTag) (in .tags_fr $filterTag) }}
+        {{ $internationalItems = $internationalItems | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ if gt (len $internationalItems) 0 }}
+    <div class="flex items-center mb-6">
+      <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+        <span class="text-xl">🌍</span>
+      </div>
+      <div>
+        <h2 class="text-gold mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            International
+          {{ else }}
+            International
+          {{ end }}
+        </h2>
+        <p class="text-white text-sm mb-0">
+          {{ if eq .Page.Site.Language.Lang "fr" }}
+            Protocoles internationaux
+          {{ else }}
+            International protocols
+          {{ end }}
+        </p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range $internationalItems }}
+        {{ partial "components/protocol-card" . }}
+      {{ end }}
+    </div>
+  {{ end }}
+</div>

@@ -1,0 +1,76 @@
+{{ $standard := . }}
+
+<div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200 group">
+  <div class="flex {{ if $standard.logo_url }}gap-4{{ end }}">
+    {{ if $standard.logo_url }}
+      <div class="flex-shrink-0 max-w-[25%]">
+        <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
+          <img src="{{ $standard.logo_url }}" alt="{{ if eq site.Language.Lang "fr" }}{{ $standard.institution_fr }}{{ else }}{{ $standard.institution_en }}{{ end }}" class="h-36 w-full object-contain" />
+        </div>
+      </div>
+    {{ end }}
+    <div class="flex-1">
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-3">
+        {{ $tags := .tags_en }}
+        {{ if eq site.Language.Lang "fr" }}
+          {{ $tags = .tags_fr }}
+        {{ end }}
+        {{ range $tags }}
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 border border-purple-200">
+            {{ . }}
+          </span>
+        {{ end }}
+      </div>
+
+      <!-- Title -->
+      <h3 class="text-gray-900 text-lg font-semibold mb-2 group-hover:text-blue-800 transition-colors duration-300">
+        {{ if eq site.Language.Lang "fr" }}
+          {{ $standard.title_fr | default $standard.title }}
+        {{ else }}
+          {{ $standard.title_en | default $standard.title }}
+        {{ end }}
+      </h3>
+
+      <!-- Institution -->
+      <p class="text-gray-600 text-sm mb-2">
+        {{ if eq site.Language.Lang "fr" }}
+          {{ $standard.institution_fr | default $standard.institution_en }}
+        {{ else }}
+          {{ $standard.institution_en | default $standard.institution_fr }}
+        {{ end }}
+      </p>
+
+      <!-- Year and Authors -->
+      <div class="text-gray-500 text-xs mb-4">
+        {{ if $standard.year }}
+          <span class="font-medium">{{ $standard.year }}</span>
+        {{ end }}
+        {{ if and $standard.year $standard.authors }}
+          <span class="mx-1">•</span>
+        {{ end }}
+        {{ if $standard.authors }}
+          {{ if gt (len $standard.authors) 0 }}
+            {{ if ne (index $standard.authors 0) "" }}
+              <span>{{ delimit $standard.authors ", " }}</span>
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      </div>
+
+      <!-- Web Link -->
+      {{ if $standard.web_url }}
+        <a href="{{ $standard.web_url }}" target="_blank" class="inline-flex items-center px-4 py-2 bg-body hover:bg-sky-600 text-white text-sm font-medium rounded-lg transition-colors duration-300 shadow-sm hover:shadow-md">
+          {{ if eq site.Language.Lang "fr" }}
+            Accéder à la ressource
+          {{ else }}
+            Access the ressource
+          {{ end }}
+          <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+          </svg>
+        </a>
+      {{ end }}
+    </div>
+  </div>
+</div>

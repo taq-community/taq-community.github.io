@@ -1,0 +1,64 @@
+- title: "CSA W214:21 Environmental DNA (eDNA) reporting requirements and terminology"
+  title_fr: "CSA W214:21 Exigences en matière de terminologie et de production de rapports sur l'ADN environnemental (ADNe)"
+  tags_en: ["Sampling"]
+  tags_fr: ["Échantillonnage"]
+  institution_en: "Canadian Standards Association (CSA)"
+  institution_fr: "Association canadienne de normalisation (CSA)"
+  year: 2021
+  authors: ["CSA Group"]
+  original_language: "en"
+  web_url: "https://www.csagroup.org/store/product/CSA%20W214%3A21/"
+  logo_url: "/images/csa.png"
+  display: true
+
+- title: "CSA W219:F23 Performance Criteria for Quantitative PCR-based Environmental DNA Assays"
+  title_fr: "CSA W219:F23 Critères de performance pour les analyses de l'ADN environnemental par réaction de polymérisation en chaîne quantitative ciblée"
+  tags_en: ["qPCR"]
+  tags_fr: ["qPCR"]
+  institution_en: "Canadian Standards Association (CSA)"
+  institution_fr: "Association canadienne de normalisation (CSA)"
+  year: 2023
+  authors: ["CSA Group"]
+  original_language: "en"
+  web_url: "https://www.csagroup.org/store/product/CSA_W219%3A23/"
+  logo_url: "/images/csa.png"
+  display: true
+
+- title: "ISO/DIS 17805.2 – Water quality — Sampling, capture and preservation of environmental DNA from water"
+  title_fr: "ISO/DIS 17805.2 – Échantillonnage, capture et préservation de l'ADN environnemental de l'eau"
+  tags_en: ["Water", "Preservation", "Capture"]
+  tags_fr: ["Eau", "Préservation", "Capture"]
+  institution_en: "International Organization for Standardization (ISO)"
+  institution_fr: "Organisation internationale de normalisation (ISO)"
+  year: 2023
+  authors: ["ISO/TC 147/SC 5"]
+  original_language: "en"
+  web_url: "https://www.iso.org/standard/87980.html"
+  logo_url: "/images/iso.png"
+  display: true
+
+- title: "ISO/DIS 22692 – Genomics informatics — Quality control metrics for DNA sequencing"
+  title_fr: "ISO/DIS 22692 – Informatique génomique — Métriques de contrôle qualité pour le séquençage de l'ADN"
+  tags_en: ["Bioinformatic"]
+  tags_fr: ["Bioinformatique"]
+  institution_en: "International Organization for Standardization (ISO)"
+  institution_fr: "Organisation internationale de normalisation (ISO)"
+  year: 2020
+  authors: ["ISO/TS 22692"]
+  original_language: "en"
+  web_url: "https://www.iso.org/standard/73693.html"
+  logo_url: "/images/iso.png"
+  display: true
+
+- title: "ISO/TS 24420 – Biotechnology — Massively parallel sequencing — General requirements and guidance for metagenomics"
+  title_fr: "ISO/TS 24420 – Biotechnologie — Séquençage massif en parallèle — Exigences générales et directives pour la métagénomique"
+  tags_en: ["Analysis"]
+  tags_fr: ["Analysis"]
+  institution_en: "International Organization for Standardization (ISO)"
+  institution_fr: "Organisation internationale de normalisation (ISO)"
+  year: 2023
+  authors: ["ISO/TS 24420"]
+  original_language: "en"
+  web_url: "https://www.iso.org/standard/78741.html"
+  logo_url: "/images/iso.png"
+  display: true
