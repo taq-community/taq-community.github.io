@@ -2,9 +2,26 @@
   {{ partial "page-header" . }}
 
   <section class="section-xsm">
-    <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+    <div class="container">
+      <!-- Search Bar -->
       <div class="row">
-        {{/* Display directors first by sort_order, then other members alphabetically */}}
+        <div class="col-12 md:col-8 lg:col-3 ml-auto my-8">
+          <div class="relative">
+            <i class="fa fa-search absolute left-7 top-1/2 -translate-y-1/2 text-gray-400 z-10 pointer-events-none"></i>
+            <input
+              type="text"
+              id="member-search"
+              placeholder="{{ if eq site.Language.Lang "fr" }}Rechercher un membre...{{ else }}Search members...{{ end }}"
+              class="w-full py-3 pl-12 pr-4 rounded-lg border text-gray-600 border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-all"
+            />
+          </div>
+          <div id="search-results-count" class="mt-2 text-sm text-white text-right"></div>
+        </div>
+      </div>
+
+      <div class="row" id="members-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+        {{/* Build members array for search */}}
+        {{ $allMembers := slice }}
         {{ $withSortOrder := slice }}
         {{ $withoutSortOrder := slice }}
 
@@ -19,18 +36,148 @@
 
         {{/* Sort members with sort_order numerically */}}
         {{ range $member := sort $withSortOrder "sort_order" "asc" }}
-          <div class="md:col-3 lg:col-4 mb-14">
+          {{ $allMembers = $allMembers | append $member }}
+          <div class="md:col-3 lg:col-4 mb-14 member-card" data-member-id="{{ $member.firstname }}-{{ $member.lastname }}">
             {{ partial "components/author-card" $member }}
           </div>
         {{ end }}
 
         {{/* Sort other members alphabetically by lastname */}}
         {{ range $member := sort $withoutSortOrder "lastname" "asc" }}
-          <div class="md:col-3 lg:col-4 mb-14">
+          {{ $allMembers = $allMembers | append $member }}
+          <div class="md:col-3 lg:col-4 mb-14 member-card" data-member-id="{{ $member.firstname }}-{{ $member.lastname }}">
             {{ partial "components/author-card" $member }}
           </div>
         {{ end }}
       </div>
+
+      <!-- No results message -->
+      <div id="no-results" class="row hidden">
+        <div class="col-12 text-center py-12">
+          <i class="fa fa-search text-6xl text-gray-300 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">
+            {{ if eq site.Language.Lang "fr" }}
+              Aucun membre trouvé
+            {{ else }}
+              No members found
+            {{ end }}
+          </h3>
+          <p class="text-white">
+            {{ if eq site.Language.Lang "fr" }}
+              Essayez avec des mots-clés différents
+            {{ else }}
+              Try different keywords
+            {{ end }}
+          </p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <!-- Fuse.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+
+  <!-- Members Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // Prepare members data for search
+      const membersDataRaw = {{ $allMembers | jsonify | safeJS }};
+      const currentLang = {{ site.Language.Lang | jsonify | safeJS }};
+
+      // Convert to array if it's an object
+      let membersData = Array.isArray(membersDataRaw)
+        ? membersDataRaw
+        : Object.values(membersDataRaw || {});
+
+      // Configure Fuse.js
+      const fuseOptions = {
+        keys: [
+          { name: 'firstname', weight: 2 },
+          { name: 'lastname', weight: 2 },
+          { name: currentLang === 'fr' ? 'affiliation_fr' : 'affiliation_en', weight: 1 }
+        ],
+        threshold: 0.1,
+        includeScore: true,
+        ignoreLocation: true,
+        minMatchCharLength: 3,
+        shouldSort: true,
+        ignoreDiacritics: true
+      };
+
+      let fuse = new Fuse(membersData, fuseOptions);
+
+      // Get DOM elements
+      const searchInput = document.getElementById('member-search');
+      const noResults = document.getElementById('no-results');
+      const resultsCount = document.getElementById('search-results-count');
+      const memberCards = document.querySelectorAll('.member-card');
+
+      // Create a map of normalized IDs to card elements for fast lookup
+      const cardMap = new Map();
+      memberCards.forEach(card => {
+        const memberId = card.getAttribute('data-member-id');
+        cardMap.set(memberId, card);
+      });
+
+      // Search function
+      function performSearch(query) {
+
+        // If query is empty, show all members
+        if (!query || query.trim() === '') {
+          memberCards.forEach(card => {
+            card.style.display = '';
+          });
+          noResults.classList.add('hidden');
+          resultsCount.textContent = '';
+          console.log('✓ Showing all members');
+          return;
+        }
+
+        // Perform search
+        const results = fuse.search(query);
+        console.log('Search results:', results.length);
+        if (results.length > 0) {
+          console.log('First result:', results[0].item);
+        }
+
+        // Create a Set of matched member indices or identifiers
+        const matchedMembers = new Set();
+        results.forEach(result => {
+          // Try multiple ID formats to handle special characters
+          const id1 = `${result.item.firstname}-${result.item.lastname}`;
+          matchedMembers.add(id1);
+        });
+
+        // Show/hide members based on search results
+        let visibleCount = 0;
+        cardMap.forEach((card, memberId) => {
+          if (matchedMembers.has(memberId)) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show/hide no results message
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          resultsCount.textContent = '';
+        } else {
+          noResults.classList.add('hidden');
+          const countText = currentLang === 'fr'
+            ? `${visibleCount} membre${visibleCount > 1 ? 's' : ''} trouvé${visibleCount > 1 ? 's' : ''}`
+            : `${visibleCount} member${visibleCount > 1 ? 's' : ''} found`;
+          resultsCount.textContent = countText;
+        }
+      }
+
+      // Add event listener for search input
+      searchInput.addEventListener('input', function(e) {
+        performSearch(e.target.value);
+      });
+
+    });
+  </script>
 {{ end }}
