@@ -2,8 +2,6 @@
 title: "Traitement et stockage des données"
 meta_title: "Traitement et stockage des données"
 description: "Services de traitement et d'analyse des données d'ADN environnemental"
-image: "/images/avatar.png"
-draft: false
 ---
 
 Le Traitement et stockage des données ADNe transforme les résultats bruts de laboratoire en informations scientifiques exploitables. La TAQc vous connecte avec des experts en bioinformatique et en analyse de données qui utilisent des outils et méthodes avancés pour interpréter vos données d'ADN environnemental.

@@ -1,8 +1,6 @@
 ---
 title: "Statutes and Governance of the TAQc"
 meta_title: "Governance"
-image: "/images/avatar.png"
-draft: false
 ---
 
 ## 1. Name of the Table

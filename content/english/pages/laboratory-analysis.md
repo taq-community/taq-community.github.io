@@ -2,8 +2,6 @@
 title: "Laboratory Analyses"
 meta_title: "Laboratory Analyses"
 description: "Environmental DNA laboratory analysis services"
-image: "/images/avatar.png"
-draft: false
 ---
 
 

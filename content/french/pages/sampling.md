@@ -2,8 +2,6 @@
 title: "Échantillonnage d'ADNe"
 meta_title: "Échantillonnage d'ADNe"
 description: "Services d'échantillonnage d'ADN environnemental"
-image: "/images/avatar.png"
-draft: false
 ---
 
 L'échantillonnage d'ADN environnemental (ADNe) est la première étape cruciale dans l'analyse de la biodiversité. La TAQc connecte les clients avec des experts en échantillonnage qui utilisent des méthodes standardisées pour collecter des échantillons d'eau, de sol ou d'autres substrats environnementaux.

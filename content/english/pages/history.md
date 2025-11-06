@@ -1,8 +1,6 @@
 ---
 title: "History"
 meta_title: "History of the TAQc table"
-image: "/images/avatar.png"
-draft: false
 ---
 
 The Québec Environmental DNA Table  was established in 2025 in response to a growing need for coordination and knowledge sharing around environmental DNA (eDNA) in Québec. This technology is recognized for its potential for biodiversity monitoring such as the detection keystone species, cryptic animals, and invasive taxa in natural and managed ecosystems.

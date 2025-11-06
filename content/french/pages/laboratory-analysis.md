@@ -2,8 +2,6 @@
 title: "Analyses en laboratoire"
 meta_title: "Analyses en laboratoire"
 description: "Services d'analyses d'ADN environnemental en laboratoire"
-image: "/images/avatar.png"
-draft: false
 ---
 
 Les analyses en laboratoire permettent d'extraire et d'amplifier le matériel génétique contenu dans vos échantillons. Une fois l'extraction et l'amplification réalisées, plusieurs analyses peuvent être effectuées à l'aide d'un séquenceur à haut débit. Ces analyses consistent à comparer les séquences génétiques obtenues avec des biobanques de référence afin d'identifier les individus, les espèces ou les groupes taxonomiques auxquels se rattachent les fragments d'ADN séquencés.

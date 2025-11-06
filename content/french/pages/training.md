@@ -2,8 +2,6 @@
 title: "Formation"
 meta_title: "Formation"
 description: "Services de formation en ADN environnemental"
-image: "/images/avatar.png"
-draft: false
 ---
 
 La TAQc offre des services de formation spécialisés pour développer les compétences en ADN environnemental (ADNe) auprès des chercheurs, gestionnaires environnementaux, consultants et autres professionnels intéressés par cette technologie émergente.

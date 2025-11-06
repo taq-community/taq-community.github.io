@@ -1,8 +1,6 @@
 ---
 title: "Status et gouvernance de la TAQc"
 meta_title: "Governance"
-image: "/images/avatar.png"
-draft: false
 ---
 
 ## 1. Appellation de la table

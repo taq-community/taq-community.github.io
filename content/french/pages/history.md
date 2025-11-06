@@ -1,8 +1,6 @@
 ---
 title: "Historique"
 meta_title: "Historique de la table TAQc"
-image: "/images/avatar.png"
-draft: false
 ---
 
 La Table sur l'ADN environnemental du Québec  a été établie en 2025 en réponse à un besoin croissant de coordination et de partage des connaissances autour de l'ADN environnemental (ADNe) au Québec. Cette technologie est reconnue pour son potentiel de surveillance de la biodiversité tel que la détection d'espèces clés, d'animaux cryptiques et de taxons envahissants dans les écosystèmes naturels et gérés.

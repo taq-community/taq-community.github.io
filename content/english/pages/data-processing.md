@@ -2,8 +2,6 @@
 title: "Data storage and processing"
 meta_title: "Data storage and processing"
 description: "Environmental DNA Data storage and processing and analysis services"
-image: "/images/avatar.png"
-draft: false
 ---
 
 eDNA Data storage and processing transforms raw laboratory results into actionable scientific information. TAQc connects you with bioinformatics and data analysis experts who use advanced tools and methods to interpret your environmental DNA data.
