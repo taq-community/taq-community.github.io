@@ -4,6 +4,9 @@ title: "Partners"
 description: "This initiative is a collaborative effort."
 
 partners:
+  - name: "rouyn-noranda"
+    image: "/images/partners/ville-rouyn-noranda.png"
+    url: "https://www.ville.rouyn-noranda.qc.ca/"
   - name: "ABMI"
     image: "/images/partners/ABMI.png"
     url: "https://www.abmi.ca/"
