@@ -5,7 +5,7 @@
     {{ if $standard.logo_url }}
       <div class="flex-shrink-0 max-w-[25%]">
         <div class="bg-gray-50 p-3 rounded-lg border border-gray-100 group-hover:bg-blue-50 transition-colors duration-300">
-          <img src="{{ $standard.logo_url }}" alt="{{ if eq site.Language.Lang "fr" }}{{ $standard.institution_fr }}{{ else }}{{ $standard.institution_en }}{{ end }}" class="h-36 w-full object-contain" />
+          {{ partial "image" (dict "Src" $standard.logo_url "Context" .Page "Alt" $standard.institution_en "Class" "h-36 w-full object-contain")}}
         </div>
       </div>
     {{ end }}

@@ -1,24 +1,24 @@
 - title: "CSA W214:21 Environmental DNA (eDNA) reporting requirements and terminology"
   title_fr: "CSA W214:21 Exigences en matière de terminologie et de production de rapports sur l'ADN environnemental (ADNe)"
-  tags_en: ["Sampling"]
-  tags_fr: ["Échantillonnage"]
+  tags_en: ["eDNA reporting"]
+  tags_fr: ["Rapport eDNA"]
   institution_en: "Canadian Standards Association (CSA)"
   institution_fr: "Association canadienne de normalisation (CSA)"
   year: 2021
-  authors: ["CSA Group"]
+  authors: ["Gagné, N., Bernatchez, L., Bright, D., Côté, G., Coulson, M., Gurney, K., Hanner, R., Helbing, C., Hobbs, J., Hocking, M., Khan, I., Naumann, C., Parent, G., Richter, C., Silverio, C., Skinner, M., Weir, A., Wilcox, T., Wilson, C., and Clogg-Wright, K."]
   original_language: "en"
   web_url: "https://www.csagroup.org/store/product/CSA%20W214%3A21/"
   logo_url: "/images/csa.png"
   display: true
 
-- title: "CSA W219:F23 Performance Criteria for Quantitative PCR-based Environmental DNA Assays"
-  title_fr: "CSA W219:F23 Critères de performance pour les analyses de l'ADN environnemental par réaction de polymérisation en chaîne quantitative ciblée"
+- title: "CSA W219:23 Performance criteria for the analyses of environmental DNA by targeted quantitative polymerase chain reaction"
+  title_fr: "CSA W219:23 Critères de performance pour les analyses de l'ADN environnemental par réaction de polymérisation en chaîne quantitative ciblée"
   tags_en: ["qPCR"]
   tags_fr: ["qPCR"]
   institution_en: "Canadian Standards Association (CSA)"
   institution_fr: "Association canadienne de normalisation (CSA)"
   year: 2023
-  authors: ["CSA Group"]
+  authors: ["Abbott, C., Bright, D., Bryant, H., Côté, G., Crookes, S., Gurney, K., Hanner, R., Helbing, C., Hocking, M., Khan, I., Langlois, V.S., Lemay, M., Marshall, N., Miliano, R., Mirabzadeh-Ardakani, A., Parent, G., Richter, C., Wagener, A., Wilson, C., and Clogg-Wright, K."]
   original_language: "en"
   web_url: "https://www.csagroup.org/store/product/CSA_W219%3A23/"
   logo_url: "/images/csa.png"
