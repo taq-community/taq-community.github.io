@@ -2,6 +2,19 @@ providers:
 
   # Quebec
   quebec:
+    - name: "µBIOME Laboratory (INRS)"
+      name_fr: "Laboratoire µBIOME (INRS)"
+      type: ["research", "analysis", "sampling", "monitoring"]
+      province: "Quebec"
+      city: "Quebec City"
+      lat: 46.812927134119064
+      lon: -71.224355790602
+      description: "The work of the µBIOME laboratory led by Professor Jérôme Comte aims to improve our capacity to monitor the health of aquatic ecosystems, measure the effects of climate change on aquatic ecosystems, and find bioremediation solutions to reduce the impact of mining on the environment. The laboratory is equipped to perform high-throughput and real-time microbiome sequencing with technologies such as the Oxford Nanopore MinION."
+      description_fr: "Les travaux du laboratoire µBIOME dirigé par le professeur Jérôme Comte visent à améliorer notre capacité à surveiller la santé des écosystèmes aquatiques, à mesurer l'effet des changements climatiques sur les écosystèmes aquatiques, ainsi qu'à trouver des solutions de bioremédiation pour diminuer l'impact des mines sur l'environnement. Le laboratoire est équipé pour effectuer du séquençage à haut débit et en temps réel de microbiome avec des technologies telles que le Oxford Nanopore MinION."
+      url: "https://comtelab.weebly.com/"
+      logo: "/images/services/inrs.png"
+      display: true
+
     - name: "Valérie Langlois Laboratory (INRS)"
       name_fr: "Laboratoire de Valérie Langlois (INRS)"
       type: ["research", "analysis", "sampling", "training"]
@@ -14,7 +27,7 @@ providers:
       url: "https://inrs.ca/la-recherche/professeurs/valerie-langlois/"
       logo: "/images/services/inrs.png"
       display: true
-    
+
     - name: "Annie Claude Bélisle laboratory (UQAT)"
       name_fr: "Laboratoire d'Annie Claude Bélisle (UQAT)"
       type: ["research", "training", "statistical analysis", "sampling", "consulting"]
