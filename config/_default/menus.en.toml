@@ -90,6 +90,12 @@ name = "Register as a service provider"
 weight = 26
 url = "/service-provider-registration"
 
+[[main]]
+parent = "Services"
+name = "Service provider list"
+weight = 27
+url = "/providers/list"
+
 # News
 [[main]]
 name = "News"

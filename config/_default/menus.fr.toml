@@ -89,6 +89,12 @@ name = "S'inscrire comme fournisseur de services"
 weight = 26
 url = "/service-provider-registration"
 
+[[main]]
+parent = "Services"
+name = "Bottin des fournisseurs de services"
+weight = 27
+url = "/providers/list"
+
 # Actualités
 [[main]]
 name = "Actualités"

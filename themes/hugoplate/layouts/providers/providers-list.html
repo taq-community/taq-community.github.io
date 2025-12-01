@@ -1,0 +1,305 @@
+{{ define "main" }}
+  {{ partial "page-header" . }}
+
+  <section class="section-xsm">
+    <div class="container">
+      <!-- Search Bar -->
+      <div class="row">
+        <div class="col-12 md:col-8 lg:col-3 ml-auto my-8">
+          <div class="relative">
+            <i class="fa fa-search absolute left-7 top-1/2 -translate-y-1/2 text-gray-400 z-10 pointer-events-none"></i>
+            <input
+              type="text"
+              id="provider-search"
+              placeholder="{{ if eq site.Language.Lang "fr" }}Rechercher un fournisseur...{{ else }}Search providers...{{ end }}"
+              class="w-full py-3 pl-12 pr-4 rounded-lg border text-gray-600 border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-all"
+            />
+          </div>
+          <div id="search-results-count" class="mt-2 text-sm text-white text-right"></div>
+        </div>
+      </div>
+
+      <div id="providers-container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
+        {{/* Build providers array for search */}}
+        {{ $allProviders := slice }}
+
+        <!-- Quebec Section -->
+        {{ $quebecItems := slice }}
+        {{ range site.Data.service_providers.providers.quebec }}
+          {{ if ne .display false }}
+            {{ $quebecItems = $quebecItems | append . }}
+            {{ $allProviders = $allProviders | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $quebecItems) 0 }}
+          <div class="provider-section" data-section="quebec">
+            <div class="flex items-center mb-6">
+              <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+                <span class="text-xl">🏴󠁣󠁡󠁱󠁣󠁿</span>
+              </div>
+              <div>
+                <h2 class="text-gold mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    Québec
+                  {{ else }}
+                    Quebec
+                  {{ end }}
+                </h2>
+                <p class="text-white text-sm mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    Fournisseurs de services au Québec
+                  {{ else }}
+                    Service providers in Quebec
+                  {{ end }}
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {{ range $quebecItems }}
+                <div class="provider-card" data-provider-name="{{ .name }}" data-provider-name-fr="{{ .name_fr }}" data-section="quebec">
+                  {{ partial "components/service-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        <!-- Canada Section -->
+        {{ $canadaItems := slice }}
+        {{ range site.Data.service_providers.providers.canada }}
+          {{ if ne .display false }}
+            {{ $canadaItems = $canadaItems | append . }}
+            {{ $allProviders = $allProviders | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $canadaItems) 0 }}
+          <div class="provider-section" data-section="canada">
+            <div class="flex items-center mb-6">
+              <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+                <span class="text-xl">🇨🇦</span>
+              </div>
+              <div>
+                <h2 class="text-gold mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    Canada
+                  {{ else }}
+                    Canada
+                  {{ end }}
+                </h2>
+                <p class="text-white text-sm mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    Fournisseurs de services canadiens
+                  {{ else }}
+                    Canadian service providers
+                  {{ end }}
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              {{ range $canadaItems }}
+                <div class="provider-card" data-provider-name="{{ .name }}" data-provider-name-fr="{{ .name_fr }}" data-section="canada">
+                  {{ partial "components/service-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+
+        <!-- International Section -->
+        {{ $internationalItems := slice }}
+        {{ range site.Data.service_providers.providers.international }}
+          {{ if ne .display false }}
+            {{ $internationalItems = $internationalItems | append . }}
+            {{ $allProviders = $allProviders | append . }}
+          {{ end }}
+        {{ end }}
+
+        {{ if gt (len $internationalItems) 0 }}
+          <div class="provider-section" data-section="international">
+            <div class="flex items-center mb-6">
+              <div class="flex items-center justify-center w-10 h-10 bg-semigold rounded-full mr-4">
+                <span class="text-xl">🌍</span>
+              </div>
+              <div>
+                <h2 class="text-gold mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    International
+                  {{ else }}
+                    International
+                  {{ end }}
+                </h2>
+                <p class="text-white text-sm mb-0">
+                  {{ if eq site.Language.Lang "fr" }}
+                    Fournisseurs de services internationaux
+                  {{ else }}
+                    International service providers
+                  {{ end }}
+                </p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {{ range $internationalItems }}
+                <div class="provider-card" data-provider-name="{{ .name }}" data-provider-name-fr="{{ .name_fr }}" data-section="international">
+                  {{ partial "components/service-card" . }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+
+      <!-- No results message -->
+      <div id="no-results" class="row hidden">
+        <div class="col-12 text-center py-12">
+          <i class="fa fa-search text-6xl text-gray-300 mb-4"></i>
+          <h3 class="text-2xl text-white mb-2">
+            {{ if eq site.Language.Lang "fr" }}
+              Aucun fournisseur trouvé
+            {{ else }}
+              No providers found
+            {{ end }}
+          </h3>
+          <p class="text-white">
+            {{ if eq site.Language.Lang "fr" }}
+              Essayez avec des mots-clés différents
+            {{ else }}
+              Try different keywords
+            {{ end }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fuse.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
+
+  <!-- Providers Search Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // Prepare providers data for search
+      const providersDataRaw = {{ $allProviders | jsonify | safeJS }};
+      const currentLang = {{ site.Language.Lang | jsonify | safeJS }};
+
+      // Convert to array if it's an object
+      let providersData = Array.isArray(providersDataRaw)
+        ? providersDataRaw
+        : Object.values(providersDataRaw || {});
+
+      // Configure Fuse.js
+      const fuseOptions = {
+        keys: [
+          { name: 'name', weight: 3 },
+          { name: 'name_fr', weight: 3 },
+          { name: currentLang === 'fr' ? 'description_fr' : 'description', weight: 1 },
+          { name: 'city', weight: 2 },
+          { name: 'province', weight: 2 },
+          { name: 'type', weight: 1.5 }
+        ],
+        threshold: 0.3,
+        includeScore: true,
+        ignoreLocation: true,
+        minMatchCharLength: 2,
+        shouldSort: true,
+        ignoreDiacritics: true
+      };
+
+      let fuse = new Fuse(providersData, fuseOptions);
+
+      // Get DOM elements
+      const searchInput = document.getElementById('provider-search');
+      const noResults = document.getElementById('no-results');
+      const resultsCount = document.getElementById('search-results-count');
+      const providerCards = document.querySelectorAll('.provider-card');
+      const providerSections = document.querySelectorAll('.provider-section');
+
+      // Create a map of normalized names to card elements for fast lookup
+      const cardMap = new Map();
+      providerCards.forEach(card => {
+        const providerName = card.getAttribute('data-provider-name');
+        const providerNameFr = card.getAttribute('data-provider-name-fr');
+        cardMap.set(providerName, card);
+        if (providerNameFr && providerNameFr !== providerName) {
+          cardMap.set(providerNameFr, card);
+        }
+      });
+
+      // Search function
+      function performSearch(query) {
+
+        // If query is empty, show all providers
+        if (!query || query.trim() === '') {
+          providerCards.forEach(card => {
+            card.style.display = '';
+          });
+          providerSections.forEach(section => {
+            section.style.display = '';
+          });
+          noResults.classList.add('hidden');
+          resultsCount.textContent = '';
+          return;
+        }
+
+        // Perform search
+        const results = fuse.search(query);
+
+        // Create a Set of matched provider names
+        const matchedProviders = new Set();
+        results.forEach(result => {
+          matchedProviders.add(result.item.name);
+          if (result.item.name_fr) {
+            matchedProviders.add(result.item.name_fr);
+          }
+        });
+
+        // Show/hide providers based on search results
+        let visibleCount = 0;
+        const visibleSections = new Set();
+
+        cardMap.forEach((card, providerName) => {
+          if (matchedProviders.has(providerName)) {
+            card.style.display = '';
+            visibleCount++;
+            visibleSections.add(card.getAttribute('data-section'));
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        // Show/hide sections based on whether they have visible cards
+        providerSections.forEach(section => {
+          const sectionName = section.getAttribute('data-section');
+          if (visibleSections.has(sectionName)) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+
+        // Show/hide no results message
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+          resultsCount.textContent = '';
+        } else {
+          noResults.classList.add('hidden');
+          const countText = currentLang === 'fr'
+            ? `${visibleCount} fournisseur${visibleCount > 1 ? 's' : ''} trouvé${visibleCount > 1 ? 's' : ''}`
+            : `${visibleCount} provider${visibleCount > 1 ? 's' : ''} found`;
+          resultsCount.textContent = countText;
+        }
+      }
+
+      // Add event listener for search input
+      searchInput.addEventListener('input', function(e) {
+        performSearch(e.target.value);
+      });
+
+    });
+  </script>
+{{ end }}
