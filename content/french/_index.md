@@ -6,10 +6,6 @@ features:
     content: "La TAQc connecte chercheurs, organisations privées et publiques, premières nations pour soutenir le développement et l'application des standards d'ADN environnemental (ADNe)."
     button:
       enable: true
-      label: "S'inscrire en tant que membre"
-      link: "/become-a-member"
-    button2:
-      enable: true
       label: "S'inscrire en tant que fournisseur de services"
       link: "/service-provider-registration"
 
