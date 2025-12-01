@@ -89,29 +89,11 @@ name = "S'inscrire comme fournisseur de services"
 weight = 26
 url = "/service-provider-registration"
 
-# Membres
-[[main]]
-name = "Membres"
-weight = 3
-
-[[main]]
-parent = "Membres"
-name = "Liste des membres"
-weight = 31
-url = "/members/list"
-
-[[main]]
-parent = "Membres"
-name = "Devenir membre"
-weight = 32
-url = "/become-a-member"
-
 # Actualités
 [[main]]
 name = "Actualités"
 url = "/news"
 weight = 4
-
 
 # Menu de pied de page
 [[footer]]

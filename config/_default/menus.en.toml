@@ -90,24 +90,6 @@ name = "Register as a service provider"
 weight = 26
 url = "/service-provider-registration"
 
-# Members
-[[main]]
-name = "Members"
-weight = 3
-url = "#"
-
-[[main]]
-parent = "Members"
-name = "Members List"
-weight = 31
-url = "/members/list"
-
-[[main]]
-parent = "Members"
-name = "Become a Member"
-weight = 32
-url = "/become-a-member"
-
 # News
 [[main]]
 name = "News"
