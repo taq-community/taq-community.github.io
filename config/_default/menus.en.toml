@@ -62,27 +62,27 @@ url = "/adne"
 
 [[main]]
 parent = "Services"
-name = "Sampling"
+name = "Training"
 weight = 22
+url = "/training"
+
+[[main]]
+parent = "Services"
+name = "Sampling"
+weight = 23
 url = "/sampling"
 
 [[main]]
 parent = "Services"
 name = "Laboratory Analysis"
-weight = 23
+weight = 24
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services"
 name = "Data storage and processing"
-weight = 24
-url = "/data-processing"
-
-[[main]]
-parent = "Services"
-name = "Training"
 weight = 25
-url = "/training"
+url = "/data-processing"
 
 [[main]]
 parent = "Services"
