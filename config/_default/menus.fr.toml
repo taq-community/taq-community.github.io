@@ -24,82 +24,83 @@ name = "Gouvernance"
 weight = 13
 url = "/governance"
 
+# Actualités
+[[main]]
+parent = "Qu'est-ce que la TAQc?"
+name = "Actualités"
+url = "/news"
+weight = 14
+
+
 [[main]]
 parent = "Qu'est-ce que la TAQc?"
 name = "Historique"
-weight = 14
+weight = 15
 url = "/history"
 
-# Documentation
-# Documentation
+# Qu'est-ce que l'ADNe ?
 [[main]]
-name = "Documentation"
-weight = 5
-
-[[main]]
-parent = "Documentation"
-name = "Protocoles"
-weight = 51
-url = "/protocols"
-
-[[main]]
-parent = "Documentation"
-name = "Standards"
-weight = 52
-url = "/standards"
+name = "Qu'est-ce que l'ADNe ?"
+weight = 2
+url = "/adne"
 
 # Services
 [[main]]
 name = "Services"
-weight = 2
-
-[[main]]
-parent = "Services"
-name = "Qu'est-ce que l'ADNe ?"
-weight= 21
-url = "/adne"
+weight = 3
 
 [[main]]
 parent = "Services"
 name = "Formation"
-weight= 22
+weight= 31
 url = "/training"
 
 [[main]]
 parent = "Services"
 name = "Échantillonnage"
-weight = 23
+weight = 32
 url = "/sampling"
 
 [[main]]
 parent = "Services"
 name = "Analyses en laboratoire"
-weight= 24
+weight= 33
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services"
 name = "Traitement et stockage des données"
-weight= 25
+weight= 34
 url = "/data-processing"
 
 [[main]]
 parent = "Services"
 name = "S'inscrire comme fournisseur de services"
-weight = 26
+weight = 35
 url = "/service-provider-registration"
 
 [[main]]
 parent = "Services"
 name = "Bottin des fournisseurs de services"
-weight = 27
+weight = 36
 url = "/providers/list"
 
-# Actualités
+# Documentation
 [[main]]
-name = "Actualités"
-url = "/news"
+name = "Documentation"
 weight = 4
+
+[[main]]
+parent = "Documentation"
+name = "Protocoles"
+weight = 41
+url = "/protocols"
+
+[[main]]
+parent = "Documentation"
+name = "Standards"
+weight = 42
+url = "/standards"
 
 # Menu de pied de page
 [[footer]]

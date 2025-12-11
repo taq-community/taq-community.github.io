@@ -24,83 +24,84 @@ name = "Governance"
 weight = 13
 url = "/governance"
 
+# News
+[[main]]
+parent = "What's the TAQc?"
+name = "News"
+url = "/news"
+weight = 14
+
+
 [[main]]
 parent = "What's the TAQc?"
 name = "History"
-weight = 14
+weight = 15
 url = "/history"
 
-
-# Documentation
+# What is eDNA?
 [[main]]
-name = "Documentation"
-weight = 5
-
-[[main]]
-parent = "Documentation"
-name = "Protocols"
-weight = 51
-url = "/protocols"
-
-[[main]]
-parent = "Documentation"
-name = "Standards"
-weight = 52
-url = "/standards"
+name = "What's eDNA?"
+weight = 2
+url = "/adne"
 
 # Services
 [[main]]
 name = "Services"
-weight = 2
+weight = 3
 url = "#"
 
 [[main]]
 parent = "Services"
-name = "What is ADNe?"
-weight = 21
-url = "/adne"
-
-[[main]]
-parent = "Services"
 name = "Training"
-weight = 22
+weight = 31
 url = "/training"
 
 [[main]]
 parent = "Services"
 name = "Sampling"
-weight = 23
+weight = 32
 url = "/sampling"
 
 [[main]]
 parent = "Services"
 name = "Laboratory Analysis"
-weight = 24
+weight = 33
 url = "/laboratory-analysis"
 
 [[main]]
 parent = "Services"
 name = "Data storage and processing"
-weight = 25
+weight = 34
 url = "/data-processing"
 
 [[main]]
 parent = "Services"
 name = "Register as a service provider"
-weight = 26
+weight = 35
 url = "/service-provider-registration"
 
 [[main]]
 parent = "Services"
 name = "Service provider list"
-weight = 27
+weight = 36
 url = "/providers/list"
 
-# News
+# Documentation
 [[main]]
-name = "News"
-url = "/news"
+name = "Documentation"
 weight = 4
+
+[[main]]
+parent = "Documentation"
+name = "Protocols"
+weight = 41
+url = "/protocols"
+
+[[main]]
+parent = "Documentation"
+name = "Standards"
+weight = 42
+url = "/standards"
 
 # footer menu
 [[footer]]
