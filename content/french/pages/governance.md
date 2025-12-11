@@ -13,7 +13,7 @@ Depuis sa fondation, la TAQc relève de l'INRS. Cependant, l'établissement gest
 
 ## 3. Mission et objectifs
 
-La TAQc a pour mission d'informer, d'assister et de servir de ressource à la population canadienne, les organismes à but non lucratif (OBNL), les Premières Nations, les Inuit, l'industrie, le milieu académique, ainsi qu'aux instances gouvernementales (fédérales, provinciales et municipales) sur la technologie de l'ADNe. Le site web de la TTAQchéberge un guide de l'utilisateur ainsi qu'une liste des services de laboratoire disponibles au Québec et dans les régions avoisinantes afin de répondre à la demande croissante en services liés à l'ADNe (taq.info).
+La TAQc a pour mission d'informer, d'assister et de servir de ressource à la population canadienne, les organismes à but non lucratif (OBNL), les Premières Nations, les Inuit, l'industrie, le milieu académique, ainsi qu'aux instances gouvernementales (fédérales, provinciales et municipales) sur la technologie de l'ADNe. Le site web de la TAQc héberge un guide de l'utilisateur ainsi qu'une liste des services de laboratoire disponibles au Québec et dans les régions avoisinantes afin de répondre à la demande croissante en services liés à l'ADNe (taqc.info).
 
 Les objectifs de la TAQc incluent:
 
