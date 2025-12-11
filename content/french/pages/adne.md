@@ -33,10 +33,10 @@ Alors que les changements climatiques et le développement humain exercent une p
   <!-- Livre publié -->
   <div class="md:col-6 mb-6">
     <div class="bg-body border border-gold rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-row h-full">
-      <div class="w-1/4 p-4 bg-semigold flex items-center justify-center">
-        <img src="https://medias.groupehmh.com/storage/medias/8745/large-L97828977335751.jpg?v=1737133633" alt="Prof Planète et sa brigade : Mission sauvetage" class="h-48 w-48 object-cover">
+      <div class="w-1/3 p-4 bg-semigold flex items-center justify-center">
+        <img src="https://medias.groupehmh.com/storage/medias/8745/large-L97828977335751.jpg?v=1737133633" alt="Prof Planète et sa brigade : Mission sauvetage" class="object-fill">
       </div>
-      <div class="w-2/4 p-6 flex flex-col justify-between">
+      <div class="w-2/3 p-6 flex flex-col justify-between">
         <div>
           <div class="inline-block px-3 py-1 bg-semigold text-body text-xs font-semibold rounded-full mb-3">
             📚 Livre publié
@@ -65,7 +65,6 @@ Alors que les changements climatiques et le développement humain exercent une p
       <div class="w-1/4 p-4 bg-semigold flex items-center justify-center">
         <div class="text-center h-24 w-24 flex flex-col items-center justify-center">
           <div class="text-6xl mb-2">📖</div>
-          <p class="text-body font-semibold text-sm">Bientôt disponible</p>
         </div>
       </div>
       <div class="w-3/4 p-6 flex flex-col justify-between">
@@ -92,10 +91,10 @@ Alors que les changements climatiques et le développement humain exercent une p
   <!-- Site internet ludique -->
   <div class="md:col-6 mb-6">
     <div class="bg-body border border-gold rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full flex flex-row">
-      <div class="w-1/2 p-4 bg-semigold flex items-center justify-center">
-        <img src="/images/partners/genome_quebec.png" alt="Génome Québec" class="h-98 w-96 object-scale-down">
+      <div class="w-1/3 p-4 bg-semigold flex items-center justify-center">
+          <img src="https://genomequebec.com/wp-content/uploads/2023/08/Image1.png" alt="Génome Québec" class="h-98 w-96 object-scale-down">
       </div>
-      <div class="w-1/2 p-6 flex flex-col justify-between">
+      <div class="w-2/3 p-6 flex flex-col justify-between">
         <div>
           <div class="inline-block px-3 py-1 bg-semigold text-body text-xs font-semibold rounded-full mb-3">
             🌐 Site ludique
