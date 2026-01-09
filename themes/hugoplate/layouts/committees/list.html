@@ -39,14 +39,26 @@
     <div class="container" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500">
       <h2 class="h3 mb-8">{{ if eq site.Language.Lang "fr" }}Comité externe{{ else }}External Committee{{ end }}</h2>
       <div class="row">
-        {{/* Filter members with committee = "external" and sort alphabetically */}}
-        {{ $externalMembers := slice }}
+        {{/* Filter members with committee = "external" and sort by sort_order then alphabetically */}}
+        {{ $externalWithSort := slice }}
+        {{ $externalWithoutSort := slice }}
         {{ range $member := site.Data.members }}
           {{ if eq $member.committee "external" }}
-            {{ $externalMembers = $externalMembers | append $member }}
+            {{ if isset $member "sort_order" }}
+              {{ $externalWithSort = $externalWithSort | append $member }}
+            {{ else }}
+              {{ $externalWithoutSort = $externalWithoutSort | append $member }}
+            {{ end }}
           {{ end }}
         {{ end }}
-        {{ range $member := sort $externalMembers "lastname" "asc" }}
+        {{/* Sort by sort_order first */}}
+        {{ range $member := sort $externalWithSort "sort_order" "asc" }}
+          <div class="md:col-3 lg:col-4 mb-14">
+            {{ partial "components/author-card" $member }}
+          </div>
+        {{ end }}
+        {{/* Then alphabetically by lastname */}}
+        {{ range $member := sort $externalWithoutSort "lastname" "asc" }}
           <div class="md:col-3 lg:col-4 mb-14">
             {{ partial "components/author-card" $member }}
           </div>
