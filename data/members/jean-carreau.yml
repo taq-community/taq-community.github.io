@@ -1,0 +1,24 @@
+# Basic info (shared)
+firstname: Jean
+lastname: Carreau
+image: "images/members/jean-carreau.jpeg"
+committee: "external"
+sort_order: 2
+
+# English content
+title_taq_en: "External committee member"
+affiliation_en: "Hydro-Québec"
+title_en: "Senior Biologist, Environmental Advisor"
+summary_en: "Jean Carreau is a senior biologist with over 25 years of experience in academic research and consulting. He has been working as an environmental advisor at Hydro-Québec for nearly 4 years. He has extensive knowledge of the biology and ecology of Quebec fish species, acquired through environmental assessments, monitoring, wildlife inventories, and research projects. He has been involved in diverse studies across various sectors (hydroelectricity, transportation, municipal, industrial, mining, government) in both technical and coordination roles."
+
+# French content
+title_taq_fr: "Membre du comité externe"
+affiliation_fr: "Hydro-Québec"
+title_fr: "Biologiste sénior, Conseiller environnement"
+summary_fr: "Jean Carreau est un biologiste senior cumulant plus de 25 ans d'expérience dans le domaine de la recherche universitaire et la consultation. Il est en poste comme conseiller environnement chez Hydro-Québec depuis maintenant presque 4 ans. Il possède une bonne connaissance des différents aspects liés à la biologie et l'écologie des différentes espèces de poisson du Québec. Ces expériences ont été acquises dans le cadre d'évaluations environnementales, de suivis, d'inventaires fauniques et de projets de recherche. Il est impliqué dans la réalisation d'études diverses pour différents marchés (hydroélectricité, transport, municipal, industriel, minier, gouvernemental), tant au niveau technique qu'en coordination."
+
+# Social links (shared)
+social:
+  - name: linkedin
+    icon: fa-brands fa-linkedin
+    link: https://www.linkedin.com/in/jean-carreau-b0547465/
