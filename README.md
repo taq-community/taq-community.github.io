@@ -31,7 +31,7 @@ npm run build
 
 Site configuration can be modified in `hugo.toml`:
 
-- **baseURL**: https://taq.info
+- **baseURL**: https://taqc.info
 - **title**: Table sur l'ADN environnemental du Québec
 - **defaultContentLanguage**: French (fr)
 

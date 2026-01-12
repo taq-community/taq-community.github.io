@@ -13,7 +13,7 @@ Since its founding, TAQc has been affiliated with INRS. However, the managing in
 
 ## 3. Mission and Objectives
 
-TAQc's mission is to inform, assist, and serve as a resource for the Canadian population, non-profit organizations (NPOs), First Nations, Inuit, industry, academia, as well as government bodies (federal, provincial, and municipal) regarding eDNA technology. TAQc's website hosts a user guide as well as a list of laboratory services available in Quebec and neighboring regions to meet the growing demand for eDNA-related services (taq.info).
+TAQc's mission is to inform, assist, and serve as a resource for the Canadian population, non-profit organizations (NPOs), First Nations, Inuit, industry, academia, as well as government bodies (federal, provincial, and municipal) regarding eDNA technology. TAQc's website hosts a user guide as well as a list of laboratory services available in Quebec and neighboring regions to meet the growing demand for eDNA-related services (taqc.info).
 
 TAQc's objectives include:
 
