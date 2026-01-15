@@ -92,7 +92,7 @@ Alors que les changements climatiques et le développement humain exercent une p
   <div class="md:col-6 mb-6">
     <div class="bg-body border border-gold rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full flex flex-row">
       <div class="w-1/3 p-4 bg-semigold flex items-center justify-center">
-          <img src="https://genomequebec.com/wp-content/uploads/2023/08/Image1.png" alt="Génome Québec" class="h-98 w-96 object-scale-down">
+          <img src="https://genomequebec.com/wp-content/uploads/2023/08/Image1.png" alt="Génome Québec" class="object-scale-down">
       </div>
       <div class="w-2/3 p-6 flex flex-col justify-between">
         <div>
@@ -105,6 +105,34 @@ Alors que les changements climatiques et le développement humain exercent une p
         <div>
           <a href="https://genomequebec.com/educative-content/espace-educatif/" target="_blank" class="btn btn-outline-primary btn-sm rounded-full hover:bg-primary hover:text-white transition-all w-full">
             Découvrir
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Québec Science -->
+  <div class="md:col-6 mb-6">
+    <div class="bg-body border border-gold rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full flex flex-row">
+      <div class="w-1/3 p-4 bg-semigold flex items-center justify-center">
+        <img src="https://www.quebecscience.qc.ca/wp-content/uploads/2025/12/qs202512-adn-1200x800-1.jpg" alt="Biodiversité ADN environnemental" class="object-fill">
+      </div>
+      <div class="w-2/3 p-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-block px-3 py-1 bg-semigold text-body text-xs font-semibold rounded-full mb-3">
+            📰 Article
+          </div>
+          <h3 class="text-xl font-bold text-gold mb-2">Étudier la biodiversité grâce à l’ADN environnemental</h3>
+          <p class="text-sm text-white mb-1">Par Bruno Lamolet</p>
+          <p class="text-sm text-white mb-4 leading-relaxed">Un article de Québec Science explorant comment l'ADN environnemental révolutionne notre façon de surveiller la biodiversité, au-delà des milieux aquatiques.</p>
+        </div>
+        <div>
+          <div class="flex items-center text-xs text-white mb-3">
+            <span><i class="fa-solid fa-newspaper mr-1"></i>Québec Science</span>
+          </div>
+          <a href="https://www.quebecscience.qc.ca/environnement/nature/biodiversite-adn-environnemental/" target="_blank" class="btn btn-outline-primary btn-sm rounded-full hover:bg-primary hover:text-white transition-all w-full">
+            Lire l'article
             <i class="fa fa-arrow-right ml-2"></i>
           </a>
         </div>

@@ -109,4 +109,31 @@ As climate change and human development put pressure on ecosystems, tools like e
     </div>
   </div>
 
+  <!-- Québec Science Article -->
+  <div class="md:col-6 mb-6">
+    <div class="bg-body border border-gold rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden h-full flex flex-row">
+      <div class="w-1/3 p-4 bg-semigold flex items-center justify-center">
+        <img src="https://www.quebecscience.qc.ca/wp-content/uploads/2025/12/qs202512-adn-1200x800-1.jpg" alt="Biodiversity environmental DNA" class="object-fill">
+      </div>
+      <div class="w-2/3 p-6 flex flex-col justify-between">
+        <div>
+          <div class="inline-block px-3 py-1 bg-semigold text-body text-xs font-semibold rounded-full mb-3">
+            📰 Article
+          </div>
+          <h3 class="text-xl font-bold text-gold mb-2">Biodiversity: Environmental DNA Goes Beyond Water</h3>
+          <p class="text-sm text-white mb-4 leading-relaxed">A Québec Science article exploring how environmental DNA is revolutionizing the way we monitor biodiversity, beyond aquatic environments.</p>
+        </div>
+        <div>
+          <div class="flex items-center text-xs text-white mb-3">
+            <span><i class="fa-solid fa-newspaper mr-1"></i>Québec Science</span>
+          </div>
+          <a href="https://www.quebecscience.qc.ca/environnement/nature/biodiversite-adn-environnemental/" target="_blank" class="btn btn-outline-primary btn-sm rounded-full hover:bg-primary hover:text-white transition-all w-full">
+            Read article
+            <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
