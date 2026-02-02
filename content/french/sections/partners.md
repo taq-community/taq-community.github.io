@@ -40,6 +40,9 @@ partners:
   - name: "krg"
     image: "/images/partners/krg.png"
     url: "https://www.krg.ca/"
+  - name: "WasserCluster Lunz-Biologische Station GmbH"
+    image: "/images/partners/WasserCluster.png"
+    url: "https://wcl.ac.at/en/"
 
 fundings:
   - name: "Genome Canada"

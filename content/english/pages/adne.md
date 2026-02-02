@@ -120,7 +120,7 @@ As climate change and human development put pressure on ecosystems, tools like e
           <div class="inline-block px-3 py-1 bg-semigold text-body text-xs font-semibold rounded-full mb-3">
             📰 Article
           </div>
-          <h3 class="text-xl font-bold text-gold mb-2">Biodiversity: Environmental DNA Goes Beyond Water</h3>
+          <h3 class="text-xl font-bold text-gold mb-2">Biodiversity: Environmental DNA goes beyond water</h3>
           <p class="text-sm text-white mb-4 leading-relaxed">A Québec Science article exploring how environmental DNA is revolutionizing the way we monitor biodiversity, beyond aquatic environments.</p>
         </div>
         <div>
