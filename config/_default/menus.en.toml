@@ -76,12 +76,6 @@ url = "/data-processing"
 
 [[main]]
 parent = "Services"
-name = "Register as a service provider"
-weight = 35
-url = "/service-provider-registration"
-
-[[main]]
-parent = "Services"
 name = "Service provider list"
 weight = 36
 url = "/providers/list"

@@ -8,6 +8,10 @@ features:
       enable: true
       label: "S'inscrire en tant que fournisseur de services"
       link: "/service-provider-registration"
+    button2:
+      enable: true
+      label: "Découvrir les fournisseurs de services"
+      link: "/providers/list/"
 
   - title: "La TAQc favorise la collaboration en partageant les connaissances, outils et meilleures pratiques de l'ADNe."
     image: "/images/collector.jpg"

@@ -3,19 +3,25 @@
 
   <section class="section-xsm">
     <div class="container">
-      <!-- Search Bar -->
+      <!-- Registration Button & Search Bar -->
       <div class="row">
-        <div class="col-12 md:col-8 lg:col-3 ml-auto my-8">
-          <div class="relative">
-            <i class="fa fa-search absolute left-7 top-1/2 -translate-y-1/2 text-gray-400 z-10 pointer-events-none"></i>
-            <input
-              type="text"
-              id="provider-search"
-              placeholder="{{ if eq site.Language.Lang "fr" }}Rechercher un fournisseur...{{ else }}Search providers...{{ end }}"
-              class="w-full py-3 pl-12 pr-4 rounded-lg border text-gray-600 border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-all"
-            />
+        <div class="col-12 flex items-start justify-end gap-4 my-8">
+          <a class="btn btn-outline-primary inline-flex items-center" href="/{{ site.Language.Lang }}/service-provider-registration"  data-aos="fade-left" data-aos-duration="500">
+            {{ if eq site.Language.Lang "fr" }}Devenir fournisseur de services{{ else }}Become a service provider{{ end }}
+            <i class="fa fa-arrow-right pl-2"></i>
+          </a>
+          <div class="w-full md:w-auto md:min-w-[300px]">
+            <div class="relative">
+              <i class="fa fa-search absolute left-7 top-1/2 -translate-y-1/2 text-gray-400 z-10 pointer-events-none"></i>
+              <input
+                type="text"
+                id="provider-search"
+                placeholder="{{ if eq site.Language.Lang "fr" }}Rechercher un fournisseur...{{ else }}Search providers...{{ end }}"
+                class="w-full py-3 pl-12 pr-4 rounded-lg border text-gray-600 border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary focus:outline-none transition-all"
+              />
+            </div>
+            <div id="search-results-count" class="mt-2 text-sm text-white text-right"></div>
           </div>
-          <div id="search-results-count" class="mt-2 text-sm text-white text-right"></div>
         </div>
       </div>
 

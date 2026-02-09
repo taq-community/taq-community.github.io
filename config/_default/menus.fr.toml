@@ -75,12 +75,6 @@ url = "/data-processing"
 
 [[main]]
 parent = "Services"
-name = "S'inscrire comme fournisseur de services"
-weight = 35
-url = "/service-provider-registration"
-
-[[main]]
-parent = "Services"
 name = "Bottin des fournisseurs de services"
 weight = 36
 url = "/providers/list"

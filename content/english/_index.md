@@ -8,6 +8,10 @@ features:
       enable: true
       label: "Register as a service provider"
       link: "/service-provider-registration"
+    button2:
+      enable: true
+      label: "Discover service providers"
+      link: "/providers/list/"
 
   - title: "TAQc fosters collaboration by sharing eDNA knowledge, tools, and best practices."
     image: "/images/collector.jpg"
