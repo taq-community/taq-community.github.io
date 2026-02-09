@@ -160,6 +160,19 @@ providers:
       logo: "/images/services/uqac.png"
       display: true
 
+    - name: "eNA Discovery Hub (McGill University)"
+      name_fr: "eNA Discovery Hub (Université McGill)"
+      type: ["research", "analysis", "training", "platform", "consulting"]
+      province: "Quebec"
+      city: "Montreal"
+      lat: 45.5048
+      lon: -73.5772
+      description: "A CFI-funded, multi-user Living Lab at McGill University advancing environmental nucleic acid (eNA) approaches — eDNA and eRNA — for biodiversity monitoring and ecosystem health. The Hub offers high-sensitivity molecular tools, and bioinformatics capacity, with support for project design, sampling, standardized protocols, data processing, and quality control. It serves academic, government, NGO, and industry partners across Canada."
+      description_fr: "Installation multi-utilisateurs financée par la FCI et opérant comme Living Lab à l'Université McGill, dédiée aux approches d'acides nucléiques environnementaux (ANe) — ADNe et ARNe — pour le suivi de la biodiversité et la santé des écosystèmes. Le Hub offre des outils moléculaires de haute sensibilité et des capacités bioinformatiques, avec un accompagnement en conception de projets, échantillonnage, protocoles standardisés, traitement des données et contrôle qualité. Il dessert des partenaires académiques, gouvernementaux, communautaires et industriels à l'échelle du Canada."
+      url: "https://www.mcgill.ca/cristescu-lab/ena-discovery-hub-mcgill-university"
+      logo: "/images/services/McGill_University.svg"
+      display: true
+
   # Canada (Multi-provincial/Federal)
   canada:
     - name: "Natural Resources DNA Profiling and Forensic Centre (NRDPFC)"
