@@ -8,19 +8,6 @@
       {{ end }}
     </h1>
 
-    <div class="bg-blue-50 border-l-4 border-gold p-4 my-6">
-      <strong class="text-body">Note:</strong>
-      {{ if eq .Page.Site.Language.Lang "fr" }}
-        Ce formulaire est destiné aux personnes ou entités désirant devenir membres de la TAQc (chercheurs, étudiants, professionnels, OBNL, etc).
-        Si vous représentez une entreprise ou offrez des services commerciaux en ADN environnemental, veuillez utiliser le
-        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}service-provider-registration" class="text-body hover:underline">formulaire pour fournisseurs de services</a>.
-      {{ else }}
-        This form is intended for individuals or entities wishing to become TAQc members (researchers, students, professionals, non-profit organizations, etc.).
-        If you represent a company or offer commercial environmental DNA services, please use the
-        <a href="{{ .Site.BaseURL }}service-provider-registration" class="text-body hover:underline">service provider form</a>.
-      {{ end }}
-    </div>
-
     <form action="{{ .Get "action" | default "https://formspree.io/f/YOUR_MEMBERSHIP_FORM_ID" }}" method="POST" enctype="multipart/form-data">
 
       <!-- Hidden field to identify form type -->

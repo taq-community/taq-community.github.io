@@ -8,18 +8,6 @@
       {{ end }}
     </h1>
 
-    <div class="bg-blue-50 border-l-4 border-gold p-4 my-6">
-      {{ if eq .Page.Site.Language.Lang "fr" }}
-        Ce formulaire est destiné aux entreprises, laboratoires commerciaux, consultants et organismes offrant des services en ADN environnemental.
-        Si vous êtes un chercheur, étudiant ou professionnel, veuillez utiliser le
-        <a href="{{ .Site.BaseURL }}{{ if eq .Page.Site.Language.Lang "fr" }}fr/{{ end }}become-a-member" class="text-body hover:underline">formulaire d'adhésion individuel</a>.
-      {{ else }}
-        This form is for companies, commercial laboratories and consultants and organizations offering environmental DNA services.
-        If you are a researcher, student or professionnal, please use the
-        <a href="{{ .Site.BaseURL }}become-a-member" class="text-body hover:underline">individual membership form</a>.
-      {{ end }}
-    </div>
-
     <form action="{{ .Get "action" | default "https://formspree.io/f/YOUR_SERVICE_PROVIDER_FORM_ID" }}" method="POST" enctype="multipart/form-data">
 
       <!-- Hidden field to identify form type -->
