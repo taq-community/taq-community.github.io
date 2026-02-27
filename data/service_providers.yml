@@ -160,6 +160,19 @@ providers:
       logo: "/images/services/uqac.png"
       display: true
 
+    - name: "Génome Québec - Centre d'expertise et de services (CES)"
+      name_fr: "Génome Québec - Centre d'expertise et de services (CES)"
+      type: ["analysis", "sequencing", "consulting", "training", "research"]
+      province: "Quebec"
+      city: "Montreal"
+      lat: 45.5017
+      lon: -73.5673
+      description: "The Centre d'expertise et de services (CES) of Génome Québec is a key player in the development and deployment of environmental DNA projects in Quebec. With cutting-edge scientific and technological expertise, the CES supports its partners at every stage — from DNA extraction to high-throughput sequencing, quality control, and advanced bioinformatics analyses. This integrated mastery enables the generation of reliable, robust, and actionable data for research, conservation, and ecosystem management. Notable projects include Mission ADNeau (aquatic biodiversity education) and Code Béluga (St. Lawrence beluga whale monitoring)."
+      description_fr: "Le Centre d'expertise et de services (CES) de Génome Québec est un acteur clé du développement et du déploiement des projets d'ADN environnemental au Québec. Fort d'une expertise scientifique et technologique de pointe, le CES accompagne ses partenaires à chaque étape du processus — de l'extraction de l'ADN au séquençage haut débit, en passant par le contrôle qualité et les analyses bio-informatiques avancées. Cette maîtrise intégrée permet de générer des données fiables, robustes et exploitables pour la recherche, la conservation et la gestion des écosystèmes. Parmi les projets phares : Mission ADNeau (sensibilisation à la biodiversité aquatique) et Code Béluga (suivi du béluga du Saint-Laurent)."
+      url: "https://genomequebec.com/"
+      logo: "/images/services/genome_quebec.jpg"
+      display: true
+
     - name: "eNA Discovery Hub (McGill University)"
       name_fr: "eNA Discovery Hub (Université McGill)"
       type: ["research", "analysis", "training", "platform", "consulting"]
